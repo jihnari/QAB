@@ -1,0 +1,12 @@
+ao3 - 
+- cant have <p class=clear> some stuff </p>. its gotta be standalone i guess? wonder if thats gonna break something...
+- cant have <p class="clear anything"></p>. its gotta be COMPLETELY standalone ig. 
+- the yt img is weird. its got a shadow and also its shifted off of the red bar? and the margin is diff now. may have to overwrite whatev the new ao3 default is? 
+-- is it that 'bottom 4'? 
+
+allowed operators: 
+lost again :/ 
+
+notepad++ - 
+- for testing purposes, add the following to html files 
+<link rel="stylesheet" href="css/qab2.css">
