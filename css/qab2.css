@@ -185,7 +185,6 @@ width:100%;
   font-weight:bold;
 }
 
-
 /*reddit*/
 /*
 i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
@@ -193,15 +192,14 @@ i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i 
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
 }
- .rd-view-box {
+.rd-view-box {
   background: #0079D3;
   border-radius: 3px;
   color: white;
-  padding: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 7px;
+  margin: 0 5px -5px 5px;
 }
- .rd-signup-box {
+.rd-signup-box {
   background: #0079D3;
   border-radius: 14px;
   color: white;
@@ -209,7 +207,10 @@ i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i 
   margin: 0 5px -5px 5px;
   font-size:0.8em;
 }
-
+.rd-sortby{
+  font-size:0.8em;
+  padding-left:5px;
+}
 .rd-photo-box {
   background: #d3dce0;
   border-radius: 18px;
@@ -284,6 +285,9 @@ font-size: .8em;
   display: table;
     padding: 0px 0px 0px 0px; 
   margin: 0px 0 5px 0;
+}
+.rd-gray-text {
+  color: #657685;
 }
 
 
