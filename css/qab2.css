@@ -175,6 +175,117 @@ width:100%;
   background: linear-gradient(to bottom, white, rgba(255,255,255, 0));
 }
 
+.text-color-gray {
+  color: #9F9FA1;
+}
+.text-size-12{
+  font-size:1.2em;
+}
+.text-bold{
+  font-weight:bold;
+}
+
+
+/*reddit*/
+/*
+i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
+*/
+.rd-font{
+  font-family:verdana, arial, helvetica, sans-serif;
+}
+ .rd-view-box {
+  background: #0079D3;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ .rd-signup-box {
+  background: #0079D3;
+  border-radius: 14px;
+  color: white;
+  padding: 5px;
+  margin: 0 5px -5px 5px;
+  font-size:0.8em;
+}
+
+.rd-photo-box {
+  background: #d3dce0;
+  border-radius: 18px;
+  color: black;
+  padding: 2px 10px 2px 10px;
+}
+.rd-name{
+  text-align: center;
+  font-weight:bold;
+  font-size:1.2em;
+}
+.rd-header{
+  font-weight:bold;
+  font-size:1.1em;
+  margin:-5px 0 -5px 0;
+}
+.rd-dot { /*idx if i wanna go down this path*/
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #bbb;
+  margin-bottom: -15px;
+}
+.rd-divider{
+  border-bottom: 8px solid #EEEFF1;
+  color: #EEEFF1;
+  margin: 0 -5px 10px -5px;
+}
+.rd-vote{
+  height:1.8em;
+}
+.rd-poster{
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+.rd-op{
+  color:#25A0ED;
+  font-weight:bold;
+}
+.rd-down-arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 0px 0 2px 7px;
+}
+.rd-small{
+font-size: .8em;
+}
+.rd-vr0 {
+  display: table;
+  padding: 10px 0 0px 30px; 
+  border-bottom: 1px solid #EEEFF1;
+}
+.rd-vr1 {
+  display: table;
+  padding: 0px 0px 0px 10px; 
+  margin: 10px 0 5px 0;
+  border-left: 1px solid #EEEFF1;
+}
+.rd-vr2 {
+  display: table;
+  padding: 0px 0px 0px 10px; 
+  margin: 10px 0px 10px 5px;
+  border-left: 1px solid #EEEFF1;
+}
+.rd-vr-not {
+  display: table;
+    padding: 0px 0px 0px 0px; 
+  margin: 0px 0 5px 0;
+}
+
 
 /*sms*/
 .sms-box-left {
