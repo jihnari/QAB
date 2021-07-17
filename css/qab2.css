@@ -486,12 +486,11 @@ todo:
 
 
 
+
 /*signal*/
 /*
 todo:
 - make a shadowbox? 
-- get a new arrow image 
-- put the image somewhere other than discord 
 */
 .signal-dot {
   height: 30px;
@@ -509,7 +508,7 @@ todo:
   float:left;
 }
 .signal-name-line{
-  border-bottom: 2px solid rgba(0,0,0,.2);
+  border-bottom: 2px solid rgba(0,0,0,.1);
   padding-bottom:40px;
 }
 .signal-name-line2{
@@ -526,9 +525,9 @@ todo:
   float:left;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  height: 35px;
-  width: 35px;
-  margin-right:10px;
+  height: 30px;
+  width: 30px;
+  margin:0 10px 0 10px;/*lmao this does nothing, its in a span bro*/
 }
 .signal-box-left1 {
   margin-top: 10px;
@@ -653,7 +652,28 @@ todo:
   padding: 5px 0 0 0;
   clear: both;
 }
-
+.signal-img-left {
+  background: #2c6bee;
+  border-radius: 15px;
+  border:2px solid #F6F6F6;
+  border-bottom-left-radius: 5px;
+  margin-top: 10px;
+  float: left;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+.signal-img-right {
+  margin-top: 10px;
+  border:2px solid #F6F6F6;
+  border-radius: 15px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 3px;
+  float: right;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
 
 
 
@@ -822,6 +842,7 @@ todo:
 */
 .dc-font{
   font-family: 'Uni sans', 'Whitney', sans-serif;
+  line-height: 160%; /*check this when on ao3*/
 }
 .dc-middle-line-red {
   text-align: center;
@@ -873,10 +894,19 @@ todo:
 }
 
 .dc-emotebox {
-  border-radius: 2px;
+  border-radius: 4px;
   background: #F6F6F6;
   color: #C2C5C9;
+  border:1.5px solid #F6F6F6;
   padding: 2px;
+  padding: 2px 3px 2px 3px; 
+}
+.dc-myemotebox {
+  border-radius: 6px;
+  border:1.5px solid #5865F2;
+  background: #E7E9FD;
+  color: #5865F2;
+  padding: 2px 3px 2px 3px; 
 }
 .dc-img-box {
   border-color: #f2f4f4;
@@ -922,7 +952,14 @@ todo:
   color:purple;
   font-weight:bold;
 }
-
+.dc-name-forest{
+  color:#228b22;
+  font-weight:bold;
+}
+.dc-name-default{
+  color:#060607;
+  font-weight:bold;
+}
 
 
 /*news*/
