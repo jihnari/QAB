@@ -889,7 +889,7 @@ todo:
 }
 .dc-hamberger { /*yes im aware this is mispelled, its too late now*/
   height: 35px;
-  width: 35px;
+  width: 50px;
   padding-top:10px;
   margin-bottom:-11px;
 }
@@ -956,7 +956,14 @@ todo:
   border-image: linear-gradient(to right, #78bf9f 85%, #F6F6F6 15%);
   border-image-slice: 1;
 }
-
+.dc-name-red{
+  color:red;
+  font-weight:bold;
+}
+.dc-name-orange{
+  color:orange;
+  font-weight:bold;
+}
 .dc-name-blue{
   color:blue;
   font-weight:bold;
@@ -976,6 +983,11 @@ todo:
 .dc-name-default{
   color:#060607;
   font-weight:bold;
+}
+
+.dc-just-emote{ /*dont forget to shift the below element up*/
+  font-size:2.5em;
+  margin-top:-5px;
 }
 
 
@@ -1008,8 +1020,3 @@ todo:
   left: 50%;
   margin-left: -50px;
 }
-
-
-
-
-
