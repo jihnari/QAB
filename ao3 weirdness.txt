@@ -3,6 +3,7 @@ ao3 -
 - cant have <p class="clear anything"></p>. its gotta be COMPLETELY standalone ig. 
 - the yt img is weird. its got a shadow and also its shifted off of the red bar? and the margin is diff now. may have to overwrite whatev the new ao3 default is? 
 -- is it that 'bottom 4'? 
+- line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around the section, open the p right after that and usually that + cussing does the trick 
 
 allowed operators: 
 lost again :/ 
