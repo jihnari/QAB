@@ -4,8 +4,9 @@ ao3 -
 - the yt img is weird. its got a shadow and also its shifted off of the red bar? and the margin is diff now. may have to overwrite whatev the new ao3 default is? 
 -- is it that 'bottom 4'? 
 - line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around the section, open the p right after that and usually that + cussing does the trick 
-- had to move yt-line-## from bottom 4px to 5px bc of the way ao3 renders images? unclear. 
-- also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.
+- had to move yt-line-## from bottom 4px to ~~5px~~ 5.5px bc of the way ao3 renders images? unclear. 
+- ~~also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.~~
+- yes hello ao3 has a style class called "wrapper" so ur not allowed to use that anymore. renamed to 'relative-wrapper'
 
 allowed operators: 
 lost again :/ 
