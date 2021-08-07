@@ -227,7 +227,7 @@ i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i 
   font-size:1.1em;
   margin:-5px 0 -5px 0;
 }
-.rd-dot { /*idx if i wanna go down this path*/
+.rd-dot { /*idk if i wanna go down this path*/
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -680,7 +680,7 @@ todo:
 /*youtube*/
 /*
 todo: 
-- see if yt-down-arrow works 
+- why is ao3 adding a drop-box 
 */
 .yt-font{
 font-family: 'Roboto', sans-serif;
@@ -690,21 +690,21 @@ font-family: 'Roboto', sans-serif;
   width:100%;
   height:5px;
   background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);  
-  bottom:4px;
+  bottom:5px;
 }
 .yt-red-line-30 {
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 70%);  
-  bottom:4px;
+  background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);  
+  bottom:5px;
 }
 .yt-red-line-70 {
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 30%);  
-  bottom:4px;
+  background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);  
+  bottom:5px;
 }
 .yt-border-bottom-gray  {
   border-bottom: 1px solid #b1b1b3;
@@ -739,11 +739,11 @@ font-family: 'Roboto', sans-serif;
   margin-top: 10px;
   margin-right: 5px;
   border: 6px solid transparent;
-  border-top-color: #000;
+  border-bottom-color: #000;
   display: inline-block;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(180deg);
+  }
 .yt-up-arrow {
   margin-bottom: 10px;
   margin-right: 5px;
@@ -778,6 +778,10 @@ font-family: 'Roboto', sans-serif;
   color: red;
   padding-right:5px;
   margin-top: 10px;
+}
+
+.yt-vid-img{
+  width:100%;
 }
 
 
@@ -900,10 +904,10 @@ todo:
   overflow: auto;
 }
 .dc-header{
-  font-size:1.2em;
+  font-size:35px;
   font-weight:bold;
   mmargin-top:10px;
-  margin-left:10px;
+  margin-left:0px;
   ppadding-bottom:-10px;
   ppadding-bottom:0;
   mmargin-bottom:-15px;
@@ -916,14 +920,14 @@ todo:
   color: #C2C5C9;
   border:1.5px solid #F6F6F6;
   padding: 2px;
-  padding: 2px 3px 2px 3px; 
+  padding: 2px 5px 2px 3px; 
 }
 .dc-myemotebox {
   border-radius: 6px;
   border:1.5px solid #5865F2;
   background: #E7E9FD;
   color: #5865F2;
-  padding: 2px 3px 2px 3px; 
+  padding: 2px 5px 2px 3px; 
 }
 .dc-img-box {
   border-color: #f2f4f4;
@@ -968,6 +972,10 @@ todo:
   color:blue;
   font-weight:bold;
 }
+.dc-name-lblue{
+  color:#add8e6;
+  font-weight:bold;
+}
 .dc-name-pink{
   color:pink;
   font-weight:bold;
@@ -988,6 +996,57 @@ todo:
 .dc-just-emote{ /*dont forget to shift the below element up*/
   font-size:2.5em;
   margin-top:-5px;
+  margin-bottom:0px;
+}
+
+
+/*phone screen/notifications/time*/
+.phone-div {
+  border-top: 1px solid #b1b1b3;
+}
+.phone-short-line {
+  border-bottom: 6px solid #bbb;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  max-width: 35%;
+  text-align: center;
+}
+ .phone-date {
+  font-size: 1.2em;
+}
+
+.phone-time {
+  font-size: 4em;
+}
+.phone-notif-top{
+  border-color: #d3dce0;
+  border-style: solid;
+  margin: 0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #9F9FA1;
+}
+
+.phone-notif-bottom {
+  border-color: #d3dce0;
+  border-style: solid;
+  margin-bottom: 25px;
+  margin-top: 0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.phone-caller{
+  font-size:1.4em;
+}
+.phone-incoming{
+    font-size:1.2em;
+    color: #9F9FA1;
 }
 
 
@@ -1020,3 +1079,22 @@ todo:
   left: 50%;
   margin-left: -50px;
 }
+
+
+/*blog*/
+.blog-header {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.blog-date {
+  font-size: .9em;
+  color: gray;
+}
+.blog-more {
+  text-decoration:underline;
+}
+.blog-block{
+text-align: justify;
+}
+
+
