@@ -1,0 +1,41 @@
+<div class="dc-font">
+
+<!-- top bar; remember @ or # -->
+<p><img class="dc-hamberger" src="https://github.com/jihnari/QAB/raw/main/img/dc-hamburger.jpg">
+<span class="dc-header-buffer text-size-12 text-bold"><span class="text-color-gray">@</span> _channel_name_</span> </p>
+<p class="dc-border-top"></p>
+
+<!-- comment --> <!-- first element has to be shifted up -->
+<!-- change name color and **remember your br's** -->
+<p class=shift-up><span class="dc-name-default">_name_ </span> <span class="dc-time-stamp">Today at _time_</span><br />
+_content_
+</p>
+
+<!-- date-line --> 
+<p class="dc-middle-line-gray"><span class="middle-box">Aug ##, 20X4</span></p>
+
+<!-- comment w emote -->
+<!-- change name color and **remember your br's** -->
+  <p><span class="dc-name-default">_name_</span> <span class="dc-time-stamp">Today at _time_</span><br />
+_content_<br/>
+<span class="dc-emotebox">_e_ _n_</span>
+</p>
+
+<!-- just emote -->
+<p><span class="dc-name-pink">_name_ </span> <span class="dc-time-stamp">Today at _time_</span><br/><span class="dc-just-emote">_emote_</span></p>
+
+
+</div>
+
+<!-- new messages -->
+<!-- unsure about div placement -->
+<p class="dc-middle-line-red"><span class="middle-box text-color-red">NEW MESSAGES</span></p>
+
+<!-- reply comment -->
+<p class="clear2 dc-reply-wrapper"><span class="dc-reply-square"></span> <span class="dc-reply-text"><b>_re_name_</b> _og_comment_ </span></p>
+<p><span class="dc-name-default">_name_</span> <span class="dc-time-stamp">Today at _time_</span><br />
+_content_
+</p>
+
+
+</div>

@@ -1,0 +1,11 @@
+<div class="art-font"><p class=art-header>_site_</p>
+  <p class=art-red>_art_type_</p>
+<p><span class=art-title1>_title_ </span> <span class=art-title2> _tag_</span></p>
+
+<p class=art-author>BY _NAME_/span>
+<hr class=art-line>
+</div><div class="fadeout art-font shift-up"><p class=art-content><br/>
+_content_ </p>
+<p align="center"><button class="art-read-more">Read Full Story</button></p>
+</div>
+

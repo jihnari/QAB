@@ -1,0 +1,60 @@
+<div class="yt-font">
+
+ <!-- video img -->
+<div class="relative-wrapper">
+  <div> <img src="_x_" width ="100%"></div>  
+  <div class=yt-red-line-50></div>  
+</div>
+
+ <!-- video tags and blurb -->
+<p class=shift-zero><span  class=yt-link>_tags_if_present_</span><br/>
+<span class="text-size-12"><strong>_vid_title_</strong></span><span class="right yt-up-arrow"></span><br/>
+<span class="text-color-lgray text-size-8">_x_ views </span></p>
+
+<p class=shift-up><img class=stay src="https://github.com/jihnari/QAB/raw/main/img/yt-topbar.jpg"></p>
+<p class=shift-up><span class=yt-stats> _liked_ </span><span class=yt-stats> _notliked_ </span></p>
+
+ <!-- poster info -->
+<p class="yt-border-top-bottom-gray clear2"><span class="yt-sub-button">SUBSCRIBE</span>
+<span class="left dot"></span>
+<span class=left><strong>_name_</strong><br/><span class="text-color-lgray text-size-8">_subs_ subscribers</span></span>
+  </p> 
+<p class="yt-border-bottom-gray padding-bottom-15">
+  Published on _Nov_13_, 20X4
+  <br/><br/>
+  _blah_
+  <br/>
+  </p>
+  
+<!-- comments header -->
+<p class="yt-border-top-bottom-gray yt-bg-gray">
+Remember to keep comments respectful and to follow our <span class=yt-link><a href="https://support.google.com/youtube/answer/9288567?hl=en">Community Guidelines</a></span></p>
+
+<p> Comments <span class=text-gray>_number_</span></p>
+<p class="yt-comment"><span class="yt-floatdot"></span><span class="yt-add-comment"> <br/>Add a public comment...</span></p>
+ 
+<!-- comment -->
+    <p class="yt-comment">
+<span class="yt-floatdot"></span>
+<span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
+_content_<br/><br/>
+  <br/>_n_ REPLIES</span>
+  </p>
+
+<!-- comment -->
+    <p class="yt-comment">
+<span class="yt-floatdot"></span>
+<span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
+_content_<br/><br/>
+  <br/>_n_ REPLIES</span>
+  </p>
+  
+<!-- comment -->
+    <p class="yt-comment">
+<span class="yt-floatdot"></span>
+<span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
+_content_<br/><br/>
+  <br/>_n_ REPLIES</span>
+  </p>
+
+</div>

@@ -1,0 +1,25 @@
+<!-- text:_participants_:_date_ -->
+[Text messaging application on the phone belonging to _name_.]
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+<div class="dm-container"> 
+
+<!-- top bar -->
+<p class="sms-border"><i class="left-arrow"></i><span class="sms-name-header">&nbsp;&nbsp;_contact_</span></p>
+
+<p class="sms-time">_friday_, _jul_16_ &bull; _time_</p>
+<p>
+  
+<!-- left -->
+<span class="sms-box-left">
+_content_
+</span>
+
+<!-- right -->
+<span class="sms-box-right">
+_content_
+</span>
+
+
+</p></div>
+

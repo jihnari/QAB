@@ -1,0 +1,32 @@
+<!-- line:_participants_:_date_ -->
+[LINE messaging application on the phone belonging to _name_.]
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+<!-- top bar -->
+<div class="dm-container">
+  <p class="line-border">
+    <i class="left-arrow"></i> <span class="line-name-header">_name_</span></p>
+ 
+<!-- date -->
+<p align="center"><br/><br/><span class="line-date">
+_Mon_, _Aug_9_, 20X4
+  </span></p>
+<p>
+  
+<!-- right (me) -->
+<span class="line-box-right1">_content_
+</span><span class="line-time-right">
+Read<br/>
+_time_
+</span>
+
+<!-- left -->
+<span class=line-box-left>_content_
+</span><span class="line-time-left">
+_time_
+</span>
+
+
+</p></div>
+
+

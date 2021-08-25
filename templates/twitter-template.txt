@@ -1,0 +1,38 @@
+<!-- top bar -->
+<p><img src="https://github.com/jihnari/QAB/raw/main/img/tw-arrow.jpg" class="left square-element"><span class="left thread-buffer text-size-12">Thread<span></p><p class="clear"></p><p class="tw-border-bottom"></p>
+
+<!-- tweeter info -->
+<span class="left dot"></span>
+<p><b>_name_ </b><br />
+<span class="tw-text-gray"> @_handle_</span></p>
+
+<!-- tweet content-->
+<p class=clear></p><p>_content_ <br />
+  <img class="tw-img" src=_x_></img>
+<br />
+<span class="tw-text-gray">_time_ · _#_ _mon_ · <span class="tw-text-blue">Twitter for Android</span><br />
+<p class="tw-border-top-bottom padding-top-bottom-10">
+<b>_x_</b> Retweets and comments <span class="padding-left-20"><b>_x_</b> Likes<span>
+</p>
+  <img src="https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg" width=100% height=40px class="tw-border-bottom shift-up"/>
+  
+<!-- normal comment -->
+  <p class="clear"></p><p><span class="left dot"></span><span class="stay-block"><b>_name_</b> <span class="tw-text-gray">@_handle_ · _date_ <br />
+Replying to</span><span class="tw-text-blue"> @_handle_</span><br/>
+    _content_ </span></p>
+  
+<p class="tw-border-bottom clear"></p>
+ 
+<!-- comment w/ 1 reply -->
+<div class="tw-line-vertical">
+    
+<p class="clear"></p><p><span class="left floatdot dot"></span><span class="stay-block"><b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date<br />
+Replying to</span><span class="tw-text-blue"> @_handle_</span><br/>
+  _content_ <br/><br/></span></p>
+  
+<p class="clear"></p><p><span class="left floatdot dot"></span><span class="stay-block">
+<b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date_</span><br />
+  _content_</span> </span></p>
+ 
+  </div>
+  

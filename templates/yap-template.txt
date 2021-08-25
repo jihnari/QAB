@@ -1,0 +1,28 @@
+<!-- yap -->
+<div class="fadein">
+<p>
+<span class="news-title">_title_ </span><br/><span class="news-date"> _July_4_· _source_ via Yap News </span></p>
+</p>
+<p class=news-border>
+_content_
+<br/><br/>
+</p></div>
+
+<p>
+<span class="news-title">_title_</span><br/><span class="news-date"> _date_ · _source_ via Yap News</span></p>
+</p>
+<p class=news-border>
+
+<br/><br/>
+</p>
+
+<div class="fadeout">
+<p>
+<span class="news-title">_title_
+</span><br/><span class="news-date"> _date_ · _source_ via Yap News </span></p>
+</p>
+<p>
+
+</p>
+</div>
+
