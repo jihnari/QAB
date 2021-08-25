@@ -1,6 +1,9 @@
 
 /*UNIVERSAL*/
 
+.relative-wrapper {
+  position: relative;
+}
 .wrapper {
   position: relative;
 }
@@ -31,6 +34,12 @@ margin-top:0;
 }
 .shift-up{
 margin-top:-15px;
+}
+.shift-up2{
+margin-top:-30px;
+}
+.shift-up3{
+margin-top:-45px;
 }
 .shift-down{
 margin-bottom:-15px;
@@ -187,7 +196,11 @@ width:100%;
 
 /*reddit*/
 /*
-i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool. 
+i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix
+that weird issue where sometimes things collapse instead of float", i remember sitting down,
+i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk
+if half of that even needs to be there and honestly at this point i dont care. i also remeber
+thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
 */
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
@@ -266,24 +279,24 @@ font-size: .8em;
 }
 .rd-vr0 {
   display: table;
-  padding: 10px 0 0px 30px; 
+  padding: 10px 0 0px 30px;
   border-bottom: 1px solid #EEEFF1;
 }
 .rd-vr1 {
   display: table;
-  padding: 0px 0px 0px 10px; 
+  padding: 0px 0px 0px 10px;
   margin: 10px 0 5px 0;
   border-left: 1px solid #EEEFF1;
 }
 .rd-vr2 {
   display: table;
-  padding: 0px 0px 0px 10px; 
+  padding: 0px 0px 0px 10px;
   margin: 10px 0px 10px 5px;
   border-left: 1px solid #EEEFF1;
 }
 .rd-vr-not {
   display: table;
-    padding: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
   margin: 0px 0 5px 0;
 }
 .rd-gray-text {
@@ -322,7 +335,7 @@ font-size: .8em;
   clear: both;
 }
 .sms-border {
-  border-bottom: 2px solid rgba(0,0,0,.2);
+  box-shadow: 0px 8px 10px -10px #888888;
   padding-bottom: 10px;
 }
 .sms-name-header {
@@ -336,7 +349,9 @@ font-size: .8em;
 /*line*/
 /*
 todo:
-- well, the placement of the timestamp STILL bothers me but im still to dumb to fix it and i cried enough over it already so i'll probably just. ignore it forever? 
+- well, the placement of the timestamp STILL bothers me but im still to dumb to fix it and i
+cried enough over it already so i'll probably just. ignore it forever?
+- could try tables again if it bugs you too much.
 */
 .line-date{
   font-size: 0.8em;
@@ -461,18 +476,19 @@ todo:
 }
 .line-time-right {
   float: right;
+  text-align: right;
   position: relative;
   bottom: 0;
   color: #9F9FA1;
-  font-size: 0.8em;
-  padding: 2px;
+  font-size: 0.6em;
+  padding: 5px;
 }
 .line-time-left {
   float: left;
   position: relative;
   color: #9F9FA1;
-  font-size: 0.8em;
-  padding: 2px;
+  font-size: 0.6em;
+  padding: 5px;
 }
 .line-name-box {
   float: left;
@@ -490,7 +506,8 @@ todo:
 /*signal*/
 /*
 todo:
-- make a shadowbox? 
+- make a shadowbox?
+- legit tho, shadow-box could fix the last of your problems.
 */
 .signal-dot {
   height: 30px;
@@ -508,8 +525,8 @@ todo:
   float:left;
 }
 .signal-name-line{
-  border-bottom: 2px solid rgba(0,0,0,.1);
   padding-bottom:40px;
+  box-shadow: 0px 8px 8px -10px #888888;
 }
 .signal-name-line2{
   border-bottom: 5px solid transparent;
@@ -674,13 +691,22 @@ todo:
   clear: both;
   position: relative;
 }
+.signal-date {
+  padding: 30px 0 5px 0;
+  color: gray;
+  font-size:.9em;
+  bbackground: white;
+  text-align:center;
+  clear: both;
+  position: relative;
+}
 
 
 
 /*youtube*/
 /*
-todo: 
-- why is ao3 adding a drop-box 
+todo:
+- why is ao3 adding a drop-box
 */
 .yt-font{
 font-family: 'Roboto', sans-serif;
@@ -689,22 +715,22 @@ font-family: 'Roboto', sans-serif;
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);  
-  bottom:5px;
+  background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);
+  bottom:5.5px;
 }
 .yt-red-line-30 {
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);  
-  bottom:5px;
+  background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);
+  bottom:5.5px;
 }
 .yt-red-line-70 {
   position:absolute;
   width:100%;
   height:5px;
-  background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);  
-  bottom:5px;
+  background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);
+  bottom:5.5px;
 }
 .yt-border-bottom-gray  {
   border-bottom: 1px solid #b1b1b3;
@@ -733,7 +759,7 @@ font-family: 'Roboto', sans-serif;
 }
 .yt-link {
   color: blue;
-  text-decoration: none; 
+  text-decoration: none;
 }
 .yt-down-arrow {
   margin-top: 10px;
@@ -789,7 +815,7 @@ font-family: 'Roboto', sans-serif;
 /*twitter*/
 /*
 todo:
- - keep an eye on that vertical line 
+ - keep an eye on that vertical line
 */
 .tw-text-gray{
   color: #657685;
@@ -842,8 +868,8 @@ todo:
 
 /*discord*/
 /*
-todo: 
-* we finally centered the header text, but at what cost 
+todo:
+* we finally centered the header text, but at what cost
 * consider going mad and replacing the hamberger w compound images
 */
 .dc-font{
@@ -855,17 +881,26 @@ todo:
   border-bottom: 1px solid red;
   line-height: 0.1em;
   margin: 10px 0 20px;
+  color:red;
+}
+.dc-middle-line-gray {
+  text-align: center;
+  border-bottom: 1px solid #8A8E93;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color:#737F8C;
+  font-size:.9em;
 }
 .dc-time-stamp {
   font-size:0.8em;
   color: #757F8B;
 }
 .dc-border-top {
-  border-top: 1px solid black;
-  
+  /*border-top: 1px solid black;*/
+
 }
 .dc-border-bottom {
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
   padding-bottom:5px;
 }
 .dc-reply-square{
@@ -874,6 +909,16 @@ todo:
   border-top-left-radius: 8px;
   margin: 2px 5px 0px 5px;
   height: 25px;
+  width: 20px;
+  display: inline-block;
+  float: left;
+}
+.dc-reply-square-short{
+  border-left: 3px solid #76808C;
+  border-top: 3px solid #76808C;
+  border-top-left-radius: 8px;
+  margin: 2px 5px 0px 5px;
+  height: 15px;
   width: 20px;
   display: inline-block;
   float: left;
@@ -920,14 +965,14 @@ todo:
   color: #C2C5C9;
   border:1.5px solid #F6F6F6;
   padding: 2px;
-  padding: 2px 5px 2px 3px; 
+  padding: 2px 5px 2px 3px;
 }
 .dc-myemotebox {
   border-radius: 6px;
   border:1.5px solid #5865F2;
   background: #E7E9FD;
   color: #5865F2;
-  padding: 2px 5px 2px 3px; 
+  padding: 2px 5px 2px 3px;
 }
 .dc-img-box {
   border-color: #f2f4f4;
@@ -980,8 +1025,16 @@ todo:
   color:pink;
   font-weight:bold;
 }
+.dc-name-lpink{
+  color:#FEC9CD;
+  font-weight:bold;
+}
 .dc-name-purple{
   color:purple;
+  font-weight:bold;
+}
+.dc-name-green{
+  color:green;
   font-weight:bold;
 }
 .dc-name-forest{
@@ -998,6 +1051,17 @@ todo:
   margin-top:-5px;
   margin-bottom:0px;
 }
+.dc-welcome{
+  font-size:2em;
+  font-weight:bold;
+  margin-bottom:-15px;
+}
+.dc-link {
+  border-radius: 1px;
+  color: #5865EF;
+  background: #E7EAFD;
+}
+
 
 
 /*phone screen/notifications/time*/
@@ -1083,8 +1147,10 @@ todo:
 
 /*blog*/
 .blog-header {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
+  text-align: left;
+  margin-bottom: -10px;
 }
 .blog-date {
   font-size: .9em;
@@ -1098,3 +1164,54 @@ text-align: justify;
 }
 
 
+
+/*article*/
+.art-author{
+  font-family:verdana;
+  font-size:.8em;
+  margin-top:10px;
+
+}
+.art-line{
+  border: 2px solid black;
+  width:80%;
+}
+.art-font{
+  font-family: 'Roboto', sans-serif;
+}
+.art-title1{
+  font-weight: bold;
+  font-size:2em;
+}
+.art-title2{
+  color:gray;
+  font-size:1.8em;
+}
+.art-red{
+  font-size:.7em;
+  font-family:verdana;
+  color: red;
+  margin: -40px 0 -10px 0;
+}
+
+.art-header{
+  font-size:4em;
+  font-weight:bold;
+  font-family:serat;
+}
+.art-read-more {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #3399cc;
+  padding: 5px 20px 5px 20px;
+  margin: auto;
+  text-align: center;
+  left: 45%;
+  margin-left: -50px;
+}
+.art-content{
+  text-align: justify;
+}
