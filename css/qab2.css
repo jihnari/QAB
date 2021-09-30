@@ -9,11 +9,12 @@
 }
 .dm-container {
   display: table;
-  padding-left: .5em;
-  padding-right: .5em;
+  /*padding-left: .5em;
+  padding-right: .5em;*/
   margin: auto;
-  max-width: 95%;
-  min-width: 95%;
+  /*pls dont let this screw smth up; changed from 95. can it NOT be 100 for some reason?? is it the padding*/
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .clear {
@@ -196,28 +197,30 @@ width:100%;
 
 /*reddit*/
 /*
-i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix
-that weird issue where sometimes things collapse instead of float", i remember sitting down,
-i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk
-if half of that even needs to be there and honestly at this point i dont care. i also remeber
-thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
+i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
+
+the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
 */
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
+  background-color: white;
 }
 .rd-view-box {
   background: #0079D3;
   border-radius: 3px;
+  text-align: center;
   color: white;
+  font-weight:bold;
   padding: 7px;
   margin: 0 5px -5px 5px;
 }
 .rd-signup-box {
   background: #0079D3;
   border-radius: 14px;
+  text-align: center;
   color: white;
-  padding: 5px;
-  margin: 0 5px -5px 5px;
+  padding: 7px 5px 7px 5px;
+  margin: 0px 5px -5px 5px;
   font-size:0.8em;
 }
 .rd-sortby{
@@ -240,7 +243,7 @@ thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. 
   font-size:1.1em;
   margin:-5px 0 -5px 0;
 }
-.rd-dot { /*idk if i wanna go down this path*/
+.rd-dot { /*idx if i wanna go down this path*/
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -249,10 +252,16 @@ thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. 
   background-color: #bbb;
   margin-bottom: -15px;
 }
-.rd-divider{
+.rd-div1{
   border-bottom: 8px solid #EEEFF1;
-  color: #EEEFF1;
+  padding-bottom:18px;
+  padding-left:8px;
   margin: 0 -5px 10px -5px;
+}
+.rd-div2{
+  border-bottom: 1.5px solid #EEEFF1;
+  margin-right:-5px;
+  margin-left:-5px;
 }
 .rd-vote{
   height:1.8em;
@@ -265,6 +274,9 @@ thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. 
   color:#25A0ED;
   font-weight:bold;
 }
+.rd-link{
+  color:#25A0ED;
+}
 .rd-down-arrow {
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -275,7 +287,9 @@ thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. 
   margin: 0px 0 2px 7px;
 }
 .rd-small{
-font-size: .8em;
+  font-size: .8em;
+  display: inline-block;
+  padding-bottom:5px;
 }
 .rd-vr0 {
   display: table;
@@ -285,22 +299,52 @@ font-size: .8em;
 .rd-vr1 {
   display: table;
   padding: 0px 0px 0px 10px;
-  margin: 10px 0 5px 0;
+  margin: 0px 0 5px 5px;
   border-left: 1px solid #EEEFF1;
 }
 .rd-vr2 {
   display: table;
   padding: 0px 0px 0px 10px;
-  margin: 10px 0px 10px 5px;
+  margin: 0px 0px 5px 5px;
   border-left: 1px solid #EEEFF1;
 }
 .rd-vr-not {
   display: table;
-    padding: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   margin: 0px 0 5px 0;
 }
 .rd-gray-text {
   color: #657685;
+}
+.rd-bubble{
+  color: #787C7F;
+  font-size: .8em;
+  padding: 12px 5px 3px 5px;
+  margin-bottom:5px;
+  border-radius: 16px;
+  border: 1px solid #EEEFF1;
+}
+
+.rd-arrow-text{
+  padding-top:2px;
+  mmargin-bottom:10px;
+  vertical-align:top;
+  display: inline-block;
+}
+.rd-arrow-up{
+  padding-top:0px;
+  padding-bottom:0px;
+  height:1.5em;
+}
+.rd-arrow-down{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+    height:1.5em;
+}
+.rd-elispes{
+  float:right;
+  padding-right:10px;
+  font-size:1.0em;
 }
 
 
@@ -808,7 +852,9 @@ font-family: 'Roboto', sans-serif;
 
 .yt-vid-img{
   width:100%;
+  /*padding-bottom: 56.25%; /*test this*/
 }
+
 
 
 
