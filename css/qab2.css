@@ -943,7 +943,8 @@ todo:
 }
 .dc-border-top {
   /*border-top: 1px solid black;*/
-
+  /*check this*/
+  box-shadow: 0px 8px 10px -10px #888888;
 }
 .dc-border-bottom {
   /*border-bottom: 1px solid black;*/
@@ -1106,6 +1107,15 @@ todo:
   border-radius: 1px;
   color: #5865EF;
   background: #E7EAFD;
+}
+
+ .dc-spoiler {
+  color: black;
+  background-color: black;
+}
+.spoiler:hover {
+  color: white;
+  background-color: white;
 }
 
 

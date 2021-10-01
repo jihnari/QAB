@@ -1,37 +1,45 @@
-
+<!-- remember to delete all ur newlines and pray :) -->
 <div class="rd-font">
-<p class="rd-name">r/NoStupidQuestions</p>
-<p class="rd-small padding-left-20"><strong>redshirt_blueshirt</strong> <span class="rd-gray-text">· 5h ago </span></p>
-<p class="rd-header">How to get away with arson </p>
-  <p>hello i would like to get away with arson please
-  <br/><br/>
-    no i would not like to go to jail
+
+<!-- intro -->
+<p class="rd-name">r/_subreddit_</p>
+<p class="rd-small padding-left-20"><strong>_op_</strong> <span class="rd-gray-text">· 5h ago </span></p>
+<p class="rd-header">_title_</p>
+  <p>
+  _content_
   </p>
 <p class ="rd-div1">
-  <span class="rd-bubble"><img class="rd-arrow-up" src="https://github.com/jihnari/QAB/raw/main/img/rd-arrow.jpg"> <span class="rd-arrow-text">123</span> <img class="rd-arrow-down" src="https://github.com/jihnari/QAB/raw/main/img/rd-arrow.jpg"></img></span> <span class="rd-bubble"> <img class="rd-arrow-up" src="https://github.com/jihnari/QAB/raw/main/img/rd-comment.jpg"></img><span class="rd-arrow-text"> 11</span></span>
+  <span class="rd-bubble"><img class="rd-arrow-up" src="https://github.com/jihnari/QAB/raw/main/img/rd-arrow.jpg"> <span class="rd-arrow-text">_likes_</span> <img class="rd-arrow-down" src="https://github.com/jihnari/QAB/raw/main/img/rd-arrow.jpg"></img></span> <span class="rd-bubble"> <img class="rd-arrow-up" src="https://github.com/jihnari/QAB/raw/main/img/rd-comment.jpg"></img><span class="rd-arrow-text"> _commments_</span></span>
   </p>
-  <p class="rd-sortby"><strong>11 Comments</strong> sorted by <strong>Best</strong><span class="rd-down-arrow"></span></span> </p>
+  <p class="rd-sortby"><strong>_#_ Comments</strong> sorted by <strong>Best</strong><span class="rd-down-arrow"></span> </p>
 <p class=rd-signup-box>Login or sign up to leave a comment</p>
 
-<p class="rd-vr rd-div2"> <span class=rd-small><strong>FireBug </strong><span class="rd-gray-text"> 1h</span></span><span class="rd-elispes">...</span> <br/>
-Yep. If your is just to get the job done and not go to jail for it, this would do it. <br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img>
+<!-- comment -->
+<p class="rd-vr rd-div2"> <span class=rd-small><strong>_user_ </strong><span class="rd-gray-text"> _1h_</span></span><span class="rd-elispes">...</span> <br/>
+_content_
+<br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img>
 <p class ="rd-div2">
-<span class=rd-small><strong> Sar8rah </strong><span class="rd-gray-text"> 3h </span></span> <br/>
-<a>This post</a> in particular is the best of both worlds: insanity and God tier level analysis.<br/>
-  <img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img>
-<span class="rd-vr1"> <span class="rd-small"><span class="rd-op">redshirt_blueshirt</span><span class="rd-gray-text"> 3h </span></span> <br/>
-interesting, thanks <br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg">
 
-  <span class="rd-vr1"> <span class="rd-small"><strong>user12345</strong><span class="rd-gray-text"> 2h </span></span> <br/>
-he he he <br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img></span>
+<!-- comment w/ reply -->
+<span class=rd-small><strong> _user_ </strong><span class="rd-gray-text"> _3h_ </span></span> <br/>
+_content_
+<br/>
+  <img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img>
+<span class="rd-vr1"> <span class="rd-small"><span class="rd-op">_op_</span><span class="rd-gray-text"> _3h_ </span></span>
+<br/>
+_content_
+<br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg">
+
+  <span class="rd-vr1"> <span class="rd-small"><strong>_user3_</strong><span class="rd-gray-text"> 2h_ </span></span> <br/>
+_content_
+<br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img></span>
 <span class=rd-small><b>1 more reply</b></span>
 </span>
 
 </p>
-</div>
-<p/>
 
-<p class="rd-view-box">VIEW ALL 11 COMMENTS</p>
+<!-- outro -->
+<p class="rd-view-box">VIEW ALL _#_ COMMENTS</p>
 </div>
 
 <p>&nbsp;</p><p>&nbsp;</p>
