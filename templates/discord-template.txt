@@ -1,24 +1,31 @@
+<!-- dc:_channel_:_date_ -->
+
 <div class="dc-font">
 
 <!-- top bar; remember @ or # -->
-<p><img class="dc-hamberger" src="https://github.com/jihnari/QAB/raw/main/img/dc-hamburger.jpg">
-<span class="dc-header-buffer text-size-12 text-bold"><span class="text-color-gray">@</span> _channel_name_</span> </p>
+<p><img class="dc-hamberger" src="https://github.com/jihnari/QAB/raw/main/img/dc-hamburger.jpg"> <span class="dc-header"><span class="text-color-gray">#</span> _channel_name_</span></p>
 <p class="dc-border-top"></p>
 
-<!-- comment --> <!-- first element has to be shifted up -->
+<!-- comment --> <!-- first element has to be shifted up -->  <!--okay maybe DONT shift the first element up?? did i change something and forget-->
 <!-- change name color and **remember your br's** -->
 <p class=shift-up><span class="dc-name-default">_name_ </span> <span class="dc-time-stamp">Today at _time_</span><br />
 _content_
 </p>
 
-<!-- date-line --> 
+<!-- comment -->
+<!-- change name color and **remember your br's** -->
+<p><span class="dc-name-default">_name_ </span> <span class="dc-time-stamp">Today at _time_</span><br />
+_content_
+</p>
+
+<!-- date-line -->
 <p class="dc-middle-line-gray"><span class="middle-box">Aug ##, 20X4</span></p>
 
 <!-- comment w emote -->
 <!-- change name color and **remember your br's** -->
   <p><span class="dc-name-default">_name_</span> <span class="dc-time-stamp">Today at _time_</span><br />
 _content_<br/>
-<span class="dc-emotebox">_e_ _n_</span>
+<span class="dc-emotebox">_e_n_</span>
 </p>
 
 <!-- just emote -->

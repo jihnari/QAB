@@ -9,10 +9,7 @@
 }
 .dm-container {
   display: table;
-  /*padding-left: .5em;
-  padding-right: .5em;*/
   margin: auto;
-  /*pls dont let this screw smth up; changed from 95. can it NOT be 100 for some reason?? is it the padding*/
   max-width: 100%;
   min-width: 100%;
 }
@@ -201,9 +198,18 @@ i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i 
 
 the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
 */
+
+/*reddit*/
+/*
+i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
+
+the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
+*/
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
   background-color: white;
+  /*make sure this didnt break everything*/
+  color:black;
 }
 .rd-view-box {
   background: #0079D3;
@@ -256,15 +262,16 @@ the last thing we might wanna do here is use the fadeout function and place the 
   border-bottom: 8px solid #EEEFF1;
   padding-bottom:18px;
   padding-left:8px;
-  margin: 0 -5px 10px -5px;
+  margin-bottom: 10px;
 }
 .rd-div2{
   border-bottom: 1.5px solid #EEEFF1;
-  margin-right:-5px;
-  margin-left:-5px;
 }
 .rd-vote{
   height:1.8em;
+  display: inline-block;
+  padding-top:5px;
+  padding-bottom:5px;
 }
 .rd-poster{
   font-size: .8em;
@@ -381,6 +388,7 @@ the last thing we might wanna do here is use the fadeout function and place the 
 .sms-border {
   box-shadow: 0px 8px 10px -10px #888888;
   padding-bottom: 10px;
+  background: white;
 }
 .sms-name-header {
   font-size: 1.2em;
@@ -397,6 +405,15 @@ todo:
 cried enough over it already so i'll probably just. ignore it forever?
 - could try tables again if it bugs you too much.
 */
+.line-container {
+  display: table;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin: auto;
+  max-width: 95%;
+  min-width: 95%;
+}
+
 .line-date{
   font-size: 0.8em;
   background: #BFBDC1;
@@ -820,6 +837,7 @@ font-family: 'Roboto', sans-serif;
   border: 6px solid transparent;
   border-bottom-color: #000;
   display: inline-block;
+  float: right;
 }
 .yt-stats{
   width: 18%;
@@ -855,6 +873,19 @@ font-family: 'Roboto', sans-serif;
   /*padding-bottom: 56.25%; /*test this*/
 }
 
+.yt-views-text{
+  font-size:0.8em;
+  font-weight: normal;
+  color: #b1b1b3;
+}
+.yt-title{
+  font-size:1.2em;
+  font-weight: bold;
+}
+.yt-title-shift{
+margin-top:-5px;
+}
+
 
 
 
@@ -867,17 +898,21 @@ todo:
   color: #657685;
 }
 .tw-text-blue{
-  color: #1c94dc;
-  text-decoration: none;
+  color: #1c94dc !important;
+  text-decoration: none !important;
+}
+.tw-link{
+  color: #1c94dc !important;
+  text-decoration: none !important;
 }
 
-.tw-text-blue:visited {
-  color: #1c94dc;
-  text-decoration: none;
+.tw-link:visited {
+  color: #1c94dc !important;
+  text-decoration: none !important;
 }
-.tw-text-blue:active {
-  color: #1c94dc;
-  text-decoration: none;
+.tw-link:active {
+  color: #1c94dc !important;
+  text-decoration: none !important;
 }
 
 .tw-border-top-bottom {
@@ -898,6 +933,8 @@ todo:
 }
 .tw-img{
   float: center;
+  /*might want to,*/
+  /*display: inline-block;*/
   margin: 10px 0px 10px 10px;
   max-width: 95%;
   border: 1px solid #c7c7c7;
@@ -920,7 +957,7 @@ todo:
 */
 .dc-font{
   font-family: 'Uni sans', 'Whitney', sans-serif;
-  line-height: 160%;
+  /*line-height: 160% !important;*/
 }
 .dc-middle-line-red {
   text-align: center;
@@ -997,9 +1034,10 @@ todo:
 }
 .dc-header{
   font-size:35px;
+  /* font-size: 1.2em; */
   font-weight:bold;
   mmargin-top:10px;
-  margin-left:0px;
+  margin-left:5px; /* this was 0 before*/
   ppadding-bottom:-10px;
   ppadding-bottom:0;
   mmargin-bottom:-15px;
@@ -1056,6 +1094,10 @@ todo:
   color:red;
   font-weight:bold;
 }
+.dc-name-yellow{
+  color:#FFC72C;
+  font-weight:bold;
+}
 .dc-name-orange{
   color:orange;
   font-weight:bold;
@@ -1105,19 +1147,20 @@ todo:
 }
 .dc-link {
   border-radius: 1px;
-  color: #5865EF;
+  color: #5865EF !important;
   background: #E7EAFD;
+  text-decoration: none !important;
 }
 
  .dc-spoiler {
+  color: #B9BBBE;
+  background-color: #B9BBBE;
+  border-radius: 3px;
+}
+.dc-spoiler:hover {
   color: black;
-  background-color: black;
+  background-color: #E5E5E5;
 }
-.spoiler:hover {
-  color: white;
-  background-color: white;
-}
-
 
 
 /*phone screen/notifications/time*/
