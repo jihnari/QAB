@@ -12,7 +12,7 @@ allowed operators:
 - lost again :/
 
 reddit:
-- there is no consistency in this land. idk whats going on here but i dont like it. im just choosing elements and running w them bc there appears to be no internal logic. 
+- there is no consistency in this land. idk whats going on here but i dont like it. im just choosing elements and running w them bc there appears to be no internal logic.
 
 notepad++:
 - for testing purposes, add the following to html files
@@ -20,3 +20,5 @@ notepad++:
 
 atom:
 - hey STUPID, you gotta STAGE THE CHANGES, COMMIT TO MAIN and THEN you gotta push that push button at the very bottom of the window that you CANT SEE BC YOU ALWAYS SQUISH UR WINDOWS. anyway yes its a 3 step process, not 2. gl. godspeed.
+- so hey when the package manager is "broken" go into settings > URI handling > click that button that lets it handle URIs. idk why it keeps resetting on you, but its annoying as heck
+- theres also just an "install" option *right there in settings* lolol

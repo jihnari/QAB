@@ -954,10 +954,18 @@ todo:
 todo:
 * we finally centered the header text, but at what cost
 * consider going mad and replacing the hamberger w compound images
+* i fixed the spacing but broke the reply boxes. so its possible, itll just take tweaking.
 */
 .dc-font{
   font-family: 'Uni sans', 'Whitney', sans-serif;
   /*line-height: 160% !important;*/
+}
+/* this breaks things */
+div.dc-font > p
+{
+  /* line-height: 160% !important;  */ /*ignore this*/
+  /* this breaks things; also, change to margin bottom and fix stuff, probably. margin top is sketch. */
+  /* margin-top:-12px;  */
 }
 .dc-middle-line-red {
   text-align: center;
@@ -1093,46 +1101,57 @@ todo:
 .dc-name-red{
   color:red;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-yellow{
   color:#FFC72C;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-orange{
   color:orange;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-blue{
   color:blue;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-lblue{
   color:#add8e6;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-pink{
   color:pink;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-lpink{
   color:#FEC9CD;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-purple{
   color:purple;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-green{
   color:green;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-forest{
   color:#228b22;
   font-weight:bold;
+  font-size:1.1em;
 }
 .dc-name-default{
   color:#060607;
   font-weight:bold;
+  font-size:1.1em;
 }
 
 .dc-just-emote{ /*dont forget to shift the below element up*/
@@ -1313,4 +1332,92 @@ text-align: justify;
 }
 .art-content{
   text-align: justify;
+}
+
+
+/* gmail */
+.gmail-font{
+  font-family: 'Roboto', sans-serif;
+}
+.gmail-weak-text{
+color:#5F6266;
+}
+.gmail-info-left{
+color:#5F6266;
+padding-right: 10px;
+}
+.gmail-sender{
+font-weight:bold;
+font-size:1.1em;
+}
+.gmail-reciever{
+font-size:.8em;
+color:#5F6266;
+}
+.gmail-send-time{
+color:#5F6266;
+font-size:.7em;
+padding-left:7px;
+}
+.gmail-indent{
+padding-left:50px;
+}
+.gmail-tag{
+  border-radius: 4px;
+  background: #EEEEEE;
+  color: #363636;
+  padding: 2px 4px 2px 4px;
+  font-size:.7em;
+}
+.gmail-info-box{
+  border-color: #DBDCDF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+.gmail-subject {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.gmail-hr{
+  border-bottom: 1px solid #EDEEEF;
+}
+.gmail-body{
+
+}
+.gmail-up-arrow{
+  border: solid #5F6266;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left:2px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.gmail-down-arrow{
+  border: solid #5F6266;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left:2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.gmail-link{
+  color: #2372DB;
+  text-decoration: none;
+}
+.gmail-dot{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #EDEEEF;
+  margin-bottom: -15px;
+  float: left;
 }
