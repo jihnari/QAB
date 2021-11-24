@@ -1336,11 +1336,22 @@ text-align: justify;
 
 
 /* gmail */
+/* todo:
+- that freaking td space, what the hell  */
+div.gmail-font > a
+{
+  color: #2372DB;
+  text-decoration: none !important;
+}
+
 .gmail-font{
   font-family: 'Roboto', sans-serif;
 }
 .gmail-weak-text{
 color:#5F6266;
+}
+.gmail-tail{
+color:#878787;
 }
 .gmail-info-left{
 color:#5F6266;
@@ -1366,8 +1377,8 @@ padding-left:50px;
   border-radius: 4px;
   background: #EEEEEE;
   color: #363636;
-  padding: 2px 4px 2px 4px;
-  font-size:.7em;
+  padding: 4px;
+  font-size:.8em;
 }
 .gmail-info-box{
   border-color: #DBDCDF;
@@ -1378,9 +1389,13 @@ padding-left:50px;
   font-size: .8em;
   margin-bottom: 10px;
 }
+
+.gmail-subject-buffer {
+  margin-bottom: 30px;
+}
 .gmail-subject {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.5em;
+
 }
 
 .gmail-hr{
@@ -1410,6 +1425,11 @@ padding-left:50px;
 .gmail-link{
   color: #2372DB;
   text-decoration: none;
+}
+.gmail-quoted-text{
+  color: #2372DB;
+  text-decoration: none;
+  font-size:.8em;
 }
 .gmail-dot{
   height: 40px;
