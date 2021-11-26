@@ -1335,9 +1335,50 @@ text-align: justify;
 }
 
 
+
 /* gmail */
 /* todo:
-- that freaking td space, what the hell  */
+- that freaking td space, what the hell
+*/
+
+p.gmail-up-arrow-gimmick:hover ~ div.gmail-info-box {
+display: none;
+}
+p.gmail-up-arrow-gimmick:hover > .gmail-up-arrow{
+  border: solid #5F6266;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left:2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+p.gmail-down-arrow-gimmick:hover ~ div.hidden-gmail-info-box {
+  display:block;
+}
+p.gmail-down-arrow-gimmick:hover > .gmail-down-arrow {
+  border: solid #5F6266;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left:2px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+span.gmail-arrow-box:hover ~ div > div.gmail-info-box {
+display: none;
+}
+
+.left{
+  float:left;
+}
+
+.clear {
+  clear: both;
+}
+
 div.gmail-font > a
 {
   color: #2372DB;
@@ -1388,6 +1429,16 @@ padding-left:50px;
   padding: 10px;
   font-size: .8em;
   margin-bottom: 10px;
+}
+.hidden-gmail-info-box{
+  border-color: #DBDCDF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: .8em;
+  margin-bottom: 10px;
+  display:none;
 }
 
 .gmail-subject-buffer {
