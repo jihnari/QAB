@@ -413,13 +413,12 @@ cried enough over it already so i'll probably just. ignore it forever?
   max-width: 95%;
   min-width: 95%;
 }
-
 .line-date{
   font-size: 0.8em;
   background: #BFBDC1;
-  border-radius: 10px;
+  border-radius: 12px;
   color: white;
-  padding: 5px 13px;
+  padding: 8px 10px;
   clear: both;
   text-align: center;
 }
@@ -493,6 +492,24 @@ cried enough over it already so i'll probably just. ignore it forever?
   border-bottom: .5em solid #d3dce0;
   border-bottom-left-radius: .8em .8em;
 }
+.line-img-left {
+  float: left;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  border: 1px solid #c7c7c7;
+  max-width: 50%;
+  clear: both;
+  position: relative;
+}
+.line-img-right {
+  float: right;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  border: 1px solid #c7c7c7;
+  max-width: 50%;
+  clear: both;
+  position: relative;
+}
 .line-box-right {
   float: right;
   color: black;
@@ -554,10 +571,10 @@ cried enough over it already so i'll probably just. ignore it forever?
 .line-name-box {
   float: left;
   position: relative;
-  color: black;
-  font-size: .8em;
+  font-weight: bold;
+  font-size: .7em;
   padding: 2px;
-  margin: .3em 0em -.2em;
+  margin: .3em 0em .5em -10px;
   clear: both;
 }
 
@@ -922,6 +939,9 @@ todo:
 .tw-border-bottom {
   border-bottom: 1px solid #b1b1b3;
 }
+.tw-border-bottom-thick {
+  border-bottom: 5px solid #b1b1b3;
+}
 .twt-share {
   background-image: url("https://i.imgur.com/iwGvFJY.png");
   overflow: hidden;
@@ -1028,6 +1048,11 @@ div.dc-font > p
   /* margin-top:-10px; */
   margin-bottom:-15px;
 }
+.dc-blockquote{
+  padding:0px 0 0px 7px;
+  margin:12px 0 2px 0;
+  border-left: 3px solid #76808C;
+}
 .dc-hamberger { /*yes im aware this is mispelled, its too late now*/
   height: 35px;
   width: 50px;
@@ -1041,8 +1066,8 @@ div.dc-font > p
   overflow: auto;
 }
 .dc-header{
-  font-size:35px;
-  /* font-size: 1.2em; */
+  /* font-size:35px; */
+  font-size: 1.3em;
   font-weight:bold;
   mmargin-top:10px;
   margin-left:5px; /* this was 0 before*/

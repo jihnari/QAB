@@ -5,7 +5,7 @@
 <!-- top bar -->
 <div class="line-container">
   <p class="line-border">
-    <i class="left-arrow"></i> <span class="line-name-header">_name_</span></p>
+    <i class="left-arrow"></i> <span class="line-name-header">_name_ (#)</span></p>
 
 <!-- date -->
 <p align="center"><br/><span class="line-date">
@@ -26,11 +26,5 @@ _time_
 _time_
 </span>
 
-<!-- left multiple -->
-<span class="line-name-box">_name_
-</span><span class=line-box-left>_content_
-</span><span class="line-time-left">
-_time_
-</span>
 
 </p></div>

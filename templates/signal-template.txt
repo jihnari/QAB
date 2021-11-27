@@ -1,13 +1,13 @@
-<!-- +signal:_:_date_ -->
-[Signal messaging application on the phone belonging to _name_.] 
+<!-- signal:_:_date_ -->
+[Signal messaging application on the phone belonging to _name_.]
 <p>&nbsp;</p><p>&nbsp;</p>
 <div class=dm-container>
- 
+
 <!-- top bar -->
 <p class=signal-name-line><img src="https://github.com/jihnari/QAB/raw/main/img/signal-arrow.jpg" class="signal-arrow"><span class="signal-dot"></span><span class="signal-name">_contact_</span></p>
-  <p class="clear"></p>
-  
-  <p>
+<p class="clear"></p>
+
+<p>
 
 <!-- right0 -->
 <span class=signal-box-right0>
@@ -23,7 +23,7 @@
 </span></span>
 
 <!-- dateblock -->
-<p class=signal-date> Sun, Aug 1, 20X4</p>
+<p class=signal-date>Sun, Aug 1, 20X4</p>
 
 
 <!-- left13 -->
