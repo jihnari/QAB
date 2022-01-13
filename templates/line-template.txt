@@ -45,7 +45,7 @@ Read<br/>
 
 <!-- left link -->
 <span class="line-box-left-top"> <img class="line-linked-img" src="https://static.wikia.nocookie.net/bokunoheroacademia/images/4/44/Hawks_expressions.png"></img></span>
-<span class="line-box-left-bottom"><span class=link-text-top>bottom element</span><br/><span class=link-text-bottom-left>bottom bottom element</span>
+<span class="line-box-left-bottom"><span class=link-text-top>_article_title_</span><br/><span class=link-text-bottom-left>_article_details_</span>
 </span>
   <span class="line-time-left">
 Read<br/>
