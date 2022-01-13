@@ -404,6 +404,8 @@ todo:
 - well, the placement of the timestamp STILL bothers me but im still to dumb to fix it and i
 cried enough over it already so i'll probably just. ignore it forever?
 - could try tables again if it bugs you too much.
+- speech bubble squiggles are now the wrong size/shape (line updated)
+- link boxes are therefore off center? idk if you want to smudge it or not... probably.
 */
 .line-container {
   display: table;
@@ -516,7 +518,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   margin: 0 0 0.5em;
   border-radius: 1em;
   padding: 0.5em 1em;
-  background: #B1ED8B;
+  background: #9DE694;
   max-width: 75%;
   clear: both;
   position: relative;
@@ -528,7 +530,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   top: -2px;
   width: 1em;
   height: .5em;
-  border-bottom: .5em solid #B1ED8B;
+  border-bottom: .5em solid #9DE694;
   border-bottom-right-radius: 1em .8em;
 }
 .line-box-right1 {
@@ -537,7 +539,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   margin-bottom: 10px;
   border-radius: 1em;
   padding: 0.5em 1em;
-  background: #B1ED8B;
+  background: #9DE694;
   max-width: 75%;
   clear: both;
   position: relative;
@@ -549,7 +551,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   top: -2px;
   width: 1em;
   height: .5em;
-  border-bottom: .5em solid #B1ED8B;
+  border-bottom: .5em solid #9DE694;
   border-bottom-right-radius: 1em .8em;
 }
 .line-time-right {
@@ -578,7 +580,74 @@ cried enough over it already so i'll probably just. ignore it forever?
   clear: both;
 }
 
+.line-box-right-top{
+  width: 60%;
+  float: right;
+  border-radius: 1em 1em 0em 0em;
+  border-bottom:0px;
+  clear: both;
+  position: relative;
+  color: black;
+  text-align: right;
+  padding: 0.5em 1em;
+  background: #8DCF85;
+}
+.line-box-right-bottom{
+  width: 60%;
+  float: right;
+  margin: 0 0 0.5em;
+  border-radius: 0em 0em 1em 1em;
+  border-top:0px;
+  clear: both;
+  position: relative;
+  color: black;
+  padding: 0.5em 1em;
+  background: #B1ED8B;
 
+}
+.line-box-left-top{
+  width: 60%;
+  float: left;
+  border-radius: 1em 1em 0em 0em;
+  border-bottom:0px;
+  clear: both;
+  position: relative;
+  color: black;
+  text-align: right;
+  padding: 0.5em 1em;
+  background: #bdc5c9;
+}
+.line-box-left-bottom{
+  width: 60%;
+  float: left;
+  margin: 0 0 0.5em;
+  border-radius: 0em 0em 1em 1em;
+  border-top:0px;
+  clear: both;
+  position: relative;
+  color: black;
+  padding: 0.5em 1em;
+  background: #d3dce0;
+}
+.line-linked-img{
+  margin: -0.5em 0 -1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:140px;
+}
+.link-text-top{
+  font-weight: bold;
+  font-size: .9em;
+}
+.link-text-bottom-right{
+  color: #438642;
+  font-size: .8em;
+}
+.link-text-bottom-left{
+  color: #7E7E7E;
+  font-size: .8em;
+}
 
 
 /*signal*/
@@ -966,6 +1035,130 @@ todo:
   border-left: 2px solid transparent;
   border-image: linear-gradient(to bottom, lightgray 80%, rgba(255,255,255, 0) 20%);
   border-image-slice: 1;
+}
+
+
+
+/*twitter DMs*/
+/*
+todo:
+* hows 'content' work
+*/
+.tw-check { /*idk how 'content' works*/
+  color: #1Da1f3;
+  content: "✓";
+  font-weight: bold;
+}
+.tw-uncheck{
+  color: #AAB8C1;
+  content: "✓";
+  font-weight: bold;
+}
+
+.tw-box-left0 {
+  margin-top: 10px;
+  color: black;
+  background: #e7ecf0;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-left-radius: 0;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.tw-box-left1 {
+  color: black;
+  background: #e7ecf0;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.tw-box-left-round {
+  border-color: #e7ecf0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 10px 40px 10px 10px;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.tw-box-right1 {
+  border-width: 1px;
+  color: white;
+  background: #1Da1f3;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 3px;
+  float: right;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.tw-box-right0 {
+  margin-top: 10px;
+  border-width: 1px;
+  color: white;
+  background: #1Da1f3;
+  border-radius: 12px;
+  padding: 10px;
+  border-bottom-right-radius: 0;
+  margin-bottom: 3px;
+  float: right;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+
+.tw-time-right {
+  float: right;
+  position: relative;
+  color: #667684;
+  padding: 2px;
+  clear: both;
+  font-size:0.8em;
+}
+
+.tw-time-left {
+  float: left;
+  position: relative;
+  color: #667684;
+  padding: 2px;
+  clear: both;
+  font-size:0.8em;
+}
+
+
+.tw-middle-line {
+  text-align: center;
+  border-bottom: 1px solid #CDD6DB;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.tw-middle-box {
+  background: #fff;
+  padding: 0 15px;
+  color:#657585;
+  font-size:.8em;
+  font-weight:bold;
 }
 
 
