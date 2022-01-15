@@ -1,0 +1,19 @@
+<!-- +signal __8/14 -->
+[Signal messaging application on the phone belonging to Pro Hero Hawks.]
+<p>&nbsp;</p><p>&nbsp;</p>
+<div class=dm-container>
+
+<p class=signal-gc-name-line><img src="https://github.com/jihnari/QAB/raw/main/img/signal-arrow.jpg" class="signal-gc-arrow"><span class="signal-gc-dot"></span><span class=inline><span class="signal-gc-name">Weeb Intervention Squad</span><span class=signal-gc-subname>Shigaraki, Dabi, Mr. Compress, spinner, Magne, jIN, You </span></span></p>
+  <p class="clear"></p>
+
+
+<span class=signal-box-left0>
+<span class="sgc-name sgc-_color_">_name_</span>
+
+<br/><span class=signal-time-left>
+</span></span>
+
+  <p class=signal-date> Himiko updated the group. <br/> Group name is now '🚨 EMERGENCY 🚨'.</p>
+
+
+  </p></div>

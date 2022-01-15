@@ -27,8 +27,8 @@ _content_
 <!-- comment w emote -->
 <!-- change name color and **remember your br's** -->
   <p><span class="dc-name-default">_name_</span> <span class="dc-time-stamp">Today at _time_</span><br />
-_content_<br/>
-<span class="dc-emotebox">_e_n_</span>
+_content_
+<br/><span class="dc-emotebox">_e_n_</span>
 </p>
 
 <!-- just emote -->

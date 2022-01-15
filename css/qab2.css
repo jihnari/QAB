@@ -591,6 +591,8 @@ cried enough over it already so i'll probably just. ignore it forever?
   text-align: right;
   padding: 0.5em 1em;
   background: #8DCF85;
+
+  overflow:hidden;
 }
 .line-box-right-bottom{
   width: 60%;
@@ -603,7 +605,6 @@ cried enough over it already so i'll probably just. ignore it forever?
   color: black;
   padding: 0.5em 1em;
   background: #B1ED8B;
-
 }
 .line-box-left-top{
   width: 60%;
@@ -616,6 +617,8 @@ cried enough over it already so i'll probably just. ignore it forever?
   text-align: right;
   padding: 0.5em 1em;
   background: #bdc5c9;
+
+  overflow:hidden;
 }
 .line-box-left-bottom{
   width: 60%;
@@ -643,18 +646,21 @@ cried enough over it already so i'll probably just. ignore it forever?
 .link-text-bottom-right{
   color: #438642;
   font-size: .8em;
+  text-overflow: ellipsis;
 }
 .link-text-bottom-left{
   color: #7E7E7E;
   font-size: .8em;
+  text-overflow: ellipsis;
 }
 
 
 /*signal*/
 /*
 todo:
-- make a shadowbox?
-- legit tho, shadow-box could fix the last of your problems.
+- could be a good person, but you wont.
+- more name colors? eh
+- im tempted to rename the colors 1-6
 */
 .signal-dot {
   height: 30px;
@@ -667,7 +673,7 @@ todo:
   float:left;
 }
 .signal-name{
-  font-size:1em;
+  font-size:1.1em;
   margin-top:5px;
   float:left;
 }
@@ -692,55 +698,56 @@ todo:
   height: 30px;
   width: 30px;
   margin:0 10px 0 10px;/*lmao this does nothing, its in a span bro*/
+  display: inline-block;
 }
 .signal-box-left1 {
   margin-top: 10px;
-  background: #2c6bee;
+  background: #e9e9e9;
   border-width: 1px;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-bottom-left-radius: 0;
   margin-bottom: 3px;
-  color: white;
+  color: black;
   float: left;
   max-width: 75%;
   clear: both;
   position: relative;
 }
 .signal-box-left2 {
-  background: #2c6bee;
+  background: #e9e9e9;
   border-width: 1px;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-bottom: 3px;
-  color: white;
+  color: black;
   float: left;
   max-width: 75%;
   clear: both;
   position: relative;
 }
 .signal-box-left3 {
-  background: #2c6bee;
+  background: #e9e9e9;
   border-width: 1px;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-top-left-radius: 0;
   margin-bottom: 10px;
-  color: white;
+  color: black;
   float: left;
   max-width: 75%;
   clear: both;
   position: relative;
 }
 .signal-box-left0 {
-  background: #2c6bee;
+  background: #e9e9e9;
   border-width: 1px;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   margin-top: 10px;
-  color: white;
+  color: black;
   float: left;
   max-width: 75%;
   clear: both;
@@ -749,8 +756,8 @@ todo:
 .signal-box-right1 {
   margin-top: 10px;
   border-width: 1px;
-  color: black;
-  background: #e9e9e9;
+  color: white;
+  background: #2c6bee;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-bottom-right-radius: 0;
@@ -762,8 +769,8 @@ todo:
 }
 .signal-box-right2 {
   border-width: 1px;
-  color: black;
-  background: #e9e9e9;
+  color: white;
+  background: #2c6bee;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-bottom-right-radius: 0;
@@ -776,8 +783,8 @@ todo:
 }
 .signal-box-right3 {
   border-width: 1px;
-  color: black;
-  background: #e9e9e9;
+  color: white;
+  background: #2c6bee;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   border-top-right-radius: 0;
@@ -790,8 +797,8 @@ todo:
 .signal-box-right0 {
   margin-top: 10px;
   border-width: 1px;
-  color: black;
-  background: #e9e9e9;
+  color: white;
+  background: #2c6bee;
   border-radius: 15px;
   padding: 7px 14px 7px 14px;
   margin-bottom: 3px;
@@ -804,15 +811,15 @@ todo:
   float: right;
   font-size: .7em;
   position: relative;
-  color: #979797;
+  color: #8eb4fd;
   padding: 5px 0 0 0;
   clear: both;
 }
 .signal-time-left {
-  float: left;
+  float: right;
   font-size: .7em;
   position: relative;
-  color: #8eb4fd;
+  color: #979797;
   padding: 5px 0 0 0;
   clear: both;
 }
@@ -824,6 +831,7 @@ todo:
   margin-top: 10px;
   float: left;
   max-width: 75%;
+  max-height:500px;
   clear: both;
   position: relative;
 }
@@ -835,18 +843,110 @@ todo:
   margin-bottom: 3px;
   float: right;
   max-width: 75%;
+  max-height:500px;
   clear: both;
   position: relative;
 }
 .signal-date {
   padding: 30px 0 5px 0;
   color: gray;
-  font-size:.9em;
+  font-size:.8em;
   bbackground: white;
   text-align:center;
   clear: both;
   position: relative;
 }
+
+/*signal group chat*/
+/*top bar is fixed in this version, legit works in this version. should fix og version also, but... probably wont.*/
+.signal-gc-arrow {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 30px;
+  width: 30px;
+  margin:0px 10px 5px 10px;
+  display: inline-block;
+}
+.inline{
+  display:inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width:70%;
+}
+.signal-gc-dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom:5px;
+  background-color: #bbb;
+}
+.signal-gc-name{
+  font-size:1.1em;
+  margin-top:5px;
+  display: block;
+}
+.signal-gc-subname{
+  font-size:.9em;
+  display:block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.signal-gc-name-line{
+  padding-bottom:5px;
+  box-shadow: 0px 8px 8px -10px #888888;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sgc-name{
+  display:block;
+  font-size:0.8em;
+  font-weight:bold;
+  ppadding-bottom:-5px;
+}
+.sgc-purple{
+  color:#c13ca7;
+}
+.sgc-green1{
+  color:#4b992a;
+}
+.sgc-green2{
+  color:#34c190;
+}
+.sgc-maroon{
+  color:maroon;
+}
+.sgc-lblue{
+  color:#32a9c1;
+}
+.sgc-dblue{
+  color:#2f59b5;
+}
+.sgc-teal{
+  color:teal;
+}
+
+.signal-at-right {
+  border-radius: 5px;
+  padding: 2px 3px 3px 3px;
+  color: white !important;
+  background: #1248B2;
+  text-decoration: none !important;
+}
+
+.signal-at-left {
+  border-radius: 5px;
+  color: black !important;
+  padding: 2px 3px 3px 3px;
+  background: #C6C6C6;
+  text-decoration: none !important;
+}
+
 
 
 
@@ -1317,6 +1417,7 @@ div.dc-font > p
   border-image: linear-gradient(to right, #78bf9f 85%, #F6F6F6 15%);
   border-image-slice: 1;
 }
+/*christ, why did i do this. why didn't i just do "dc-name" and then a separate variable for color, what is wrong with me*/
 .dc-name-red{
   color:red;
   font-weight:bold;
