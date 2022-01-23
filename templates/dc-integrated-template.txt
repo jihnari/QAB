@@ -1,0 +1,35 @@
+<!-- dc:_channel_:_date_ -->
+
+<div class="dc-font">
+
+<!-- top bar; remember @ or # -->
+<p><img class="dc-hamberger" src="https://github.com/jihnari/QAB/raw/main/img/dc-hamburger.jpg"> <span class="dc-header"><span class="text-color-gray">@</span> Shuttai</span></p>
+<p class="dc-border-top"></p>
+
+<!-- comment --> <!-- first element has to be shifted up -->  <!--okay maybe DONT shift the first element up?? did i change something and forget-->
+<!-- change name color and **remember your br's** -->
+<p class=shift-up><span class="dc-name-default">crawler </span> <span class="dc-time-stamp">Today at 12:40</span><br />
+right?? <br/>
+and then: <br/>
+<blockquote class=dc-blockquote> If the specimen is deemed worthy (i.e., quirkless), he shall be taken up by the goddess and the goddess shall recieve him with open arms in accordence with the scriptures. This  </blockquote>
+</p>
+  <p><span class="dc-name-default">Shuttai </span> <span class="dc-time-stamp">Today at 12:40</span><br />
+????
+</p>
+<p><span class="dc-name-default">crawler </span> <span class="dc-time-stamp">Today at 12:41</span><br />
+who the hell talks like this <br/>
+what is prelude even going on about
+</p>
+
+<!-- comment -->
+<!-- change name color and **remember your br's** -->
+<p><span class="dc-name-default">Shuttai </span> <span class="dc-time-stamp">Today at 12:41</span><br />
+How small his dick is? <br/>
+No wait pretend I didn't say that, that's mean
+</p>
+<div class=relative-wrapper><p><i class=dc-right-arrow></i><span class=dc-msg-box>test test<span class=dc-cursor><image src="https://media.discordapp.net/attachments/263895206124978176/930867853693943898/Webp.net-gifmaker_5.gif"/></span><image class=dc-emote-button src="https://cdn.discordapp.com/attachments/387318898174984195/934666730356232192/Screenshot_20220122-203114_Photos.jpg"/></span><image class=dc-send src="https://cdn.discordapp.com/attachments/387318898174984195/934666730016505856/Screenshot_20220122-203137_Photos.jpg"/></p></div>
+
+<p></p>
+
+<div class=relative-wrapper><p><i class=dc-right-arrow></i><span class=dc-msg-box-empty><span class=dc-cursor><image src="https://media.discordapp.net/attachments/263895206124978176/930867853693943898/Webp.net-gifmaker_5.gif"/></span>Message #curry<image class=dc-emote-button src="https://cdn.discordapp.com/attachments/387318898174984195/934666730356232192/Screenshot_20220122-203114_Photos.jpg"/></span></p></div>
+  </div>

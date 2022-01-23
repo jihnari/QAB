@@ -653,6 +653,9 @@ cried enough over it already so i'll probably just. ignore it forever?
   font-size: .8em;
   text-overflow: ellipsis;
 }
+.line-at{
+  color: #4582C2;
+}
 
 
 /*signal*/
@@ -1499,6 +1502,67 @@ div.dc-font > p
 .dc-spoiler:hover {
   color: black;
   background-color: #E5E5E5;
+}
+
+/*discord, but integrated*/
+.relative-wrapper{
+  position: relative;
+}
+.dc-right-arrow {
+  border: solid #4F5560;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  margin-right:15px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  display: inline-block;
+}
+.dc-cursor{
+  height:1.5em;
+  width:1em;
+  position: absolute;
+  bbackground-color:pink;
+  margin-left:-8px;
+  margin-top:-1px;
+  oopacity:.5;
+}
+.dc-msg-box{
+  background:#ECEDEF;
+  width:75%; /*75?*/
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 7px 10px 7px 12px;
+  margin-top: 10px;
+  color: black;
+  display: inline-block;
+}
+.dc-msg-box-empty{
+  color:gray;
+  width:85%;
+  background:#ECEDEF;
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 7px 10px 7px 12px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.dc-emote-button{
+  bbackground-color:#4f5660;
+  width:1.5em;
+  height:1.5em;
+  display: inline-block;
+  float:right;
+
+}
+.dc-send{
+  background-color:#5765f2;
+  width:2.5em;
+  height:2.5em;
+  display: inline-block;
+  float:right; /*reconsider*/
+  margin-top: 10px;
 }
 
 

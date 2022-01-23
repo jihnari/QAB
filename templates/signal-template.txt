@@ -11,14 +11,12 @@
 
 <!-- right0 -->
 <span class=signal-box-right0>
-
 <br/><span class=signal-time-right> ✓✓
 </span></span>
 
 
 <!-- left0 -->
 <span class=signal-box-left0>
-
 <br/><span class=signal-time-left>
 </span></span>
 
@@ -28,9 +26,7 @@
 
 <!-- left13 -->
 <span class=signal-box-left1>
-
 </span><span class=signal-box-left3>
-
 <br/><span class=signal-time-left>
 </span></span>
 
@@ -42,19 +38,14 @@
 
 <!-- right13 -->
 <span class=signal-box-right1>
-
 </span><span class=signal-box-right3>
-
 <br/><span class=signal-time-right> ✓✓
 </span></span>
 
 <!-- left123 -->
 <span class=signal-box-left1>
-
 </span><span class=signal-box-left2>
-
 </span><span class=signal-box-left3>
-
 <br/><span class=signal-time-left>
 </span></span>
 
