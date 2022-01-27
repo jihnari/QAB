@@ -1589,10 +1589,10 @@ div.dc-msg-container p
   border-top: 1px solid #b1b1b3;
 }
 .phone-short-line {
-  border-bottom: 6px solid #bbb;
-  border-radius: 5px;
+  border-bottom: 4px solid #bbb;
+  border-radius: 4px;
   padding-bottom: 10px;
-  max-width: 35%;
+  max-width: 30%;
   text-align: center;
 }
  .phone-date {
@@ -1626,11 +1626,28 @@ div.dc-msg-container p
   border-top-left-radius: 0;
 }
 .phone-caller{
-  font-size:1.4em;
+  font-size:2em;
 }
 .phone-incoming{
-    font-size:1.2em;
-    color: #9F9FA1;
+  font-size:.8em;
+  color: #9F9FA1;
+}
+.phone-number{
+  color: #9F9FA1;
+  font-size:.8em;
+  margin:-20px 0 0 0;
+}
+
+.phone-send-message{
+  font-size:.8em;
+  color: #9F9FA1;
+  text-align:center;
+  margin-top:-10px;
+}
+
+.phone-answer{
+  width:100%;
+  margin:60% 0 10px 0;
 }
 
 
