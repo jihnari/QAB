@@ -47,5 +47,16 @@ _content_
 _content_
 </p>
 
+<!-- embedded youtube thing -->
+<p><span class="dc-name-default">Shuttai </span> <span class="dc-time-stamp">Today at 12:40</span><br />
+    <span class=dc-link-blue>youtu.be/xxxxx</span>
+</p>
+<p class=dc-yt-box>
+    <span class=dc-yt-text>YouTube </span> <br/>
+  <strong>_youtuber_ </strong><br/>
+  <span class=dc-link-blue><strong>_video_name_ </strong></span>
+  <image class=dc-yt-img src="https://cdn.discordapp.com/attachments/263895206124978176/936118605064581180/Screenshot_20220126-204051_Sketchbook.jpg"/>
+</p>
+
 
 </div>

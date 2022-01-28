@@ -1504,6 +1504,34 @@ div.dc-font > p
   background-color: #E5E5E5;
 }
 
+
+/*discord, embedded*/
+.dc-link-blue{
+  color: #0C63CC !important;
+  text-decoration: none !important;
+}
+.dc-yt-box{
+  width:95%;
+  max-width:500px;
+  display:table;
+  background-color:#F2F3F5;
+  border: 1px solid #DDDEDF;
+  border-left: 4px solid #FE0000;
+  border-radius: 6px;
+  padding:3px 7px 3px 7px;
+  line-height:1.4em;
+}
+.dc-yt-img{
+  width:100%;
+  border: 1px;
+  border-radius: 6px;
+  margin-top:10px;
+}
+.dc-yt-text{
+  font-size:.7em;
+  color:gray;
+}
+
 /*discord, but integrated*/
 /*deals with the p tags ao3 littered everywhere*/
 div.dc-msg-container p
@@ -1587,12 +1615,14 @@ div.dc-msg-container p
 /*phone screen/notifications/time*/
 .phone-div {
   border-top: 1px solid #b1b1b3;
+  max-width:412px;
 }
 .phone-short-line {
   border-bottom: 4px solid #bbb;
   border-radius: 4px;
   padding-bottom: 10px;
-  max-width: 30%;
+  width: 30%;
+  max-width:123px;
   text-align: center;
 }
  .phone-date {
@@ -1646,8 +1676,10 @@ div.dc-msg-container p
 }
 
 .phone-answer{
-  width:100%;
+  width:90%;
+/*   this might get you into trouble */
   margin:60% 0 10px 0;
+  max-width:412px;
 }
 
 
@@ -1957,11 +1989,9 @@ div.ch-table p
 
 .ch-row{
   display: table-row;
-  wwidth:100%;
   height:3em;
   border: 1px solid gray;
   margin: 10px 0 10px 0;
-  bbackground:blue;
 }
 
 .ch-dot-cell{

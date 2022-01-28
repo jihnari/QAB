@@ -3,11 +3,14 @@ ao3 -
 - cant have <p class="clear anything"></p>. its gotta be COMPLETELY standalone ig.
 - the yt img is weird. its got a shadow and also its shifted off of the red bar? and the margin is diff now. may have to overwrite whatev the new ao3 default is?
 -- is it that 'bottom 4'?
-- line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around the section, open the p right after that and usually that + cussing does the trick
+- line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around THAT SECTION AND THAT SECTION ONLY, open the p right after that and usually that + cussing does the trick
+- for copy pasta:
+</p><p>
+boy am i lazy.
 - had to move yt-line-## from bottom 4px to ~~5px~~ 5.5px bc of the way ao3 renders images? unclear.
 - ~~also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.~~
 - yes hello ao3 has a style class called "wrapper" so ur not allowed to use that anymore. renamed to 'relative-wrapper'
-- using the built in table stuff adds in some weird padding and idk where its coming from. id like to overwrite it but im sick of looking for it... maybe someday. 
+- using the built in table stuff adds in some weird padding and idk where its coming from. id like to overwrite it but im sick of looking for it... maybe someday.
 
 allowed operators:
 - lost again :/
