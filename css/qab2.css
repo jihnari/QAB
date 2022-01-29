@@ -1795,7 +1795,7 @@ text-align: justify;
 p.gmail-up-arrow-gimmick:hover ~ div.gmail-info-box {
 display: none;
 }
-p.gmail-up-arrow-gimmick:hover > .gmail-up-arrow{
+p.gmail-up-arrow-gimmick:hover .gmail-up-arrow{
   border: solid #5F6266;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
@@ -1808,7 +1808,7 @@ p.gmail-up-arrow-gimmick:hover > .gmail-up-arrow{
 p.gmail-down-arrow-gimmick:hover ~ div.hidden-gmail-info-box {
   display:block;
 }
-p.gmail-down-arrow-gimmick:hover > .gmail-down-arrow {
+p.gmail-down-arrow-gimmick:hover .gmail-down-arrow {
   border: solid #5F6266;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
@@ -1820,14 +1820,6 @@ p.gmail-down-arrow-gimmick:hover > .gmail-down-arrow {
 
 span.gmail-arrow-box:hover ~ div > div.gmail-info-box {
 display: none;
-}
-
-.left{
-  float:left;
-}
-
-.clear {
-  clear: both;
 }
 
 div.gmail-font > a
@@ -1992,6 +1984,7 @@ div.ch-table p
   height:3em;
   border: 1px solid gray;
   margin: 10px 0 10px 0;
+  bbackground:blue;
 }
 
 .ch-dot-cell{
