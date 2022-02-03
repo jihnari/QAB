@@ -31,5 +31,13 @@ No wait pretend I didn't say that, that's mean
 
 <p></p>
 
-<div class=relative-wrapper><p><i class=dc-right-arrow></i><span class=dc-msg-box-empty><span class=dc-cursor><image src="https://media.discordapp.net/attachments/263895206124978176/930867853693943898/Webp.net-gifmaker_5.gif"/></span>Message #curry<image class=dc-emote-button src="https://cdn.discordapp.com/attachments/387318898174984195/934666730356232192/Screenshot_20220122-203114_Photos.jpg"/></span></p></div>
-  </div>
+<!-- message input box w/ text -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class=dc-msg-container><div class="dc-arrow-wrapper"><image src="https://github.com/jihnari/QAB/raw/main/img/dc-arrow.png" class=dc-arrow></image></div><div class="dc-msg-box"><div class="dc-msg-wrapper"><div class="dc-msg-text">text text text lots and lots of text yay for text text text text text just keep typing until it wraps around, gotta get it up to four<span class=dc-cursor><image src="https://github.com/jihnari/QAB/raw/main/img/dc-blink.gif"/></span> </div><div class="dc-emote-wrapper"><image class=dc-emote-button src="https://github.com/jihnari/QAB/raw/main/img/dc-emote.png"/></div></div></div><div class="dc-send-wrapper"><image class="dc-send" src="https://github.com/jihnari/QAB/raw/main/img/dc-send.png"/></div></div>
+
+<!-- message input box w/o text -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div class=dc-msg-container><div class="dc-arrow-wrapper"><image src="https://github.com/jihnari/QAB/raw/main/img/dc-arrow.png" class=dc-arrow></image></div><div class="dc-msg-box"><div class="dc-msg-wrapper"><div class="dc-msg-text dc-empty"><span class=dc-cursor><image src="https://github.com/jihnari/QAB/raw/main/img/dc-blink.gif"/></span>Message #curry </div><div class="dc-emote-wrapper"><image class=dc-emote-button src="https://github.com/jihnari/QAB/raw/main/img/dc-emote.png"/></div></div></div></div>

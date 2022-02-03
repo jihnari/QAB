@@ -12,12 +12,12 @@
 
 <!-- left -->
 <span class="sms-box-left">
-_content_
+
 </span>
 
 <!-- right -->
 <span class="sms-box-right">
-_content_
+
 </span>
 
 

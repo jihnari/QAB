@@ -198,13 +198,6 @@ i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i 
 
 the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
 */
-
-/*reddit*/
-/*
-i do not, i repeat do NOT remember making vr0-2. i mean, i remember thinking "i should fix that weird issue where sometimes things collapse instead of float", i remember sitting down, i remember thinking "what if tables" but i DO NOT remember what it does or how it works. idk if half of that even needs to be there and honestly at this point i dont care. i also remeber thinking "GOTTA NEST THOSE DIVS" which we... appparently did not do. so that's. that's cool.
-
-the last thing we might wanna do here is use the fadeout function and place the 'view all comments' button over top of it. rn im tired tho. messing w relative/ablosute is one of my least favorite things.
-*/
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
   background-color: white;
@@ -1462,7 +1455,7 @@ div.dc-font > p
   font-size:1.1em;
 }
 .dc-name-green{
-  color:green;
+  color:#78bf9f;
   font-weight:bold;
   font-size:1.1em;
 }
@@ -1502,6 +1495,33 @@ div.dc-font > p
 .dc-spoiler:hover {
   color: black;
   background-color: #E5E5E5;
+}
+
+.dc_bot {
+  background:#5865F2;
+  color:white;
+  font-size:.5em;
+  padding: 2px 4px 2px 4px;
+  border-radius:3px;
+}
+.dc_code {
+  background:#f9f9f9;
+  color:#4F555D;
+  padding:1.5px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.dc_image{
+  width: auto;
+  max-width: 500px;
+  max-height: 350px;
+  height: auto;
+
+  display:table;
+  border: 1px solid #DDDEDF;
+  border-radius: 6px;
+  line-height: 1.4em;
+
 }
 
 
@@ -1678,7 +1698,7 @@ div.dc-msg-container p
 .phone-answer{
   width:90%;
 /*   this might get you into trouble */
-  margin:60% 0 10px 0;
+  margin:250px 0 10px 0;
   max-width:412px;
 }
 

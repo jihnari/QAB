@@ -49,7 +49,7 @@ Read<br/>
 </span>
   <span class="line-time-left">
 Read<br/>
-8:03
+
 </span>
 
 </p></div>
