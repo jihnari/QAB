@@ -1511,9 +1511,9 @@ div.dc-font > p
   font-family: "Lucida Console", Monaco, monospace;
 }
 
+
 .dc_image{
-  width: auto;
-  max-width: 500px;
+  max-width: 95%;
   max-height: 350px;
   height: auto;
 
@@ -1827,6 +1827,7 @@ p.gmail-up-arrow-gimmick:hover .gmail-up-arrow{
 
 p.gmail-down-arrow-gimmick:hover ~ div.hidden-gmail-info-box {
   display:block;
+  margin-bottom: 20px;
 }
 p.gmail-down-arrow-gimmick:hover .gmail-down-arrow {
   border: solid #5F6266;
@@ -1846,6 +1847,24 @@ div.gmail-font > a
 {
   color: #2372DB;
   text-decoration: none !important;
+}
+
+.gmail-down-arrow-gimmick{
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.gmail-up-arrow-gimmick{
+  white-space: nowrap;
+}
+
+/* lmao idk */
+.gmail-reply-button{
+  height: 30px;
+  display: inline-block;
+  margin-right: -5px;
+  float: right;
+  overflow: hidden;
 }
 
 .gmail-font{
@@ -1873,6 +1892,7 @@ color:#5F6266;
 color:#5F6266;
 font-size:.7em;
 padding-left:7px;
+
 }
 .gmail-indent{
 padding-left:50px;
@@ -1892,6 +1912,7 @@ padding-left:50px;
   padding: 10px;
   font-size: .8em;
   margin-bottom: 10px;
+  /* line-height: 1.5em; */
 }
 .hidden-gmail-info-box{
   border-color: #DBDCDF;
@@ -1905,7 +1926,8 @@ padding-left:50px;
 }
 
 .gmail-subject-buffer {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: -10px;
 }
 .gmail-subject {
   font-size: 1.5em;
@@ -1950,7 +1972,7 @@ padding-left:50px;
   width: 40px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
   background-color: #EDEEEF;
   margin-bottom: -15px;
   float: left;
