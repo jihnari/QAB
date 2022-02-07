@@ -32,6 +32,7 @@ margin-top:0;
 }
 .shift-up{
 margin-top:-15px;
+max-width:100%;
 }
 .shift-up2{
 margin-top:-30px;
@@ -151,9 +152,18 @@ margin-bottom:-15px;
   margin-left:10px;
   padding-bottom:10px;
 }
+
+/* attempting a thing to hide the scroll bar on pc */
 .stay-block {
-overflow: auto;
-display: block;
+  overflow: auto;
+  display: block;
+
+  scrollbar-width: none;
+}
+
+.stay-block::-webkit-scrollbar {
+  display: none;
+}
 }
 .stay{
 width:100%;
