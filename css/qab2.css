@@ -74,6 +74,13 @@ margin-bottom:-15px;
 }
 
 
+.tahoma {
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
 .text-color-red {
   color: red;
 }
@@ -637,6 +644,7 @@ cried enough over it already so i'll probably just. ignore it forever?
 }
 .line-linked-img{
   margin: -0.5em 0 -1em;
+  padding: -0.5em -1em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -862,6 +870,19 @@ todo:
   clear: both;
   position: relative;
 }
+.signal-call {
+  padding: 0px 0 0px 0;
+  color: gray;
+  font-size:.8em;
+  bbackground: white;
+  text-align:center;
+  clear: both;
+  position: relative;
+}
+.signal-call-icon{
+  height:2em;
+  margin-bottom:-5px;
+}
 
 /*signal group chat*/
 /*top bar is fixed in this version, legit works in this version. should fix og version also, but... probably wont.*/
@@ -961,29 +982,32 @@ todo:
 todo:
 - why is ao3 adding a drop-box
 */
+.yt-font > a {
+
+}
 .yt-font{
 font-family: 'Roboto', sans-serif;
 }
 .yt-red-line-50 {
   position:absolute;
   width:100%;
-  height:5px;
+  height:3px;
   background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);
-  bottom:5.5px;
+  bottom:6px;
 }
 .yt-red-line-30 {
   position:absolute;
   width:100%;
-  height:5px;
+  height:3px;
   background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);
-  bottom:5.5px;
+  bottom:6px;
 }
 .yt-red-line-70 {
   position:absolute;
   width:100%;
-  height:5px;
+  height:3px;
   background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);
-  bottom:5.5px;
+  bottom:6px;
 }
 .yt-border-bottom-gray  {
   border-bottom: 1px solid #b1b1b3;
@@ -1012,7 +1036,7 @@ font-family: 'Roboto', sans-serif;
 }
 .yt-link {
   color: blue;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .yt-down-arrow {
   margin-top: 10px;
@@ -1076,6 +1100,9 @@ font-family: 'Roboto', sans-serif;
 }
 .yt-title-shift{
 margin-top:-5px;
+}
+.yt-replies{
+ font-size:.9em;
 }
 
 
@@ -1543,13 +1570,16 @@ div.dc-font > p
 .dc-yt-box{
   width:95%;
   max-width:500px;
-  display:table;
+  /* why was this a table */
+  /* display:table; */
   background-color:#F2F3F5;
   border: 1px solid #DDDEDF;
   border-left: 4px solid #FE0000;
   border-radius: 6px;
   padding:3px 7px 3px 7px;
   line-height:1.4em;
+  /* align:left !important; */
+  margin-left: 0px;
 }
 .dc-yt-img{
   width:100%;
@@ -1986,6 +2016,14 @@ padding-left:50px;
   background-color: #EDEEEF;
   margin-bottom: -15px;
   float: left;
+}
+
+.gmail-red{
+  color:red;
+  fond-size:1.4em;
+}
+.gmail-secret{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
 }
 
 

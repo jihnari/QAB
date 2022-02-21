@@ -25,7 +25,7 @@
   _blah_
   <br/>
   </p>
-  
+
 <!-- comments header -->
 <p class="yt-border-top-bottom-gray yt-bg-gray">
 Remember to keep comments respectful and to follow our <span class=yt-link><a href="https://support.google.com/youtube/answer/9288567?hl=en">Community Guidelines</a></span></p>
@@ -38,7 +38,7 @@ Remember to keep comments respectful and to follow our <span class=yt-link><a hr
 <span class="yt-floatdot"></span>
 <span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
 _content_<br/><br/>
-  <br/>_n_ REPLIES</span>
+  <br/><span class=yt-replies>_n_ REPLIES</span></span>
   </p>
 
 <!-- comment -->
@@ -46,7 +46,7 @@ _content_<br/><br/>
 <span class="yt-floatdot"></span>
 <span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
 _content_<br/><br/>
-  <br/>_n_ REPLIES</span>
+  <br/><span class=yt-replies>_n_ REPLIES</span></span>
   </p>
 
 <!-- comment -->
@@ -55,7 +55,7 @@ _content_<br/><br/>
 <span class="stay-block"><span class="text-color-lgray text-size-8">_name_ &middot; _when_ ago</span><br/>
 _content_
 <br/><br/>
-  <br/>_n_ REPLIES</span>
+  <br/><span class=yt-replies>_n_ REPLIES</span></span>
   </p>
 
 </div>

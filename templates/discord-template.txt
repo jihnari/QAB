@@ -45,7 +45,7 @@ _content_
 
 <!-- new messages -->
 <!-- unsure about div placement -->
-<p class="dc-middle-line-red"><span class="middle-box text-color-red">NEW MESSAGES</span></p>
+<p class="dc-middle-line-red"><span class="middle-box text-color-red">NEW MESSAGES </span></p>
 
 <!-- reply comment -->
 <p class="clear2 dc-reply-wrapper"><span class="dc-reply-square"></span> <span class="dc-reply-text"><b>_re_name_</b> _og_comment_ </span></p>
