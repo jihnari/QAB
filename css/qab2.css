@@ -1671,6 +1671,21 @@ div.dc-msg-container p
   */
 }
 
+.dc-new-msg-bar{
+  background:#5865F2;
+  color:white;
+  padding: 5px;
+  font-weight:bold;
+  /* this value feels wrong but looks correct in atom */
+  margin-top:20px;
+}
+.dc-blue-x{
+  float:right;
+  padding-right:3px;
+  margin-top:-3px;
+  height:1.4em;
+}
+
 
 /*phone screen/notifications/time*/
 .phone-div {
@@ -2020,7 +2035,7 @@ padding-left:50px;
 
 .gmail-red{
   color:red;
-  fond-size:1.4em;
+  font-size:1.4em;
 }
 .gmail-secret{
   font-family: Tahoma,Verdana,Segoe,sans-serif;
@@ -2029,6 +2044,9 @@ padding-left:50px;
 
 
 /*chrome history*/
+div.no-p p{
+margin:0;
+}
 div.ch-table p
 {
   margin-top:0;
@@ -2053,6 +2071,7 @@ div.ch-table p
   color: #1A72E8;
   font-size:.9em;
   ffont-weight:bold;
+  margin: auto !important;
   margin-top:25px;
 }
 
