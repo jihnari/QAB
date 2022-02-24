@@ -1685,7 +1685,17 @@ div.dc-msg-container p
   margin-top:-3px;
   height:1.4em;
 }
-
+.dc-typing{
+  background: #F9F9F9;
+  color:#35363A;
+  font-size: .8em;
+  margin-bottom:20px;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.dc-typing-dot{
+  height:1em;
+}
 
 /*phone screen/notifications/time*/
 .phone-div {
