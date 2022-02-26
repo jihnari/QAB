@@ -17,6 +17,10 @@
 .clear {
   clear: both;
 }
+/* i think maybe clear is already defined by ao3?  */
+.clearclear{
+    clear: both;
+}
 .clear2{
   overflow: auto;
 }
@@ -1320,6 +1324,7 @@ div.dc-font > p
   line-height: 0.1em;
   margin: 10px 0 20px;
   color:red;
+  font-size:.9em;
 }
 .dc-middle-line-gray {
   text-align: center;
@@ -1689,12 +1694,15 @@ div.dc-msg-container p
   background: #F9F9F9;
   color:#35363A;
   font-size: .8em;
-  margin-bottom:20px;
-  margin-top: 5px;
+  margin-bottom:5px;
+  /* for ao3 spacing */
+  /* margin-bottom:0px; */
+  margin-top: 15px;
   padding-left: 5px;
 }
 .dc-typing-dot{
   height:1em;
+  margin-top:2px;
 }
 
 /*phone screen/notifications/time*/
@@ -2054,13 +2062,14 @@ padding-left:50px;
 
 
 /*chrome history*/
+
+/* this didnt help */
 div.no-p p{
-margin:0;
+/* margin:0; */
 }
 div.ch-table p
 {
-  margin-top:0;
-  margin-bottom:0;
+  margin:0;
 }
 
 .ch-header{
@@ -2080,7 +2089,7 @@ div.ch-table p
 .ch-sub-header{
   color: #1A72E8;
   font-size:.9em;
-  ffont-weight:bold;
+  /* font-weight:bold; */
   margin: auto !important;
   margin-top:25px;
 }
@@ -2095,15 +2104,13 @@ div.ch-table p
     width: 100%;
     table-layout: fixed;
 /*     position:relative; */
-  bbackground:pink;
 }
 
 .ch-row{
   display: table-row;
   height:3em;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   margin: 10px 0 10px 0;
-  bbackground:blue;
 }
 
 .ch-dot-cell{
@@ -2142,7 +2149,46 @@ div.ch-table p
   display:table-cell;
   vertical-align: middle;
 }
+
+/* .ch-x-cell{
+  background-size: contain;
+  width:10px;
+  margin:0 10px 0 10px;
+  display:table-cell;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/jihnari/QAB/raw/main/img/ch-x.png");
+} */
+
 .ch-x{
   margin:0 10px 0 10px;
   width:20px;
+}
+
+
+
+/* (formal) interview */
+.interview-table {
+  display: table;
+  margin: auto;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight:normal;
+}
+
+.interview-name {
+  vertical-align:top;
+  width: 10%;
+  font-weight:normal;
+}
+
+.interview-text {
+  width: 88%;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom: 5px;
+  font-weight:normal;
 }
