@@ -1174,6 +1174,24 @@ todo:
   border-image-slice: 1;
 }
 
+/* this could be muuuch cleaner but got it cleaned up then hot swapped it in and everything broke?? so it gets to live like this now. */
+.tw-no-heart{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
+  display: inline-block;
+  height:40px;
+  width:100%;
+  background-size:100% 40px;
+  border-right-color: transparent;
+}
+
+.tw-no-heart:hover{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar-heart.png") no-repeat;
+  display: inline-block;
+  height:40px;
+  width:100%;
+  background-size:100% 40px;
+}
+
 
 
 /*twitter DMs*/
@@ -1679,15 +1697,19 @@ div.dc-msg-container p
 .dc-new-msg-bar{
   background:#5865F2;
   color:white;
-  padding: 5px;
+  padding: 8px 10px 8px 15px;
   font-weight:bold;
   /* this value feels wrong but looks correct in atom */
   margin-top:20px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 .dc-blue-x{
   float:right;
   padding-right:3px;
-  margin-top:-3px;
+  /* margin-top:-3px; */
+  vertical-align: middle;
   height:1.4em;
 }
 .dc-typing{
@@ -2173,16 +2195,13 @@ div.ch-table p
   margin: auto;
   max-width: 100%;
   min-width: 100%;
-  font-family: Tahoma,Verdana,Segoe,sans-serif;
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight:normal;
 }
 
 .interview-name {
   vertical-align:top;
   width: 10%;
   font-weight:normal;
+  font-family:Tahoma,Verdana,Segoe,sans-serif;
 }
 
 .interview-text {
@@ -2191,4 +2210,7 @@ div.ch-table p
   padding-right:10px;
   padding-bottom: 5px;
   font-weight:normal;
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
