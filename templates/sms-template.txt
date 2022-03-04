@@ -12,12 +12,10 @@
 
 <!-- left -->
 <span class="sms-box-left">
-
 </span>
 
 <!-- right -->
 <span class="sms-box-right">
-
 </span>
 
 

@@ -14,14 +14,14 @@ _Mon_, _Aug_9_, 20X4
 <p>
 
 <!-- right (me) -->
-<span class="line-box-right1">_content_
+<span class="line-box-right1">
 </span><span class="line-time-right">
 Read<br/>
 _time_
 </span>
 
 <!-- left -->
-<span class=line-box-left>_content_
+<span class=line-box-left>
 </span><span class="line-time-left">
 _time_
 </span>

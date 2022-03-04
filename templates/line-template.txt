@@ -28,7 +28,7 @@ Read<br/>
 
 <!-- left multiple -->
 <span class="line-name-box">_name_
-</span><span class=line-box-left>_content_
+</span><span class=line-box-left>
 </span><span class="line-time-left">
 _time_
 </span>
