@@ -9,7 +9,8 @@ ao3 -
 - yes hello ao3 has a style class called "wrapper" so ur not allowed to use that anymore. renamed to 'relative-wrapper'
 - using the built in table stuff adds in some weird padding and idk where its coming from. id like to overwrite it but im sick of looking for it... maybe someday.
 - update, sometimes your only option is to overwrite all the table properties bc ao3 is so aggressive about nesting divs. related, table-layout:fixed does some HORRIFIC STUFF after ao3 has sprinkled "p"s all over the place
-- so regardless of what the documentation says about "a single line will be ignored by the parser" 1, it will not. 2, it SUPER will not if you nest divs. every div gets at least one p shoved in there. you can sometimes solve this with sibling selectors and margin:0-ing the p, but sometimes you cant ¯\_(ツ)_/¯
+- ao3 completely ignores tables? its very kind about ignoring all formatting inside the table and just keeping it like it was. so just. just write tables.
+- regardless of what the documentation says about "a single line will be ignored by the parser" 1, it will not. 2, it SUPER will not if you nest divs. every div gets at least one p shoved in there. you can sometimes solve this with sibling selectors and margin:0-ing the p, but sometimes you cant ¯\_(ツ)_/¯
 
 allowed operators:
 - lost again :/
@@ -25,3 +26,6 @@ atom:
 - hey STUPID, you gotta STAGE THE CHANGES, COMMIT TO MAIN and THEN you gotta push that push button at the very bottom of the window that you CANT SEE BC YOU ALWAYS SQUISH UR WINDOWS. anyway yes its a 3 step process, not 2. gl. godspeed.
 - so hey when the package manager is "broken" go into settings > URI handling > click that button that lets it handle URIs. idk why it keeps resetting on you, but its annoying as heck
 - theres also just an "install" option *right there in settings* lolol
+
+html:
+- if you set a bg-image for an img object, theres a weird gray border you cant do anything about. if you switch it to a p, that border magically goes away.

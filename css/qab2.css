@@ -496,6 +496,20 @@ cried enough over it already so i'll probably just. ignore it forever?
   clear: both;
   position: relative;
 }
+.line-box-left-m {
+  border-color: #d3dce0;
+  border-style: solid;
+  border-width: 1px;
+  background: #d3dce0;
+  color: black;
+  float: left;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
 .line-box-left::after {
   content: "";
   position: absolute;
@@ -526,6 +540,17 @@ cried enough over it already so i'll probably just. ignore it forever?
   clear: both;
   position: relative;
 }
+.line-box-right-m {
+  float: right;
+  color: black;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #9DE694;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
 .line-box-right {
   float: right;
   color: black;
@@ -548,6 +573,17 @@ cried enough over it already so i'll probably just. ignore it forever?
   border-bottom-right-radius: 1em .8em;
 }
 .line-box-right1 {
+  float: right;
+  color: black;
+  margin-bottom: 10px;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #9DE694;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+.line-box-right1-m {
   float: right;
   color: black;
   margin-bottom: 10px;
@@ -1141,6 +1177,7 @@ todo:
 .tw-border-top-bottom {
   border-bottom: 1px solid #D7DADD;
   border-top: 1px solid #D7DADD;
+  font-size: 0.8em; /*this might break things*/
 }
 .tw-border-bottom {
   border-bottom: 1px solid #D7DADD;
@@ -1184,7 +1221,7 @@ todo:
 }
 .tw-footer{
   color: #657685;
-  /* font-size: .9em; */
+  /* font-size: .9em;  */
   margin-top:-10px;
   margin-bottom:5px;
 }
@@ -1196,9 +1233,12 @@ todo:
 .tw-retweets-bar{
   /* font-size: .9em; */
   padding:10px 0 10px 0;
+  /* idk why this is necessary, maybe smth to do with a shift up 15px somewhere */
+  margin-bottom: 15px;
   border-bottom: 1px solid #D7DADD;
   border-top: 1px solid #D7DADD;
   color: #657685;
+  font-size: .8em;
 }
 
 /* this could be muuuch cleaner but got it cleaned up then hot swapped it in and everything broke?? so it gets to live like this now. */
@@ -1363,6 +1403,8 @@ div.dc-font > p
 {
   /* line-height: 160% !important;  */ /*ignore this*/
   /* this breaks things; also, change to margin bottom and fix stuff, probably. margin top is sketch. */
+
+  /* this fixes the spacing issue, but its an ao3 specific fix. it looks bad everywhere else. */
   margin-bottom:-12px;
 }
 .dc-middle-line-red {

@@ -20,6 +20,7 @@ _content_
 <p>
 <span class="news-title">_title_
 </span><br/><span class="news-date"> _date_ · _source_ via Yap News </span>
+
 </p>
 
 </div>
