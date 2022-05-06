@@ -1075,7 +1075,7 @@ font-family: 'Roboto', sans-serif;
   padding: 5px;
 }
 .yt-link {
-  color: blue;
+  color: #145DBD;
   text-decoration: none !important;
 }
 .yt-down-arrow {
@@ -1143,6 +1143,12 @@ margin-top:-5px;
 }
 .yt-replies{
  font-size:.9em;
+ color: #145DBD;
+}
+.yt-readmore{
+  /* font-size:.9em; */
+  color: #606060;
+  padding-left:5px;
 }
 
 
