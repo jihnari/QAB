@@ -2158,6 +2158,18 @@ padding-left:50px;
   font-family: Tahoma,Verdana,Segoe,sans-serif;
 }
 
+.red-top{
+  border-top: 2.5px solid #CF3F3D;
+  /* the offset is off, its fine, i give up */
+  /* margin-right: -1px; */
+}
+.blue-top{
+  border-top: 2.5px solid #5281D8;
+  /* margin-left: -3px; */
+}
+.yellow-top{
+  border-top: 2.5px solid #EDC151;
+}
 
 
 /*chrome history*/
