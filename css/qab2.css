@@ -1198,7 +1198,19 @@ todo:
   height:5px;
   max-width:100%;
 }
+.twt-comment-buttons{
+  height: 40px;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom:-5px;
+  display: block;
+}
 .twt-share {
+  /* why the hell is this on imgur */
+  /* that seems excessively wrong */
+  /* like. who the hell put it on imgur? it wasnt me. no one else works on this project. all my resources are on github or, if i was lazy and forgot to fix it, discord. so *who put it on imgur*. */
+  /* wait am i even USING this anywhere??? */
+  /* WHO PUT THIS HERE */
   background-image: url("https://i.imgur.com/iwGvFJY.png");
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1211,6 +1223,7 @@ todo:
   float: center;
   /*might want to,*/
   /*display: inline-block;*/
+  /* protip i think this might be block not inline-block */
   margin: 10px 0px 10px 10px;
   max-width: 95%;
   border: 1px solid #D7DADD;
