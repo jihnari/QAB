@@ -1199,10 +1199,13 @@ todo:
   max-width:100%;
 }
 .twt-comment-buttons{
-  height: 40px;
+  max-height: 40px;
   width: 80%;
-  padding-top: 10px;
-  padding-bottom:-5px;
+  max-width: 450px;
+
+  /* padding-top: 10px; */
+  /* lmao this breaks things  */
+  /* margin-bottom:-10px; */
   display: block;
 }
 .twt-share {
@@ -1404,6 +1407,29 @@ todo:
   font-weight:bold;
 }
 
+.filter {
+    width:100%;/*To occupy image full width of the container and also fit inside the container*/
+    max-width:100%/*To fit inside the container alone with natural size of the image ,Use either of these width or max-width based on your need*/
+   height:auto;
+   max-height: 100px;
+   }
+
+.tw-img-right0 {
+   filter: brightness(0.95);
+   max-height: 200px;
+
+   background: #1Da1f3;
+   overflow:hidden;
+
+   margin-top: 10px;
+   border-width: 1px;
+   border-radius: 12px;
+
+   border-bottom-right-radius: 0;
+   margin-bottom: 3px;
+   float: right;
+   max-width: 75%;
+}
 
 
 /*discord*/
