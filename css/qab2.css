@@ -1284,6 +1284,22 @@ todo:
 }
 
 
+.tw-gray-box{
+  background: #C5CFD6;
+}
+.tw-big-cirle{
+  /* might not ever use this, but just in case */
+}
+.tw-header{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tw-subheader{
+  color: #626E81;
+
+}
+
+
 
 /*twitter DMs*/
 /*
@@ -1407,28 +1423,36 @@ todo:
   font-weight:bold;
 }
 
-.filter {
-    width:100%;/*To occupy image full width of the container and also fit inside the container*/
-    max-width:100%/*To fit inside the container alone with natural size of the image ,Use either of these width or max-width based on your need*/
-   height:auto;
-   max-height: 100px;
-   }
+.tw-white-img{
+  /* filter/brightness not supported by ao3 */
+  /* filter: brightness(0.95); */
+  /* opacity: 0.8;
+  background-color: black; */
+}
 
 .tw-img-right0 {
-   filter: brightness(0.95);
    max-height: 200px;
-
-   background: #1Da1f3;
    overflow:hidden;
 
    margin-top: 10px;
    border-width: 1px;
    border-radius: 12px;
-
    border-bottom-right-radius: 0;
    margin-bottom: 3px;
    float: right;
    max-width: 75%;
+}
+.tw-img-left0 {
+  max-height: 200px;
+  overflow:hidden;
+
+  margin-top: 10px;
+  border-width: 1px;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  margin-bottom: 3px;
+  float: left;
+  max-width: 75%;
 }
 
 
