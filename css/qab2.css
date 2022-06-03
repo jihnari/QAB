@@ -2221,6 +2221,7 @@ padding-left:50px;
   font-family: Tahoma,Verdana,Segoe,sans-serif;
 }
 
+
 .red-top{
   border-top: 2.5px solid #CF3F3D;
   /* the offset is off, its fine, i give up */
@@ -2232,6 +2233,14 @@ padding-left:50px;
 }
 .yellow-top{
   border-top: 2.5px solid #EDC151;
+}
+
+.gmail-sig{
+  display:inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 
