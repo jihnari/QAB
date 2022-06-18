@@ -42,6 +42,14 @@
 <br/><span class=signal-time-right> ✓✓
 </span></span>
 
+<!-- right123 -->
+<span class=signal-box-right1>
+</span><span class=signal-box-right2>
+</span><span class=signal-box-right3>
+<br/><span class=signal-time-right> ✓✓
+</span></span>
+
+
 <!-- left123 -->
 <span class=signal-box-left1>
 </span><span class=signal-box-left2>

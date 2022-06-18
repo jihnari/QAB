@@ -1199,7 +1199,7 @@ todo:
   max-width:100%;
 }
 .twt-comment-buttons{
-  max-height: 40px;
+  max-height: 50px;
   width: 80%;
   max-width: 450px;
 
@@ -1531,8 +1531,9 @@ div.dc-font > p
   font-size: .8em;
   color: #797D80;
   display:block;
-  overflow: auto;
-  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 32px;
 }
 .dc-reply-wrapper {
   /* margin-top:-10px; */
