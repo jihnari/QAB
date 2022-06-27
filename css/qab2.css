@@ -1576,6 +1576,13 @@ div.dc-font > p
   padding: 2px;
   padding: 2px 5px 2px 3px;
 }
+
+.dc-emotebox:hover {
+background: #FFFFFF;
+border:1.5px solid #BCBCBC;
+}
+
+
 .dc-myemotebox {
   border-radius: 6px;
   border:1.5px solid #5865F2;
@@ -1682,10 +1689,16 @@ div.dc-font > p
   margin-bottom:-15px;
 }
 .dc-link {
-  border-radius: 1px;
-  color: #5865EF !important;
+  border-radius: 3px;
+  color: #5865EF;
   background: #E7EAFD;
-  text-decoration: none !important;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.dc-link:hover {
+  color:#FFFFFF;
+  background: #5865F2;
+  text-decoration: underline #FFFFFF;
 }
 
  .dc-spoiler {
@@ -1754,6 +1767,19 @@ div.dc-font > p
 .dc-yt-text{
   font-size:.7em;
   color:gray;
+}
+
+.dc-orange-bg{
+background: #FFF6E7;
+border-left: 3px solid #AA7212;
+
+/* might need to fix this */
+padding-bottom:7px;
+padding-left:7px;
+}
+
+.dc-orange-bg:hover{
+background:#FEEED1;
 }
 
 /*discord, but integrated*/

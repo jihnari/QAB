@@ -30,12 +30,6 @@
 <br/><span class=signal-time-left>
 </span></span>
 
-<!-- left img -->
- <p><img class="signal-img-left" src=_link_></img></p>
-
-<!-- right img -->
- <p><img class="signal-img-right" src=_link_></img></p>
-
 <!-- right13 -->
 <span class=signal-box-right1>
 </span><span class=signal-box-right3>
@@ -56,6 +50,13 @@
 </span><span class=signal-box-left3>
 <br/><span class=signal-time-left>
 </span></span>
+
+
+<!-- left img -->
+ <p><img class="signal-img-left" src=_link_></img></p>
+
+<!-- right img -->
+ <p><img class="signal-img-right" src=_link_></img></p>
 
 
 
