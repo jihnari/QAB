@@ -1,4 +1,6 @@
 - hey bro did you ever fix chisaki's LINE user name
 - should probably go back through and fix up tweets before ch10
 - youtube template/css is ugly, does that bother you enough to rewrite it into something legible?
-- 
+- i changed dm-container to have a max of 100 and a min of 97 and i think that messed things up but
+- did mei's name get changed everywhere
+- discord update pushed for 11-15, still need to do 1-10 but might update twitter while we're at it? 

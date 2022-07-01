@@ -11,7 +11,8 @@
   display: table;
   margin: auto;
   max-width: 100%;
-  min-width: 100%;
+  /* this used to be 100 and for what?? to make me cry?? idk but we're gonna see if changing it breaks everything */
+  min-width: 95%;
 }
 
 .clear {
@@ -84,6 +85,10 @@ margin-bottom:-15px;
   text-justify: inter-word;
 }
 
+.italics {
+
+}
+
 
 .text-color-red {
   color: red;
@@ -120,6 +125,13 @@ margin-bottom:-15px;
 }
 .text-bold{
   font-weight:bold;
+}
+.text-em{
+  font-style:italic;
+}
+.text-normal{
+  font-weight: normal;
+  font-style: normal;
 }
 
 .square-element{
@@ -1678,6 +1690,55 @@ border:1.5px solid #BCBCBC;
   font-size:1.1em;
 }
 
+/* i have regrets. why didnt i just leave the colors as colors instead of making sepate classes for each? why did i do that. */
+/* uuggghh okay but what if we fixed it. right here. right now. what if. OKAY so what if we keep both for now? make the fixed version, slowly phase it out? yeah. yeah okay lets. */
+
+.dc-name{
+  font-weight:bold;
+  font-size:1.1em;
+  color:#060607;
+}
+
+.dc-name:hover{
+  text-decoration: underline;
+}
+
+.color-red{
+  color:red;
+}
+.color-yellow{
+  color:#FFC72C;
+}
+.color-orange{
+  color:orange;
+}
+.color-blue{
+  color:blue;
+}
+.color-lblue{
+  color:#add8e6;
+}
+.color-pink{
+  color:pink;
+}
+.color-lpink{
+  color:#FEC9CD;
+}
+.color-purple{
+  color:purple;
+}
+.color-green{
+  color:#78bf9f;
+}
+.color-forest{
+  color:#228b22;
+}
+.color-default{
+  color:#060607;
+}
+
+
+
 .dc-just-emote{ /*dont forget to shift the below element up*/
   font-size:2.5em;
   margin-top:-5px;
@@ -1772,6 +1833,7 @@ border:1.5px solid #BCBCBC;
 .dc-orange-bg{
 background: #FFF6E7;
 border-left: 3px solid #AA7212;
+color:black;
 
 /* might need to fix this */
 padding-bottom:7px;
