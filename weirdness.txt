@@ -5,11 +5,12 @@ ao3 -
 -- is it that 'bottom 4'?
 - line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around THAT SECTION AND THAT SECTION ONLY, open the p right after that and usually that + cussing does the trick
 - had to move yt-line-## from bottom 4px to ~~5px~~ 5.5px bc of the way ao3 renders images? unclear.
-- ~~also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.~~
+- ~~also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.~~ fixed
 - yes hello ao3 has a style class called "wrapper" so ur not allowed to use that anymore. renamed to 'relative-wrapper'
 - using the built in table stuff adds in some weird padding and idk where its coming from. id like to overwrite it but im sick of looking for it... maybe someday.
 - update, sometimes your only option is to overwrite all the table properties bc ao3 is so aggressive about nesting divs. related, table-layout:fixed does some HORRIFIC STUFF after ao3 has sprinkled "p"s all over the place
 - ao3 completely ignores tables? its very kind about ignoring all formatting inside the table and just keeping it like it was. so just. just write tables.
+- oh so hey you can just overwrite that, whoops. i was dumb then, tables are doable and infact ao3 respects them EXTREMELY WELL bc the whole website relies on them, you just gotta overwrite them correctly first.
 - regardless of what the documentation says about "a single line will be ignored by the parser" 1, it will not. 2, it SUPER will not if you nest divs. every div gets at least one p shoved in there. you can sometimes solve this with sibling selectors and margin:0-ing the p, but sometimes you cant ¯\_(ツ)_/¯
 
 allowed operators:
@@ -26,6 +27,10 @@ atom:
 - hey STUPID, you gotta STAGE THE CHANGES, COMMIT TO MAIN and THEN you gotta push that push button at the very bottom of the window that you CANT SEE BC YOU ALWAYS SQUISH UR WINDOWS. anyway yes its a 3 step process, not 2. gl. godspeed.
 - so hey when the package manager is "broken" go into settings > URI handling > click that button that lets it handle URIs. idk why it keeps resetting on you, but its annoying as heck
 - theres also just an "install" option *right there in settings* lolol
+- literally nothing is stopping you from doing multiple commit messages per push?? um????? why have you done this, why have you lived your life this way
 
 html:
 - if you set a bg-image for an img object, theres a weird gray border you cant do anything about. if you switch it to a p, that border magically goes away.
+
+github's free webpage:
+- for some reason it doesnt like rel links if theyre global? (ie, the github hosted css file.) it insists on it being an actual relative link in the same file structure it's in. super annoying. 

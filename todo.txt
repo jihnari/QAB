@@ -1,6 +1,9 @@
+you should, but for some reason you haven't:
 - hey bro did you ever fix chisaki's LINE user name
 - should probably go back through and fix up tweets before ch10
-- youtube template/css is ugly, does that bother you enough to rewrite it into something legible?
+- youtube template/css is ugly. does that bother you enough to rewrite it into something legible?
 - i changed dm-container to have a max of 100 and a min of 97 and i think that messed things up but
 - did mei's name get changed everywhere
-- discord update pushed for 11-15, still need to do 1-10 but might update twitter while we're at it? 
+- discord update pushed for 11-15, still need to do 1-10 but might update twitter while we're at it?
+- new discord update (elbow)... wasnt changed anywhere, i think. change implemented as of ch16.
+- i think some 100 width somewhere is still screwing things up with ao3
