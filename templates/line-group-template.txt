@@ -1,6 +1,6 @@
 <!-- line:_participants_:_date_ -->
 [LINE messaging application on the phone belonging to _name_.]
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
 
 <!-- top bar -->
 <div class="line-container">
@@ -19,10 +19,18 @@ _Mon_, _Aug_9_, 20X4
 Read<br/>
 </span>
 
+<span class="line-box-right1-m">
+</span><span class="line-time-right">
+Read<br/>
+</span>
+
 <!-- left -->
 <span class="line-name-box">
 </span>
 <span class=line-box-left>
+</span><span class="line-time-left">
+</span>
+<span class=line-box-left-m>
 </span><span class="line-time-left">
 </span>
 

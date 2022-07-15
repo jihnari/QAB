@@ -721,6 +721,35 @@ cried enough over it already so i'll probably just. ignore it forever?
 }
 
 
+
+.lbox2 {
+  background: #BFBDC1;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 13px;
+  clear: both;
+  text-align: center;
+}
+
+.line-notif-container {
+  float: left;
+  position: relative;
+  left: 50%;
+  max-width: 50%;
+}
+.line-notif {
+  background: #BFBDC1;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 13px;
+  float: left;
+  position: relative;
+  left: -50%;
+  text-align: center;
+}
+
+
+
 /*signal*/
 /*
 todo:
@@ -1523,9 +1552,16 @@ div.dc-font > p
   border-top-left-radius: 8px;
   margin: 2px 5px 0px 5px;
   height: 25px;
+  /* min-height: inherit;
+  max-height: inherit; */
+  /* height: 90%; */
   width: 20px;
   display: inline-block;
   float: left;
+
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
 }
 .dc-reply-square-short{
   border-left: 3px solid #76808C;
@@ -1547,10 +1583,47 @@ div.dc-font > p
   overflow: hidden;
   max-height: 32px;
 }
-.dc-reply-wrapper {
-  /* margin-top:-10px; */
+.dc-reply-text2{
   margin-bottom:-15px;
+  margin-top: 17px;
+  padding-left: 30px;
+
+  max-width: 90%;
+  max-height: 32px;
+
+  font-size: .8em;
+  color: #797D80;
+
+  display:block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  position: relative;
 }
+.dc-reply-text2::before{
+  content: '';
+  border-left: 3px solid #76808C;
+  border-top: 3px solid #76808C;
+  border-top-left-radius: 8px;
+  /* margin: 2px 5px 0px 5px; */
+
+  left: 0px;
+  top: 4px;
+  height: 100%;
+  width: 20px;
+
+  display: inline-block;
+  position: absolute;
+}
+
+.dc-reply-wrapper {
+  margin-bottom:-15px;
+  overflow: auto;
+}
+
 .dc-blockquote{
   padding:0px 0 0px 7px;
   margin:12px 0 2px 0;
@@ -1585,8 +1658,10 @@ div.dc-font > p
   background: #F6F6F6;
   color: #C2C5C9;
   border:1.5px solid #F6F6F6;
-  padding: 2px;
+  /* padding: 2px; */
   padding: 2px 5px 2px 3px;
+  margin: 5px 5px 5px 0px;
+  display: inline-block;
 }
 
 .dc-emotebox:hover {
