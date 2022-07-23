@@ -7,9 +7,9 @@
   <p class="line-border">
     <i class="left-arrow"></i> <span class="line-name-header">_name_</span></p>
 
-<!-- date -->
+<!-- date (new line update removed the year)-->
 <p align="center"><br/><span class="line-date">
-_Mon_, _Aug_9_, 20X4
+_Mon_, _Aug_9_
   </span></p>
 <p>
 
@@ -17,22 +17,18 @@ _Mon_, _Aug_9_, 20X4
 <span class="line-box-right1">
 </span><span class="line-time-right">
 Read<br/>
-
 </span>
 <span class="line-box-right1-m">
 </span><span class="line-time-right">
 Read<br/>
-
 </span>
 
 <!-- left -->
 <span class=line-box-left>
 </span><span class="line-time-left">
-
 </span>
 <span class=line-box-left-m>
 </span><span class="line-time-left">
-
 </span>
 
 <!-- left multiple -->
