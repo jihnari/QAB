@@ -955,7 +955,6 @@ todo:
   padding: 0px 0 0px 0;
   color: gray;
   font-size:.8em;
-  bbackground: white;
   text-align:center;
   clear: both;
   position: relative;
@@ -963,6 +962,40 @@ todo:
 .signal-call-icon{
   height:2em;
   margin-bottom:-5px;
+}
+
+.signal-header {
+  /* padding: 2px 0 5px 0; */
+  margin-top:-5px;
+  font-size: 1.5em;
+  text-align:center;
+  position: relative;
+}
+.signal-subheader {
+  /* padding: 5px 0 5px 0; */
+  margin-top:-10px;
+  font-size:.8em;
+  text-align:center;
+  position: relative;
+}
+
+.signal-big-dot {
+  margin-top: 30px;
+  position: relative;
+  /* actual irl black magic */
+  /* left: 50%;
+  transform: translate(-50%); */
+/* nvm, the above works on everything but ao3. ao3 demands just left. */
+left: 50%;
+
+
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #bbb;
+}
+.signal-misc-space{
+  height:50px;
 }
 
 /*signal group chat*/
@@ -1279,6 +1312,13 @@ todo:
   border-image: linear-gradient(to bottom, lightgray 80%, rgba(255,255,255, 0) 20%);
   border-image-slice: 1;
 }
+.tw-line-vertical2 {
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  /* border-image: linear-gradient(to bottom, lightgray 80%, rgba(255,255,255, 0) 20%); */
+  /* border-image-slice: 1; */
+}
 .tw-body{
   font-size: 1.4em;
 }
@@ -1340,6 +1380,13 @@ todo:
 
 }
 
+.tw-verified-icon{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-verified.png");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 /*twitter DMs*/
