@@ -187,7 +187,7 @@ margin-bottom:-15px;
 .stay-block::-webkit-scrollbar {
   display: none;
 }
-}
+
 .stay{
 width:100%;
 }
@@ -1235,6 +1235,30 @@ margin-top:-5px;
 todo:
  - keep an eye on that vertical line
 */
+.tw-dot-thread{
+  float:left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #D7DADD;
+  box-shadow: 0px 0px 0px 3px white;
+  margin-bottom: -15px;
+  margin-left:-21px;
+
+}
+.tw-dot{
+  float:left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #D7DADD;
+  margin-bottom: -15px;
+
+}
 .tw-text-gray{
   color: #657685;
 }
@@ -1284,6 +1308,35 @@ todo:
   /* margin-bottom:-10px; */
   display: block;
 }
+.twt-comment-buttons2{
+  /* max-height: 35px; */
+  /* width: 80%; */
+  /* max-width: 450px; */
+
+  background-size:80% 35px;
+
+  /* background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008111410984783923/Screenshot_20220813-133439_Twitter.jpg") no-repeat; */
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
+
+  display: inline-block;
+
+  /* padding-top: 10px; */
+  /* lmao this breaks things  */
+  /* margin-bottom:-10px; */
+}
+
+/* remove */
+.tw-no-heart{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
+  display: inline-block;
+  height:40px;
+  width:100%;
+  background-size:100% 40px;
+  border-bottom: 1px solid #D7DADD;
+  margin-top:-15px;
+  margin-bottom:0;
+}
+
 .twt-share {
   /* why the hell is this on imgur */
   /* that seems excessively wrong */
@@ -1376,7 +1429,7 @@ todo:
   /* might not ever use this, but just in case */
   /* border: solid 2px #C5CFD6;
   margin-left: 10px; */
-/* 
+/*
   height: 50px;
   width: 50px;
   border-radius: 50%;
