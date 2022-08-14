@@ -39,6 +39,9 @@ margin-top:0;
 margin-top:-15px;
 max-width:100%;
 }
+.shift-right{
+margin-left:15px;
+}
 .shift-up2{
 margin-top:-30px;
 }
@@ -1244,7 +1247,8 @@ todo:
   margin-right: 10px;
   background-color: #D7DADD;
   box-shadow: 0px 0px 0px 3px white;
-  margin-bottom: -15px;
+  mmargin-bottom: -15px;
+  margin-top:0px;
   margin-left:-21px;
 
 }
@@ -1309,20 +1313,16 @@ todo:
   display: block;
 }
 .twt-comment-buttons2{
-  /* max-height: 35px; */
-  /* width: 80%; */
-  /* max-width: 450px; */
+  max-width: 500px;
 
-  background-size:80% 35px;
+  /* background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat; */
 
-  /* background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008111410984783923/Screenshot_20220813-133439_Twitter.jpg") no-repeat; */
-  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
-
+  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008111410984783923/Screenshot_20220813-133439_Twitter.jpg") no-repeat;
   display: inline-block;
-
-  /* padding-top: 10px; */
-  /* lmao this breaks things  */
-  /* margin-bottom:-10px; */
+  height:30px;
+  width:100%;
+  background-size:80% 30px;
+  margin-bottom:0;
 }
 
 /* remove */
@@ -1386,7 +1386,7 @@ todo:
 .tw-subtext{
   color: #657685;
   /* font-size: .9em; */
-  padding-bottom:10px;
+  /* padding-bottom:10px; */
 }
 .tw-retweets-bar{
   /* font-size: .9em; */
