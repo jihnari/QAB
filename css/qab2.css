@@ -10,7 +10,7 @@
 .dm-container {
   display: table;
   margin: auto;
-  max-width: 100%;
+  max-width: 95%;
   /* this used to be 100 and for what?? to make me cry?? idk but we're gonna see if changing it breaks everything */
   min-width: 95%;
 }
@@ -38,6 +38,9 @@ margin-top:0;
 .shift-up{
 margin-top:-15px;
 max-width:100%;
+}
+.shift-up5{
+margin-top:-5px;
 }
 .shift-right{
 margin-left:15px;
@@ -309,9 +312,11 @@ the last thing we might wanna do here is use the fadeout function and place the 
 .rd-op{
   color:#25A0ED;
   font-weight:bold;
+  cursor: pointer;
 }
 .rd-link{
   color:#25A0ED;
+  cursor: pointer;
 }
 .rd-down-arrow {
   border: solid black;
@@ -445,6 +450,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   min-width: 95%;
 }
 .line-date{
+  /* i think this might be more like .5 (now? might have changed) */
   font-size: 0.8em;
   background: #BFBDC1;
   border-radius: 12px;
@@ -452,6 +458,32 @@ cried enough over it already so i'll probably just. ignore it forever?
   padding: 8px 10px;
   clear: both;
   text-align: center;
+}
+.line-unread{
+  margin: auto;
+  width:95%;
+
+  font-size: 0.8em;
+  background: #BFBDC1;
+  border-radius: 12px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  margin-bottom:10px;
+  margin-top:10px;
+
+  /* idk how content works except that it never does  */
+  content: "Unread messages below";
+}
+.line-unread-icon{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/line-unread-icon.png") no-repeat;
+  height:12px;
+  width:16px;
+  background-size:16px 12px;
+  display: inline-block;
+
+  float:left;
+  margin-top: 0px;
 }
 .line-name-header{
   font-size: 1.2em;
@@ -706,6 +738,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   margin-right: auto;
   height:140px;
 }
+/* are these supposed to be "line" */
 .link-text-top{
   font-weight: bold;
   font-size: .9em;
@@ -722,6 +755,7 @@ cried enough over it already so i'll probably just. ignore it forever?
 }
 .line-at{
   color: #4582C2;
+  cursor: pointer;
 }
 
 
@@ -1083,6 +1117,7 @@ todo:
   color: white !important;
   background: #1248B2;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .signal-at-left {
@@ -1091,6 +1126,7 @@ todo:
   padding: 2px 3px 3px 3px;
   background: #C6C6C6;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 
@@ -1156,6 +1192,7 @@ font-family: 'Roboto', sans-serif;
 .yt-link {
   color: #145DBD;
   text-decoration: none !important;
+  cursor: pointer;
 }
 .yt-down-arrow {
   margin-top: 10px;
@@ -1269,10 +1306,12 @@ todo:
 .tw-text-blue{
   color: #1c94dc !important;
   text-decoration: none !important;
+  cursor: pointer;
 }
 .tw-link{
   color: #1c94dc !important;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .tw-link:visited {
@@ -1291,6 +1330,12 @@ todo:
 }
 .tw-border-bottom {
   border-bottom: 1px solid #D7DADD;
+}
+.tw-border-bottom2 {
+  border-bottom: 1px solid #D7DADD;
+
+  /* ao3 nonsense */
+  margin-top:-5px;
 }
 /*all these grays are different now... thanks twitter......*/
 /* they changed again :') */
@@ -1326,7 +1371,7 @@ todo:
 }
 
 /* remove */
-.tw-no-heart{
+/* .tw-no-heart{
   background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat;
   display: inline-block;
   height:40px;
@@ -1335,7 +1380,7 @@ todo:
   border-bottom: 1px solid #D7DADD;
   margin-top:-15px;
   margin-bottom:0;
-}
+} */
 
 .twt-share {
   /* why the hell is this on imgur */
@@ -1610,6 +1655,153 @@ todo:
 }
 
 
+/* new twitter stuff, should delete/clean a bunch of it  */
+
+  .tw-back-icon{
+    height: 27px;
+    width: 27px;
+    vertical-align:bottom;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:contain;
+    display: inline-block;
+
+    margin-right:15px;
+    margin-left:3px;
+  }
+  .tw-header-text{
+    font-size: 12px;
+  }
+
+
+/* all the nonsense for the viewable impression count twitter icons  */
+
+/* hey... do you need both of these
+what is the function of this, was it an ao3 specific fix */
+p.tw-small-icon-buffer{
+  height:30px;
+}
+.tw-small-icon-buffer{
+  height:30px;
+}
+
+.tw-small-icon-table{
+  display: table;
+
+  position:absolute;
+  left:0;
+  max-width:500px;
+
+  width: 100%;
+  margin-right:20px;
+  /* for ao3's nonsense */
+  mmargin-top: -65px;
+  /* alternatively, we just make a wrapper for twitter and kill the p margins */
+}
+
+
+/* try this later? was it to fix smth on ao3? probably */
+p.ttw-small-icon-table{
+  margin:0;
+}
+
+  .tw-small-icon-cell-link{
+    display: table-cell;
+    height: 30px;
+    min-width: 70px;
+
+    text-align: left;
+    font-size: .8em;
+    padding-left:5px;
+    color:gray;
+  }
+  .tw-small-icon-cell-link::before{
+    content: '';
+    display: inline-flex;
+    height:30px;
+    width:30px;
+    background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246780347031572/unknown.png") no-repeat;
+    background-size:30px 30px;
+
+    vertical-align: -70%;
+    padding-right:15px;
+  }
+  .tw-test{
+    margin-left:30px;
+    margin-top:-25px;
+}
+
+
+.tw-small-icon-cell-bubble{
+  display: table-cell;
+  height: 30px;
+  min-width:100px;
+
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+}
+.tw-small-icon-cell-bubble::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246431674531850/unknown.png") no-repeat;
+  background-size:30px 30px;
+
+  vertical-align: -70%;
+  padding-right:15px;
+
+  /* this value has to change depending on if its a main tweet or tweet thread, i think */
+  margin-left:37px;
+}
+
+.tw-small-icon-cell-heart{
+  display: table-cell;
+  height: 30px;
+  min-width:70px;
+
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+}
+.tw-small-icon-cell-heart::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246683404075068/unknown.png") no-repeat;
+  background-size:30px 30px;
+
+  vertical-align: -70%;
+  padding-right:15px;
+}
+
+.tw-small-icon-cell-retweet{
+  display: table-cell;
+  height: 30px;
+  min-width: 70px;
+
+  text-align: left;
+  font-size: .8em;
+  padding-left:5px;
+  color:gray;
+}
+.tw-small-icon-cell-retweet::before{
+  content: '';
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246555788189756/unknown.png") no-repeat;
+  background-size:30px 30px;
+
+  vertical-align: -70%;
+  padding-right:15px;
+}
+
+
 /*discord*/
 /*
 todo:
@@ -1756,6 +1948,13 @@ div.dc-font > p
   width: 50px;
   padding-top:10px;
   margin-bottom:-11px;
+
+
+/* check this later, no internet now  */
+  /* background-size:50px 35px;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/dc-hamburger.jpg") no-repeat;
+  display: inline-block;
+  background-color: pink; */
 }
 .dc-header-buffer{
   margin-top:10px;
@@ -2000,6 +2199,60 @@ border:1.5px solid #BCBCBC;
 
 }
 
+/* discord emotes */
+.custom_emote{
+  width:1.2em;
+  height:1.2em;
+  margin:2px;
+  display:inline-block;
+  vertical-align:sub;
+}
+
+/* update link */
+.thonk{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/thonk.png") no-repeat;
+  background: url("https://i.kym-cdn.com/photos/images/original/001/250/498/dd3.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+
+.fcb{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/fcb.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.cowboy_will_remember_that{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/cowboy_will_remember_that.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.finter{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/finter.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.happy_cb{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/happy_cb.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.oof_cowboy{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/oof_cowboy.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.pensive_cowboy{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/pensive_cowboy.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.yeehowdy{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/yeehowdy.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+
+
+/* add:
+pensive cowboy
+orly
+power
+thonk
+cb thumbsup
+*/
+
 
 /*discord, embedded*/
 .dc-link-blue{
@@ -2043,6 +2296,13 @@ padding-left:7px;
 
 .dc-orange-bg:hover{
 background:#FEEED1;
+}
+
+.dc-custom_emote{
+  width:1.2em;
+  height:1.2em;
+  display:inline-block;
+  vertical-align:sub;
 }
 
 /*discord, but integrated*/
@@ -2486,6 +2746,7 @@ padding-left:50px;
 .gmail-link{
   color: #2372DB;
   text-decoration: none;
+  cursor: pointer;
 }
 .gmail-quoted-text{
   color: #2372DB;
