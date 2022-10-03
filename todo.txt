@@ -1,9 +1,22 @@
 you should, but for some reason you haven't:
 - hey bro did you ever fix chisaki's LINE user name
-- should probably go back through and fix up tweets before ch10
+- probably go back through and fix up tweets before ch10
+- - guess what i *didnt do*
 - youtube template/css is ugly. does that bother you enough to rewrite it into something legible?
-- i changed dm-container to have a max of 100 and a min of 97 and i think that messed things up but
-- did mei's name get changed everywhere
-- discord update pushed for 11-15, still need to do 1-10 but might update twitter while we're at it?
-- new discord update (elbow)... wasnt changed anywhere, i think. change implemented as of ch16.
 - i think some 100 width somewhere is still screwing things up with ao3
+- i changed dm-container to have a max of 100 and a min of 97 and i think that messed things up but
+- - actually this is fine maybe
+- - i dont think it fixed the issue tho
+- did mei's name get changed everywhere
+- fix twitter skin (span to p) (also the new icon bar, the spacing is inconsistent)
+- make templates for twitter search and... something else but i forget
+- - we did this but where did it go
+- change out the new twitter icons for real images, not discord images. also ~~consider making them transparent~~ make them transparent. that would be real uggo as is on a black bg.
+- kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
+- totally forgot about the "read #" on line group convos, gotta add that back 
+
+
+i THINK i already:
+- did the change from "dc-name-color" to "dc-name dc-color"
+- all the dc elbows (did not verify that they all worked tho so here's hoping nothing broke )
+- cleaned the code for new twitter icons with viewable impressions

@@ -24,16 +24,16 @@ Read<br/>
 </span>
 
 <!-- left -->
-<span class=line-box-left>
+<span class="line-box-left">
 </span><span class="line-time-left">
 </span>
-<span class=line-box-left-m>
+<span class="line-box-left-m">
 </span><span class="line-time-left">
 </span>
 
 <!-- left multiple -->
 <span class="line-name-box">_name_
-</span><span class=line-box-left>
+</span><span class="line-box-left">
 </span><span class="line-time-left">
 _time_
 </span>
@@ -41,7 +41,7 @@ _time_
 
 <!-- right link -->
 <span class="line-box-right-top"> <img class="line-linked-img" src="https://static.wikia.nocookie.net/bokunoheroacademia/images/4/44/Hawks_expressions.png"></img></span>
-<span class="line-box-right-bottom"><span class=link-text-top>bottom element</span><br/><span class=link-text-bottom-right>bottom bottom element</span>
+<span class="line-box-right-bottom"><span class="link-text-top">bottom element</span><br/><span class="link-text-bottom-right">bottom bottom element</span>
 </span>
   <span class="line-time-right">
 Read<br/>
@@ -50,7 +50,7 @@ Read<br/>
 
 <!-- left link -->
 <span class="line-box-left-top"> <img class="line-linked-img" src="https://static.wikia.nocookie.net/bokunoheroacademia/images/4/44/Hawks_expressions.png"></img></span>
-<span class="line-box-left-bottom"><span class=link-text-top>_article_title_</span><br/><span class=link-text-bottom-left>_article_details_</span>
+<span class="line-box-left-bottom"><span class="link-text-top">_article_title_</span><br/><span class="link-text-bottom-left">_article_details_</span>
 </span>
   <span class="line-time-left">
 Read<br/>

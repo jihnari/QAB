@@ -472,7 +472,9 @@ cried enough over it already so i'll probably just. ignore it forever?
   margin-bottom:10px;
   margin-top:10px;
 
-  /* idk how content works except that it never does  */
+}
+/* figure this out  */
+.line-unread::after{
   content: "Unread messages below";
 }
 .line-unread-icon{
@@ -1421,6 +1423,9 @@ todo:
 }
 .tw-body{
   font-size: 1.4em;
+
+  /* delete this later probably  */
+  /* max-width: 500px; */
 }
 .tw-footer{
   color: #657685;
@@ -1690,7 +1695,7 @@ p.tw-small-icon-buffer{
 
   position:absolute;
   left:0;
-  max-width:500px;
+  /* max-width:600px; */
 
   width: 100%;
   margin-right:20px;
@@ -1731,6 +1736,10 @@ p.ttw-small-icon-table{
     margin-top:-25px;
 }
 
+.tw-small-icon-cell-reply-buffer{
+  /* ao3 wants this to exist, but for there to be no poperties in it. yeah. */
+  /* width:20px; */
+}
 
 .tw-small-icon-cell-bubble{
   display: table-cell;
@@ -1778,6 +1787,13 @@ p.ttw-small-icon-table{
   vertical-align: -70%;
   padding-right:15px;
 }
+.tw-small-icon-cell-heart::before:hover{
+  display: inline-flex;
+  height:30px;
+  width:30px;
+  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1026327601024860250/unknown.png") no-repeat;
+  background-size:30px 30px;
+}
 
 .tw-small-icon-cell-retweet{
   display: table-cell;
@@ -1800,6 +1816,138 @@ p.ttw-small-icon-table{
   vertical-align: -70%;
   padding-right:15px;
 }
+
+
+
+/* twitter trending code */
+/* try deleting this, see what happens */
+  div.tw-search-container p
+  {
+    margin-top:0;
+    margin-bottom:0;
+  }
+
+  .tw-search-container {
+      display: table;
+      width: 100%;
+      position:relative;
+  }
+
+  .tw-search-box{
+    display: table-cell;
+    background:#ECEDEF;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    color: black;
+  }
+  .tw-search-box2{
+    display: table-cell;
+    background:#ECEDEF;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    color: black;
+
+    margin-right:20px;
+  }
+  .tw-search-text{
+      display: table-cell;
+      width:85%;
+  }
+
+  .tw-down-arrow{
+    /*change color*/
+    border: solid #5F6266;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-right:10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float:right;
+  }
+
+/* gotta make this no wrap somehow, think we've done it somewhere else; replies? */
+  .tw-big-dot {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #D7DADD;
+  }
+  .tw-back-icon2{
+    width:3.5em;
+    height:27px;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:27px 27px;
+
+    margin-right:40px;
+    margin-left:5px;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .tw-other-icon{
+    width:6em;
+    height:2em;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png") no-repeat 100% center;
+    background-size: 4.5em 2em;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* should i use a regular table? yes. do i remember how? 😶 */
+  .tw-tabs{
+    width:100%;
+    white-space: nowrap;
+  }
+  .tw-tab-name{
+    width: 19%;
+    display: inline-block;
+    text-align : center;
+  }
+  .tw-tab-name-focus{
+    color:#18A0FB;
+    border-bottom:3px solid;
+    padding-bottom: 15px;
+    margin-bottom:-18px;
+  }
+  /* for use on "latest" i think */
+  .tw-is-trending{
+    color:gray;
+    font-size: .8em;
+    margin-left:32px;
+    margin-top:-10px;
+    margin-bottom:-10px;
+  }
+  .tw-is-trending::before{
+    width:12px;
+    height:12px;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-trending-fire.png") no-repeat;
+    background-size:12px 12px;
+
+    margin-right:10px;
+    display:inline-block;
+    content:"";
+    vertical-align: middle;
+  }
+  .tw-is-trending::after{
+  content:" is trending";
+  }
+
+
+
+
+
+
+
+
 
 
 /*discord*/

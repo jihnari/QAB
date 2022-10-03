@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="C:\Users\kell3\github\QAB\css\qab2.css">
+<!-- <link rel="stylesheet" href="C:\Users\kell3\github\QAB\css\qab2.css"> -->
 
 <style>
 
@@ -20,8 +20,18 @@
     background:#ECEDEF;
     border-width: 1px;
     border-radius: 20px;
-    padding: 7px 10px 7px 12px;
+    padding: 7px 10px 7px 10px;
     color: black;
+  }
+  .tw-search-box2{
+    display: table-cell;
+    background:#ECEDEF;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    color: black;
+
+    margin-right:20px;
   }
   .tw-search-text{
       display: table-cell;
@@ -57,18 +67,57 @@
     width:3.5em;
     vertical-align: middle;
   }
-  .tw-back-icon{
-    background-color:#5765f2;
-    width:2.5em;
-    height:2.5em;
-    float:left;
+  .tw-back-icon2{
+    width:2em;
+    height:2em;
+    /* float:left; */
     margin-right:40px;
   }
+
+
+  .tw-back-icon3{
+    width:3.5em;
+    height:27px;
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:27px 27px;
+
+    margin-right:40px;
+    margin-left:5px;
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+
+  .tw-back-icon{
+    height: 27px;
+    width: 27px;
+    vertical-align:bottom;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:contain;
+    display: inline-block;
+
+    margin-right:15px;
+    margin-left:3px;
+  }
+
   .tw-other-icon{
-    background-color:#5765f2;
-    width:2.5em;
-    height:2.5em;
-    float:right;
+    width:4.5em;
+    height:2em;
+    margin-left:20px;
+    /* float:right; */
+  }
+
+  .tw-other-icon2{
+    width:6em;
+    height:2em;
+
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png") no-repeat 100% center;
+    background-size: 4.5em 2em;
+
+    display: table-cell;
+    vertical-align: middle;
   }
 
   /* should i use a regular table? yes. do i remember how? 😶 */
@@ -88,16 +137,58 @@
     margin-bottom:-18px;
   }
 
+
+
+
+
+
+  /* testing */
+  .twt-comment-buttons2{
+    max-width: 500px;
+
+    /* background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat; */
+
+    background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008111410984783923/Screenshot_20220813-133439_Twitter.jpg") no-repeat;
+    display: inline-block;
+    height:30px;
+    width:100%;
+    background-size:80% 30px;
+    margin-bottom:0;
+  }
+
 </style>
 
 
 
 
+<!-- top bar -->
+  <div class=tw-search-container><div class="tw-topbar-icon-wrapper"><image class="tw-back-icon2" src="https://github.com/jihnari/QAB/raw/main/img/tw-arrow.jpg"/></div><div class="tw-search-box"><div class="tw-search-wrapper"><div class="tw-search-text">qcon</div></div></div><div class="tw-topbar-icon-wrapper"><image class="tw-other-icon" src="https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png"/></div></div>
 
 
+<br/><br/>
 
 <!-- top bar -->
-  <div class=tw-search-container><div class="tw-topbar-icon-wrapper"><image class="tw-back-icon" src="https://github.com/jihnari/QAB/raw/main/img/tw-arrow.jpg"/></div><div class="dc-msg-box"><div class="tw-search-wrapper"><div class="tw-search-text">qcon</div></div></div><div class="tw-topbar-icon-wrapper"><image class="tw-other-icon" src="https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.jpg"/></div></div>
+  <div class=tw-search-container><div class="tw-topbar-icon-wrapper"><image class="tw-back-icon"/></div><div class="tw-search-box"><div class="tw-search-wrapper"><div class="tw-search-text">qcon</div></div></div><div class="tw-topbar-icon-wrapper"><image class="tw-other-icon2"/></div></div>
+
+  <br/><br/>
+
+  <!-- top bar -->
+  <div class=tw-search-container><div class="tw-topbar-icon-wrapper"><image class="tw-back-icon3"/></div><div class="tw-search-box"><div class="tw-search-wrapper"><div class="tw-search-text">qcon</div></div></div><div class="tw-topbar-icon-wrapper"><image class="tw-other-icon" src="https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png"/></div></div>
+
+  <br/><br/>
+
+<!-- top bar -->
+<div class=tw-search-container><div class="tw-topbar-icon-wrapper"><span class="tw-back-icon3"><span/></div><div class="tw-search-box"><div class="tw-search-wrapper"><div class="tw-search-text">qcon</div></div></div><div class="tw-topbar-icon-wrapper"><image class="tw-other-icon" src="https://github.com/jihnari/QAB/raw/main/img/tw-other-icons.png"/></div></div>
+
+  <br/><br/>
+
+<!-- top bar -->
+<div class=tw-search-container><div class="tw-back-icon3"></div><div class="tw-search-box2"><div class="tw-search-text">qcon</div></div><div class="tw-other-icon2"></div></div>
+
+
+
+
+<span class=
 
 
 <!-- this doesnt HAVE to be a table but shouldnt it be? or you could do the percentage thing again but i cant remember where we used that last  -->
@@ -105,27 +196,27 @@
   <span class="tw-tab-name tw-tab-name-focus">
     Top
   </span>
-  <span class=tw-tab-name>
+  <span class="tw-tab-name">
     Latest
   </span>
-<span class=tw-tab-name>
+<span class="tw-tab-name">
   People
 </span>
-<span class=tw-tab-name>
+<span class="tw-tab-name">
   Photos
 </span>
-<span class=tw-tab-name>
+<span class="tw-tab-name">
   Videos
 </span>
 </p>
-<p class="clear"></p><p class="tw-border-bottom"></p>
+<!-- <p class="tw-border-bottom"></p> -->
 
 
 <!-- single tweet -->
 <!-- tweeter info -->
 <span class="tw-big-dot"></span>
 <p><b>_name_ </b> <span class="tw-text-gray"> @_handle_ &bull; 10m </span>
-<span class=tw-down-arrow></span>
+<span class="tw-down-arrow"></span>
 </p>
 <!-- tweet content-->
 <!-- make smaller text -->
@@ -140,17 +231,45 @@ blah blah <strong>qcon</strong> blah blah blah
 
 <!-- repeat  -->
 
-
+<!-- with impression count  -->
+<!-- fix this spacing when you have internet  -->
+<!-- also im not positive the spacing on the css file is the same as the test file. also also, gotta fix spacing on ao3 -->
 <!-- single tweet -->
 <!-- tweeter info -->
 <p></p>
 <span class="tw-big-dot"></span>
 <p class="stay-block"><b>_name_ </b> <span class="tw-text-gray"> @_handle_ &bull; 10m </span>
-<span class=tw-down-arrow></span>
+<span class="tw-down-arrow"></span>
 </p>
 <!-- tweet content-->
 <!-- make smaller text -->
-<p class=shift-up>
+<p class="shift-up">
+blah blah <strong>qcon</strong> blah blah blah
+<br/>
+</p>
+
+<p class="tw-small-icon-buffer"><table class="tw-small-icon-table2">
+<tr>
+  <th class="tw-small-icon-cell-bubble">12</th>
+  <th class="tw-small-icon-cell-retweet">12</th>
+  <th class="tw-small-icon-cell-heart">12</th>
+  <th class="tw-small-icon-cell-link">12</th>
+</tr>
+</table></p>
+
+
+
+ <!-- og -->
+<!-- single tweet -->
+<!-- tweeter info -->
+<p></p>
+<span class="tw-big-dot"></span>
+<p class="stay-block"><b>_name_ </b> <span class="tw-text-gray"> @_handle_ &bull; 10m </span>
+<span class="tw-down-arrow"></span>
+</p>
+<!-- tweet content-->
+<!-- make smaller text -->
+<p class="shift-up">
 blah blah <strong>qcon</strong> blah blah blah
 <br/>
 </p>
