@@ -11,7 +11,14 @@
 <p align="center"><br/><span class="line-date">
 _Mon_, _Aug_9_
   </span></p>
-<p>
+
+  <p>
+
+  </p>
+  <p class=line-unread><span class="line-unread-icon"></span></p>
+  <p>
+
+
 
 <!-- right (me) -->
 <span class="line-box-right1">
@@ -53,8 +60,6 @@ Read<br/>
 <span class="line-box-left-bottom"><span class="link-text-top">_article_title_</span><br/><span class="link-text-bottom-left">_article_details_</span>
 </span>
   <span class="line-time-left">
-Read<br/>
-
 </span>
 
 </p></div>

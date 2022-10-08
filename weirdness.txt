@@ -13,7 +13,8 @@ ao3 -
 - oh so hey you can just overwrite that, whoops. i was dumb then, tables are doable and infact ao3 respects them EXTREMELY WELL bc the whole website relies on them, you just gotta overwrite them correctly first.
 - regardless of what the documentation says about "a single line will be ignored by the parser" 1, it will not. 2, it SUPER will not if you nest divs. every div gets at least one p shoved in there. you can sometimes solve this with sibling selectors and margin:0-ing the p, but sometimes you cant ¯\_(ツ)_/¯
 - regarding the twitter skin changes on 8/19/22: the last reply section in a tweet including the new sub-reactions bar WILL break for no reason. you can solve this by wrapping everything in a stay-block. i have not found any other solutions.
-- - INCORRECT. IT BREAKS ANYWAY. the fix is, rewrite that section to be p instead of span. but later. do it later. 
+- - INCORRECT. IT BREAKS ANYWAY. the fix is, rewrite that section to be p instead of span. but later. do it later.
+- <th> and <td> are by default, "vertical-align: top" due to ao3 and inheritance? setting the <table> to "vertical-align: middle" fixes this issue on most platforms. however, there's something weird about the inheritance rules on ios/safari because it defaults to "vertical-align: top" again. you can fix this by making the class for every cell/td/th (or just the thing thats holding the thing not laying properly) to include "vertical-align: middle". 
 
 allowed operators:
 - lost again :/
