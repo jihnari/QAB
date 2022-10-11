@@ -1723,7 +1723,7 @@ p.tw-small-icon-buffer{
     display: inline-flex;
     height:30px;
     width:30px;
-    background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246780347031572/unknown.png") no-repeat;
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-link.png") no-repeat;
     background-size:30px 30px;
 
     vertical-align: -70%;
@@ -1756,7 +1756,7 @@ p.tw-small-icon-buffer{
   display: inline-flex;
   height:30px;
   width:30px;
-  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246431674531850/unknown.png") no-repeat;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-bubble.png") no-repeat;
   background-size:30px 30px;
 
   vertical-align: -70%;
@@ -1783,12 +1783,13 @@ p.tw-small-icon-buffer{
   display: inline-flex;
   height:30px;
   width:30px;
-  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246683404075068/unknown.png") no-repeat;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-heart.png") no-repeat;
   background-size:30px 30px;
 
   vertical-align: -70%;
   padding-right:15px;
 }
+/* this is broken  */
 .tw-small-icon-cell-heart::before:hover{
   display: inline-flex;
   height:30px;
@@ -1813,7 +1814,7 @@ p.tw-small-icon-buffer{
   display: inline-flex;
   height:30px;
   width:30px;
-  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008246555788189756/unknown.png") no-repeat;
+  background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-retweet.png") no-repeat;
   background-size:30px 30px;
 
   vertical-align: -70%;
