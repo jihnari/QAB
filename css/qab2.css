@@ -1670,7 +1670,7 @@ todo:
   .tw-back-icon{
     height: 27px;
     width: 27px;
-    vertical-align:bottom;
+    vertical-align:middle;
 
     background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
     background-size:contain;
@@ -1681,6 +1681,22 @@ todo:
   }
   .tw-header-text{
     font-size: 12px;
+  }
+  .tw-tweet-header{
+    font-size:1.2em;
+    padding-bottom:5px;
+    border-bottom: 1px solid #D7DADD;
+  }
+  .tw-tweet-header::after{
+    content:"Tweet";
+  }
+
+  .tw-thread-header{
+    font-size:1.2em;
+    border-bottom: 1px solid #D7DADD;
+  }
+  .tw-thread-header::after{
+    content:"Thread";
   }
 
 
@@ -1980,7 +1996,9 @@ div.dc-font > p
   text-align: center;
   border-bottom: 1px solid red;
   line-height: 0.1em;
-  margin: 10px 0 20px;
+  /* fix these margins */
+  /* margin: 10px 0 20px; */
+  margin:20px 0 30px;
   color:red;
   font-size:.9em;
 }
@@ -2042,6 +2060,7 @@ div.dc-font > p
   overflow: hidden;
   max-height: 32px;
   cursor: pointer;
+  line-height: normal;
 }
 .dc-reply-text2:hover{
   /* color: black; */
@@ -2096,6 +2115,17 @@ div.dc-font > p
   padding:0px 0 0px 7px;
   margin:12px 0 2px 0;
   border-left: 3px solid #76808C;
+}
+.dc-locked-channel-icon{
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  background-color: pink;
+  vertical-align: -35%;
+  margin-right:5px;
+
+  background: url("https://cdn.discordapp.com/attachments/601150838513336339/1033922679457198201/Screenshot_20221023-185928_Discord.jpg") no-repeat;
+  background-size:35px 35px;
 }
 .dc-hamberger { /*yes im aware this is mispelled, its too late now*/
   height: 35px;
@@ -2250,6 +2280,9 @@ border:1.5px solid #BCBCBC;
   color:#060607;
   cursor: pointer;
   -webkit-text-stroke-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .dc-name:hover{
@@ -3075,6 +3108,42 @@ div.ch-table p
   padding-left:10px;
   padding-right:10px;
   padding-bottom: 5px;
+  font-weight:normal;
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+
+/* audiolog */
+.audiolog-table {
+  display: table;
+  margin: auto;
+  max-width: 100%;
+  min-width: 100%;
+}
+.audiolog-name {
+  vertical-align:top;
+  width: 115px;
+  padding-top:5px;
+  padding-bottom: 10px;
+  font-weight:bold;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align:left;
+}
+.audiolog-time {
+  font-size: .8em;
+  font-weight: normal ;
+  -webkit-text-stroke-width: thin;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.audiolog-text {
+  vertical-align: top;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom: 10px;
   font-weight:normal;
   font-family: Tahoma,Verdana,Segoe,sans-serif;
   text-align: justify;

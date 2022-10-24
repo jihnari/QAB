@@ -13,8 +13,8 @@ you should, but for some reason you haven't:
 - - we did this but where did it go
 - change out the new twitter icons for real images, not discord images. also ~~consider making them transparent~~ make them transparent. that would be real uggo as is on a black bg.
 - kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
-- totally forgot about the "read #" on line group convos, gotta add that back 
-
+- totally forgot about the "read #" on line group convos, gotta add that back
+- TWITTER USES SEP, NOT SEPT. AHHHH.
 
 i THINK i already:
 - did the change from "dc-name-color" to "dc-name dc-color"
