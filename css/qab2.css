@@ -1435,6 +1435,18 @@ todo:
   border-image: linear-gradient(to bottom, lightgray 95%, rgba(255,255,255, 0) 5%);
   border-image-slice: 1;
 }
+
+/* its hacky but it works (better than the above) */
+.tw-line-vertical-100{
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  border-image-slice: 1;
+  }
+.tw-line-vertical-0{
+  margin-left:22px;
+}
+
 .tw-body{
   font-size: 1.4em;
 
@@ -2085,7 +2097,7 @@ div.dc-font > p
 
 .dc-reply-text2{
   /* a lot of this is ao3 specific */
-  margin-bottom:-20px !important;
+  margin-bottom:-17px !important;
   margin-top: 17px;
   margin-left: 3px;
   padding-left: 25px;
