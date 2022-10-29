@@ -433,6 +433,15 @@ the last thing we might wanna do here is use the fadeout function and place the 
   padding-left:10px;
   color: #424242;
 }
+.sms-not-delivered-text{
+  color:red;
+  font-size: .8em;
+
+  float: right;
+  margin-top: 5px;
+  clear: both;
+  position: relative;
+}
 
 
 /*line*/
@@ -1429,6 +1438,9 @@ todo:
 .tw-body{
   font-size: 1.4em;
 
+  /* ao3 spacing fix */
+  margin-top: -5px;
+
   /* delete this later probably  */
   /* max-width: 500px; */
 }
@@ -1982,6 +1994,9 @@ todo:
 .dc-font{
   font-family: 'Uni sans', 'Whitney', sans-serif;
   /*line-height: 160% !important;*/
+
+  /* for the orange bg */
+  margin-left:7px;
 }
 /* this breaks things */
 div.dc-font > p
@@ -2069,10 +2084,14 @@ div.dc-font > p
 }
 
 .dc-reply-text2{
-  margin-bottom:-15px;
+  /* a lot of this is ao3 specific */
+  margin-bottom:-20px !important;
   margin-top: 17px;
-  margin-left: 0;
+  margin-left: 3px;
   padding-left: 25px;
+
+/* this fixes the ao3 erasing issue */
+  padding-bottom: 3px;
 
   max-width: 90%;
   max-height: 32px;
@@ -2398,7 +2417,7 @@ border:1.5px solid #BCBCBC;
 /* update link */
 .thonk{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/thonk.png") no-repeat;
-  background: url("https://i.kym-cdn.com/photos/images/original/001/250/498/dd3.png") no-repeat;
+  /* background: url("https://i.kym-cdn.com/photos/images/original/001/250/498/dd3.png") no-repeat; */
   background-size:1.2em 1.2em;
 }
 
@@ -2485,6 +2504,7 @@ border-left: 3px solid #AA7212;
 color:black;
 
 /* might need to fix this */
+margin-left:-7px;
 padding-bottom:7px;
 padding-left:7px;
 }
