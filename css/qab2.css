@@ -972,7 +972,7 @@ todo:
   clear: both;
 }
 .signal-img-left {
-  background: #2c6bee;
+  /* background: #2c6bee; */
   border-radius: 15px;
   border:2px solid #F6F6F6;
   border-bottom-left-radius: 5px;
@@ -1717,6 +1717,7 @@ todo:
 
   .tw-thread-header{
     font-size:1.2em;
+    padding-bottom: 5px;
     border-bottom: 1px solid #D7DADD;
   }
   .tw-thread-header::after{
@@ -2433,16 +2434,22 @@ border:1.5px solid #BCBCBC;
   background-size:1.2em 1.2em;
 }
 
+.finter{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/finter.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+/* FIX THIS (grab img rsc) */
+.cb_thumbsup{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/finter.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+
 .fcb{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/fcb.png") no-repeat;
   background-size:1.2em 1.2em;
 }
 .cowboy_will_remember_that{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/cowboy_will_remember_that.png") no-repeat;
-  background-size:1.2em 1.2em;
-}
-.finter{
-  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/finter.png") no-repeat;
   background-size:1.2em 1.2em;
 }
 .happy_cb{
@@ -3193,8 +3200,7 @@ div.ch-table p
 
 .scene-fade {
   position: relative;
-   bbackground: linear-gradient(rgba(255,255,255, 0) 50px, black 500px, rgba(255,255,255, 0)) 50px;
    background: linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(255,255,255,0) 100%);
    width: 100%;
-   height:1000px;
+   height:1500px;
 }

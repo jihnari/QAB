@@ -15,8 +15,21 @@ you should, but for some reason you haven't:
 - kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
 - totally forgot about the "read #" on line group convos, gotta add that back
 - TWITTER USES SEP, NOT SEPT. AHHHH.
+- twitter header is broken in most places
+- litter in custom emotes
+- you have fixed code for the vertical twitter line, so use it (gotta  figure out what its called/how to format, but its in the qcon chapter a lot)
 
 i THINK i already:
 - did the change from "dc-name-color" to "dc-name dc-color"
 - all the dc elbows (did not verify that they all worked tho so here's hoping nothing broke )
 - cleaned the code for new twitter icons with viewable impressions
+
+
+
+
+error reports:
+[chapter 1]
+- Is crawler's handle supposed to be on the same line as the "<- Tweet"? Because it appears so on my phone (android). Same with Enon's tweet later in the chapter
+- Blood Love's first message on the discord, her name overlaps with the discord header
+[chapter ?]
+- "overlapping lines with twitter in previous chapters"

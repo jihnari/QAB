@@ -15,6 +15,7 @@ ao3 -
 - regarding the twitter skin changes on 8/19/22: the last reply section in a tweet including the new sub-reactions bar WILL break for no reason. you can solve this by wrapping everything in a stay-block. i have not found any other solutions.
 - - INCORRECT. IT BREAKS ANYWAY. the fix is, rewrite that section to be p instead of span. but later. do it later.
 - <th> and <td> are by default, "vertical-align: top" due to ao3 and inheritance? setting the <table> to "vertical-align: middle" fixes this issue on most platforms. however, there's something weird about the inheritance rules on ios/safari because it defaults to "vertical-align: top" again. you can fix this by making the class for every cell/td/th (or just the thing thats holding the thing not laying properly) to include "vertical-align: middle".
+- 1/12/23, ao3's new update breaks spans that aren't wrapped by <p> already. known breaks: twitter "left dot". fix is to throw it in the below <p> block. fixed ch14 but no others so far. honestly i should just update that base code bc its janky but. i didnt do that. 
 
 allowed operators:
 - lost again :/
@@ -23,7 +24,7 @@ reddit:
 - there is no consistency in this land. idk whats going on here but i dont like it. im just choosing elements and running w them bc there appears to be no internal logic.
 
 twitter:
-- back icon is suddenly not correctly aligned. i think i just swapped out the file for a transparent png and forgot/the final file dimensions were different, but its still weird that it happened. 
+- back icon is suddenly not correctly aligned. i think i just swapped out the file for a transparent png and forgot/the final file dimensions were different, but its still weird that it happened.
 
 notepad++:
 - for testing purposes, add the following to html files
