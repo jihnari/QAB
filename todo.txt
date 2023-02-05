@@ -18,13 +18,22 @@ you should, but for some reason you haven't:
 - twitter header is broken in most places
 - litter in custom emotes
 - you have fixed code for the vertical twitter line, so use it (gotta  figure out what its called/how to format, but its in the qcon chapter a lot)
+- new parser update breaks all twitter, ch3 and ch14? are fixed but nothing else.
+- have to remove all 'shift-up' from discord sections now due to change in ao3 margin handling; also may need to delete extra empty paragraphs, ao3 is nbsp-ing those on its own now
 
 i THINK i already:
 - did the change from "dc-name-color" to "dc-name dc-color"
 - all the dc elbows (did not verify that they all worked tho so here's hoping nothing broke )
 - cleaned the code for new twitter icons with viewable impressions
 
-
+***update twitter sections. done on:
+8??
+14
+15
+18
+19
+20
+21
 
 
 error reports:

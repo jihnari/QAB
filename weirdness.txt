@@ -15,7 +15,9 @@ ao3 -
 - regarding the twitter skin changes on 8/19/22: the last reply section in a tweet including the new sub-reactions bar WILL break for no reason. you can solve this by wrapping everything in a stay-block. i have not found any other solutions.
 - - INCORRECT. IT BREAKS ANYWAY. the fix is, rewrite that section to be p instead of span. but later. do it later.
 - <th> and <td> are by default, "vertical-align: top" due to ao3 and inheritance? setting the <table> to "vertical-align: middle" fixes this issue on most platforms. however, there's something weird about the inheritance rules on ios/safari because it defaults to "vertical-align: top" again. you can fix this by making the class for every cell/td/th (or just the thing thats holding the thing not laying properly) to include "vertical-align: middle".
-- 1/12/23, ao3's new update breaks spans that aren't wrapped by <p> already. known breaks: twitter "left dot". fix is to throw it in the below <p> block. fixed ch14 but no others so far. honestly i should just update that base code bc its janky but. i didnt do that. 
+- 1/12/23, ao3's new update breaks spans that aren't wrapped by <p> already. known breaks: twitter "left dot". fix is to throw it in the below <p> block. fixed ch14 but no others so far. honestly i should just update that base code bc its janky but. i didnt do that.
+- 2/4/23, this isnt a new issue but it is an issue i am just now understanding. the twitter breaks from october(?) were because of the new parser deleting extra empty <p> tags. it doesnt matter if they have a class, if they're empty theyre deleted. gotta &nbsp; those suckers. also potentially you could wrap the entire chapter in <figure>, thats been fixing some of the parser update introduced bugs.
+- same as above, another new issue is that empty or comment lines are being interpreted into <p><br/></p> which breaks. a lot of things. i have sent in a ticket but for now the fix is to condense everything to a single line. \r\n
 
 allowed operators:
 - lost again :/
