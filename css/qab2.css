@@ -1,6 +1,12 @@
 
 /*UNIVERSAL*/
 
+/* ao3 parser broke things. wrapping ithe whole chapter in a figure fixes it, but at the cost of margins you dont want. */
+figure {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .relative-wrapper {
   position: relative;
 }
@@ -371,8 +377,8 @@ the last thing we might wanna do here is use the fadeout function and place the 
 
 .rd-arrow-text{
   padding-top:2px;
-  mmargin-bottom:10px;
-  vertical-align:top;
+  /* mmargin-bottom:10px; */
+  vertical-align:super;
   display: inline-block;
 }
 .rd-arrow-up{
@@ -1267,6 +1273,8 @@ font-family: 'Roboto', sans-serif;
 .yt-title{
   font-size:1.2em;
   font-weight: bold;
+  margin-top:0px;
+  margin-bottom: 10px;
 }
 .yt-title-shift{
 margin-top:-5px;
@@ -1298,10 +1306,9 @@ todo:
   margin-right: 10px;
   background-color: #D7DADD;
   box-shadow: 0px 0px 0px 3px white;
-  mmargin-bottom: -15px;
+  /* mmargin-bottom: -15px; */
   margin-top:0px;
   margin-left:-21px;
-
 }
 .tw-dot{
   float:left;
@@ -1312,7 +1319,30 @@ todo:
   margin-right: 10px;
   background-color: #D7DADD;
   margin-bottom: -15px;
-
+}
+.tw-usernames{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 80%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.tw-name{
+  font-weight:bold;
+  cursor: pointer;
+  /* vertical-align: baseline; */
+}
+.tw-name:hover{
+text-decoration: underline;
+}
+.tw-handle{
+  color: #657685;
+  cursor: pointer;
+  /* vertical-align: baseline; */
+}
+.tw-time{
+  color: #657685;
 }
 .tw-text-gray{
   color: #657685;
@@ -1732,6 +1762,7 @@ what is the function of this, was it an ao3 specific fix */
 p.tw-small-icon-buffer{
   height:15px;
   margin-bottom:-10px;
+  margin-top: -15px;
 }
 
 .tw-small-icon-table{
@@ -1745,7 +1776,12 @@ p.tw-small-icon-buffer{
   margin-right:20px;
   /* for ao3's nonsense */
   margin-top: -20px;
+  /* ao3 stopped the nonsense? */
   /* alternatively, we just make a wrapper for twitter and kill the p margins */
+
+  overflow: hidden;
+  -webkit-text-stroke-width: 0;
+  white-space: nowrap;
 }
 
   .tw-small-icon-cell-link{
@@ -2041,6 +2077,12 @@ div.dc-font > p
 .dc-time-stamp {
   font-size:0.8em;
   color: #757F8B;
+
+  /* testing */
+  -webkit-text-stroke-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dc-border-top {
   /*border-top: 1px solid black;*/
@@ -2315,6 +2357,9 @@ border:1.5px solid #BCBCBC;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  max-width: 70%;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .dc-name:hover{
@@ -2397,6 +2442,7 @@ border:1.5px solid #BCBCBC;
   font-size:.5em;
   padding: 2px 4px 2px 4px;
   border-radius:3px;
+  vertical-align: middle;
 }
 .dc_code {
   background:#f9f9f9;
@@ -2640,7 +2686,7 @@ div.dc-msg-container p
   background: #F9F9F9;
   color:#35363A;
   font-size: .8em;
-  margin-bottom:5px;
+  margin-bottom:5px !important;
   /* for ao3 spacing */
   /* margin-bottom:0px; */
   margin-top: 15px;
@@ -2768,6 +2814,8 @@ div.dc-msg-container p
   text-decoration:underline;
 }
 .blog-block{
+  margin-right:20px;
+  margin-left:20px;
 text-align: justify;
 }
 
