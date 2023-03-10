@@ -1,30 +1,26 @@
 <link rel="stylesheet" href="C:\Users\kell3\github\QAB\css\qab2.css">
 
 
+<!-- twt:_who_:_date_ -->
 <!-- top bar -->
-<p class="tw-thread-header"><span class="tw-back-icon"></span></p>
-
+<!-- <p class="tw-thread-header"><span class="tw-back-icon"></span></p> -->
 <p class="tw-tweet-header"><span class="tw-back-icon"></span></p>
 
-
-<!-- twt:_who_:_date_ -->
-<!-- if smth breaks, add some clears -->
-
-<!-- top bar -->
-<p><span class="tw-back-icon"></span><span class="text-size-12">Tweet<span></p><p class="clear"></p><p class="tw-border-bottom"></p>
-
 <!-- tweeter info -->
-<p>
-  <span class="left dot"></span>
-  <span class="tw-name">_name_ </p><br />
-<span class="tw-handle"> @_handle_ </span></p>
+<p><span class="left dot"></span>
+  <span class="tw-name">_name_</span><br /><span class="tw-handle">@_handle_</span></p>
 
 <!-- tweet content-->
 <p class="tw-body">
 _content_
-<br/>
-<img class="tw-img" src=_x_></img>
+<!-- <br/> -->
+<!-- <img class="tw-img" src=_x_></img> -->
 </p>
+<p class="tw-qrt">
+  <span class="tw-tiny-dot"></span><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span> <span class="tw-time"> · #/#/20X4</span> <br/>
+  <span class="tw-qrt-body">_qrt_content_ </span>
+</p>
+<br/>
 
 <p class="tw-footer">_time_ · # _aug_ · <span class="tw-link">Twitter for Android</span></p>
 <p class="tw-retweets-bar">
@@ -34,10 +30,11 @@ _content_
 
 
 <!-- normal comment -->
-<p><span class="left dot"></span><span class="stay-block"><span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_ </span></span> <span class="tw-time"> · _1h_ </span><br />
+<p><span class="left dot"></span><span class="stay-block"><span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span></span> <span class="tw-time"> · _1h_ </span><br />
     _content_
     <br/></span></p>
-  <p class="tw-small-icon-buffer"><table class="tw-small-icon-table">
+  <!-- <p class="tw-small-icon-buffer"> -->
+    <table class="tw-small-icon-table">
   <tr>
     <th class="tw-small-icon-cell-reply-buffer"></th>
     <th class="tw-small-icon-cell-bubble"> </th>
@@ -45,7 +42,8 @@ _content_
     <th class="tw-small-icon-cell-heart"> </th>
     <th class="tw-small-icon-cell-link"> </th>
   </tr>
-  </table></p>
+  </table>
+<!-- </p> -->
 
 
 <p class="tw-border-bottom-thick"></p>
@@ -54,9 +52,9 @@ _content_
 <!-- *****FIX THIS (switch span to p and add a shift up 5, ao3 does not respect this any more) (also gotta update the usernames stuff)-->
 
 <!-- normal comment -->
-<p class="clear"></p>
+
 <p><span class="left dot"></span><span class="stay-block"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span><span class=tw-time> · _date_</span> <br />
-<span class="tw-text-gray">Replying to</span><span class="tw-link"> @_handle_</span><br/>
+<span class="tw-text-gray">Replying to</span> <span class="tw-link">@_handle_</span><br/>
     _content_
 <br/><span class="twt-comment-buttons2"></span>
   </span></p>
@@ -66,8 +64,8 @@ _content_
 <!-- comment w/ 1 reply -->
 <div class="tw-line-vertical">
 
-<p class="clear"></p><p><span class="tw-dot-thread"></span><span class="stay-block"><b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date<br />
-Replying to</span><span class="tw-link"> @_handle_</span><br/>
+<p><span class="tw-dot-thread"></span><span class="stay-block"><span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span></span> <span class="tw-time"> · _1h_ </span><br />
+<span class="tw-text-gray">Replying to </span><span class="tw-link">@_handle_</span><br/>
   _content_
 
 </span></p>
@@ -82,8 +80,8 @@ Replying to</span><span class="tw-link"> @_handle_</span><br/>
 </tr>
 </table></p>
 
-<p class="clear"></p><p><span class="tw-dot-thread"></span><span class="stay-block">
-<b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date_</span><br />
+<p><span class="tw-dot-thread"></span><span class="stay-block">
+<span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span></span> <span class="tw-time"> · _1h_ </span><br />
   _content_
 </span></p>
 <p class="tw-small-icon-buffer"><table class="tw-small-icon-table">
@@ -98,18 +96,21 @@ Replying to</span><span class="tw-link"> @_handle_</span><br/>
 
 </div>
 
+<p class="tw-border-bottom"></p>
 
+
+
+<!-- outdated?  -->
 <!-- comment w/ 1 reply -->
 <div class="tw-line-vertical2">
 
-<p class="clear"></p><p><span class="tw-dot-thread"></span><span class="stay-block"><b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date<br />
-Replying to</span><span class="tw-link"> @_handle_</span><br/>
+<p><span class="tw-dot-thread"></span><span class="stay-block"><span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span></span> <span class="tw-time"> · _1h_ </span><br />
+<span class="tw-text-gray">Replying to</span><span class="tw-link"> @_handle_</span><br/>
   _content_
 <br/><br/>
 </span></p>
 
-<p class="clear"></p><p><span class="tw-dot-thread"></span><span class="stay-block">
-<b>_name_ </b> <span class="tw-text-gray">@_handle_ · _date_</span><br />
+<p><span class="tw-dot-thread"></span><span class="stay-block"><span class="tw-usernames"><span class="tw-name">_name_</span> <span class="tw-handle">@_handle_</span></span> <span class="tw-time"> · _1h_ </span><br />
   _content_</span></p>
 
 </div>

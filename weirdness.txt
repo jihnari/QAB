@@ -10,7 +10,7 @@ ao3 -
 - using the built in table stuff adds in some weird padding and idk where its coming from. id like to overwrite it but im sick of looking for it... maybe someday.
 - update, sometimes your only option is to overwrite all the table properties bc ao3 is so aggressive about nesting divs. related, table-layout:fixed does some HORRIFIC STUFF after ao3 has sprinkled "p"s all over the place
 - ao3 completely ignores tables? its very kind about ignoring all formatting inside the table and just keeping it like it was. so just. just write tables.
-- oh so hey you can just overwrite that, whoops. i was dumb then, tables are doable and infact ao3 respects them EXTREMELY WELL bc the whole website relies on them, you just gotta overwrite them correctly first.
+- oh so hey you can just overwrite that, whoops. i was dumb then, tables are doable and in-fact ao3 respects them EXTREMELY WELL bc the whole website relies on them, you just gotta overwrite them correctly first.
 - regardless of what the documentation says about "a single line will be ignored by the parser" 1, it will not. 2, it SUPER will not if you nest divs. every div gets at least one p shoved in there. you can sometimes solve this with sibling selectors and margin:0-ing the p, but sometimes you cant ¯\_(ツ)_/¯
 - regarding the twitter skin changes on 8/19/22: the last reply section in a tweet including the new sub-reactions bar WILL break for no reason. you can solve this by wrapping everything in a stay-block. i have not found any other solutions.
 - - INCORRECT. IT BREAKS ANYWAY. the fix is, rewrite that section to be p instead of span. but later. do it later.

@@ -1328,6 +1328,14 @@ todo:
   display: inline-block;
   vertical-align: bottom;
 }
+.tw-usernames-w-dot{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width:60%;
+  display: inline-block;
+  vertical-align: bottom;
+}
 .tw-name{
   font-weight:bold;
   cursor: pointer;
@@ -1451,6 +1459,31 @@ text-decoration: underline;
   max-height:400px;
   border: 1px solid #D7DADD;
   border-radius: 10px;
+}
+.tw-qrt{
+  font-size: 1.0em !important;
+
+  display:block;
+  width:90%;
+  margin: 10px 0px 10px 10px;
+  padding:5px 10px 10px 10px;
+  min-height: 10px;
+  border: 1px solid #D7DADD;
+  border-radius: 10px;
+}
+.tw-qrt-body{
+  padding-top: 25px;
+}
+.tw-tiny-dot{
+  /* float: left; */
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  /* margin-bottom: 5px; */
+  background-color: #D7DADD;
 }
 .tw-line-vertical {
   margin-left: 22px;
@@ -1721,6 +1754,11 @@ todo:
 
 /* new twitter stuff, should delete/clean a bunch of it  */
 
+.tw-space{
+  margin:0;
+  height: 20px;
+}
+
   .tw-back-icon{
     height: 27px;
     width: 27px;
@@ -1762,7 +1800,7 @@ what is the function of this, was it an ao3 specific fix */
 p.tw-small-icon-buffer{
   height:15px;
   margin-bottom:-10px;
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
 
 .tw-small-icon-table{
@@ -1970,6 +2008,8 @@ p.tw-small-icon-buffer{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     float:right;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
 /* gotta make this no wrap somehow, think we've done it somewhere else; replies? */
