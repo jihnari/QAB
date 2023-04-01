@@ -1168,21 +1168,21 @@ font-family: 'Roboto', sans-serif;
   width:100%;
   height:3px;
   background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);
-  bottom:6px;
+  bottom:5px;
 }
 .yt-red-line-30 {
   position:absolute;
   width:100%;
   height:3px;
   background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);
-  bottom:6px;
+  bottom:5px;
 }
 .yt-red-line-70 {
   position:absolute;
   width:100%;
   height:3px;
   background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);
-  bottom:6px;
+  bottom:5px;
 }
 .yt-border-bottom-gray  {
   border-bottom: 1px solid #b1b1b3;
@@ -1277,7 +1277,7 @@ font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
 }
 .yt-title-shift{
-margin-top:-5px;
+margin-top:-2px;
 }
 .yt-replies{
  font-size:.9em;
@@ -1488,7 +1488,8 @@ text-decoration: underline;
 .tw-line-vertical {
   margin-left: 22px;
   border-left: 2px solid transparent;
-  border-image: linear-gradient(to bottom, lightgray 80%, rgba(255,255,255, 0) 20%);
+  /* changed from 80, tentatively seems fine */
+  border-image: linear-gradient(to bottom, lightgray 70%, rgba(255,255,255, 0) 20%);
   border-image-slice: 1;
 }
 .tw-line-vertical2 {
@@ -2470,10 +2471,21 @@ border:1.5px solid #BCBCBC;
   color: #B9BBBE;
   background-color: #B9BBBE;
   border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0s 400s;
+  -moz-transition: all 0s 400s;
+  -ms-transition: all 0s 400s;
+  -o-transition: all 0s 400s;
+  transition: all 0s 400s;
 }
-.dc-spoiler:hover {
+.dc-spoiler:active {
   color: black;
   background-color: #E5E5E5;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .dc_bot {

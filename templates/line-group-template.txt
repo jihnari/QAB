@@ -16,12 +16,12 @@ _Mon_, _Aug_9_, 20X4
 <!-- right (me) -->
 <span class="line-box-right1">
 </span><span class="line-time-right">
-Read<br/>
+Read 2<br/>
 </span>
 
 <span class="line-box-right1-m">
 </span><span class="line-time-right">
-Read<br/>
+Read 2<br/>
 </span>
 
 <!-- left -->
