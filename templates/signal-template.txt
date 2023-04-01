@@ -1,62 +1,62 @@
 <!-- signal:_:_date_ -->
 [Signal messaging application on the phone belonging to _name_.]
 <p>&nbsp;</p><p>&nbsp;</p>
-<div class=dm-container>
+<div class="dm-container">
 
 <!-- top bar -->
 <p class=signal-name-line><img src="https://github.com/jihnari/QAB/raw/main/img/signal-arrow.jpg" class="signal-arrow"><span class="signal-dot"></span><span class="signal-name">_contact_</span></p>
-<p class="clear"></p>
+<!-- <p class="clear"></p> -->
 
 <p>
 
 <!-- right0 -->
-<span class=signal-box-right0>
-<br/><span class=signal-time-right> ✓✓
+<span class="signal-box-right0">
+<br/><span class="signal-time-right"> ✓✓
 </span></span>
 
 
 <!-- left0 -->
-<span class=signal-box-left0>
-<br/><span class=signal-time-left>
+<span class="signal-box-left0">
+<br/><span class="signal-time-left">
 </span></span>
 
 <!-- dateblock -->
-<p class=signal-date>Sun, Aug 1, 20X4</p>
+<p class="signal-date">Sun, Aug 1, 20X4</p>
 
 
 <!-- left13 -->
-<span class=signal-box-left1>
-</span><span class=signal-box-left3>
-<br/><span class=signal-time-left>
+<span class="signal-box-left1">
+</span><span class="signal-box-left3">
+<br/><span class="signal-time-left">
 </span></span>
 
 <!-- right13 -->
-<span class=signal-box-right1>
-</span><span class=signal-box-right3>
-<br/><span class=signal-time-right> ✓✓
+<span class="signal-box-right1">
+</span><span class="signal-box-right3">
+<br/><span class="signal-time-right"> ✓✓
 </span></span>
 
 <!-- right123 -->
-<span class=signal-box-right1>
-</span><span class=signal-box-right2>
-</span><span class=signal-box-right3>
-<br/><span class=signal-time-right> ✓✓
+<span class="signal-box-right1">
+</span><span class="signal-box-right2">
+</span><span class="signal-box-right3">
+<br/><span class="signal-time-right"> ✓✓
 </span></span>
 
 
 <!-- left123 -->
-<span class=signal-box-left1>
-</span><span class=signal-box-left2>
-</span><span class=signal-box-left3>
-<br/><span class=signal-time-left>
+<span class="signal-box-left1">
+</span><span class="signal-box-left2">
+</span><span class="signal-box-left3">
+<br/><span class="signal-time-left">
 </span></span>
 
 
 <!-- left img -->
- <p><img class="signal-img-left" src=_link_></img></p>
+ <p><img class="signal-img-left" src="_link_"></img></p>
 
 <!-- right img -->
- <p><img class="signal-img-right" src=_link_></img></p>
+ <p><img class="signal-img-right" src="_link_"></img></p>
 
 
 
