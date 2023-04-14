@@ -13,7 +13,7 @@ you should, but for some reason you haven't:
 - - we did this but where did it go
 - change out the new twitter icons for real images, not discord images. also ~~consider making them transparent~~ make them transparent. that would be real uggo as is on a black bg.
 - kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
-- totally forgot about the "read #" on line group convos, gotta add that back
+- totally forgot about the "read #" on line group convos, gotta add that back (edit: did several of these)
 - TWITTER USES SEP, NOT SEPT. AHHHH.
 - twitter header is broken in most places
 - litter in custom emotes
@@ -21,12 +21,18 @@ you should, but for some reason you haven't:
 - new parser update breaks all twitter, ch3 and ch14? are fixed but nothing else.
 - have to remove all 'shift-up' from discord sections now due to change in ao3 margin handling; also may need to delete extra empty paragraphs, ao3 is nbsp-ing those on its own now
 - ch4 twitter broke (lightly); also is not in figure which might (re) break yt
-- *****ch7, switch juzo and awata 
+- check soho chapter; signal is being weird and fat there 
+- figure out if you can make a table overflow hidden ("new" twitter icons being fat)
+
 
 i THINK i already:
 - did the change from "dc-name-color" to "dc-name dc-color"
 - all the dc elbows (did not verify that they all worked tho so here's hoping nothing broke )
 - cleaned the code for new twitter icons with viewable impressions
+
+i DID already:
+- ch7, switch juzo and awata 
+
 
 ***update twitter sections. done on:
 8??
