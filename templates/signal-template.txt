@@ -5,7 +5,6 @@
 
 <!-- top bar -->
 <p class=signal-name-line><img src="https://github.com/jihnari/QAB/raw/main/img/signal-arrow.jpg" class="signal-arrow"><span class="signal-dot"></span><span class="signal-name">_contact_</span></p>
-<!-- <p class="clear"></p> -->
 
 <p>
 
@@ -58,6 +57,7 @@
 <!-- right img -->
  <p><img class="signal-img-right" src="_link_"></img></p>
 
+</p><p class=signal-call> <img class=signal-call-icon src="https://github.com/jihnari/QAB/raw/main/img/signal-call-normal.png"/> You called &bull; 14:01 </p><p>
 
 
 </p></div>

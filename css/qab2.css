@@ -489,7 +489,6 @@ cried enough over it already so i'll probably just. ignore it forever?
   text-align: center;
   margin-bottom:10px;
   margin-top:10px;
-
 }
 /* figure this out  */
 .line-unread::after{
@@ -608,6 +607,14 @@ cried enough over it already so i'll probably just. ignore it forever?
   clear: both;
   position: relative;
 }
+
+/* 
+the mystery here: 
+right vs right1 
+the only difference is the bottom margin, one is 0.5em the other is 5px? 10px? right1 is slightly bigger. left has a bottom margin of 0.5. there are no other differences that i can tell. 
+why are there two of these? why did i use right1 for so long over right? i do not know.
+*/
+
 .line-box-right-m {
   float: right;
   color: black;
@@ -1056,6 +1063,16 @@ todo:
 .signal-misc-space{
   height:30px;
 }
+.signal-unread{
+  border-top: #404040 solid 1px;
+  font-size: .8em;
+  text-align: center;
+  padding-top: 5px;
+  /* -webkit-text-stroke-width: thin; */
+  
+  margin-top: 20px;
+  margin-bottom:20px;
+}
 
 /*signal group chat*/
 /*top bar is fixed in this version, legit works in this version. should fix og version also, but... probably wont.*/
@@ -1070,7 +1087,7 @@ todo:
 .inline{
   display:inline-block;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   overflow: hidden;
   max-width:70%;
 }
@@ -1099,7 +1116,7 @@ todo:
   padding-bottom:5px;
   box-shadow: 0px 8px 8px -10px #888888;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
   overflow: hidden;
 }
 
@@ -2306,7 +2323,17 @@ border:1.5px solid #BCBCBC;
   border-width: 2px;
   border-radius: 5px;
   padding: 3px 3px 10px 3px;
-  margin-top:-10px;
+  /* margin-top:-10px; */
+
+
+    /* background: #2c6bee; */
+    border-radius: 15px;
+    border:2px solid #F6F6F6;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+    max-width: 75%;
+    max-height:500px;
+  }
 }
 .dc-green-line-50 {
   border-bottom: 3px solid transparent;
@@ -2572,6 +2599,14 @@ border:1.5px solid #BCBCBC;
 }
 .power{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/power.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.mood{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/mood.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
+.shakey_eyes{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/shakey-eyes.png") no-repeat;
   background-size:1.2em 1.2em;
 }
 
