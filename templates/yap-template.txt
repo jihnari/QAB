@@ -9,7 +9,7 @@ _content_
 </p></div>
 
 <p>
-<span class="news-title">_title_</span><br/><span class="news-date"> _date_ · _source_ via Yap News</span>
+<span class="news-title">_title_ </span><br/><span class="news-date"> _date_ · _source_ via Yap News</span>
 </p>
 <p class=news-border>
 
@@ -18,9 +18,11 @@ _content_
 
 <div class="fadeout">
 <p>
-<span class="news-title">_title_
-</span><br/><span class="news-date"> _date_ · _source_ via Yap News </span>
+<span class="news-title">_title_ </span><br/><span class="news-date"> _date_ · _source_ via Yap News </span>
+</p>
+  <p class=news-border>
 
 </p>
+
 
 </div>

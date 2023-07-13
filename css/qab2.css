@@ -16,6 +16,7 @@ figure {
 .dm-container {
   display: table;
   margin: auto;
+  /* i actually think this would be fine as 100 now? iirc the issue was line and the speech bubble danglies */
   max-width: 95%;
   /* this used to be 100 and for what?? to make me cry?? idk but we're gonna see if changing it breaks everything */
   min-width: 95%;
@@ -829,19 +830,32 @@ todo:
   display: inline-block;
   margin-right: 10px;
   background-color: #bbb;
-  margin-bottom: -15px;
-  margin-bottom: 10px;
-  float:left;
 }
+/* the ellipse collapse here only works if you wrap it in the "inline" class first, inexpliclably. fortunately, the updates dont break previous instances, they just also dont wrap. */
 .signal-name{
   font-size:1.1em;
-  margin-top:5px;
-  float:left;
+  margin-bottom: 2px;
+  
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width:100%;
 }
 .signal-name-line{
-  padding-bottom:40px;
+  padding-bottom:5px;
   box-shadow: 0px 8px 8px -10px #888888;
+  
+  white-space: nowrap;
+
+  /* text-overflow: ellipsis;
+  overflow: hidden; */
+
+  /* display inline breaks things on ao3 in ridiculous ways */
+  /* display: inline; */
+  /* width:100%; */
 }
+/* are you using this anywhere?? why is this here */
 .signal-name-line2{
   border-bottom: 5px solid transparent;
   margin-bottom:20px;
@@ -853,13 +867,14 @@ todo:
   background:linear-gradient(to bottom, gray 50%,rgba(246,246,246,.3) 50%);
 }
 .signal-arrow {
-  float:left;
+  /* float:left; */
+  display: inline-block;
+  /* has this grayscale EVER done anything */
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   height: 30px;
   width: 30px;
-  margin:0 10px 0 10px;/*lmao this does nothing, its in a span bro*/
-  display: inline-block;
+  margin:0 10px 0 10px;
 }
 .signal-box-left1 {
   margin-top: 10px;
@@ -989,18 +1004,20 @@ todo:
   border-radius: 15px;
   border:2px solid #F6F6F6;
   border-bottom-left-radius: 5px;
-  margin-top: 10px;
+  border-bottom-right-radius: 5px;
+  /* margin-top: 10px; */
   float: left;
   max-width: 75%;
-  max-height:500px;
+  max-height:400px;
   clear: both;
   position: relative;
 }
 .signal-img-right {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border:2px solid #F6F6F6;
   border-radius: 15px;
   border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   margin-bottom: 3px;
   float: right;
   max-width: 75%;
@@ -1076,6 +1093,7 @@ todo:
 
 /*signal group chat*/
 /*top bar is fixed in this version, legit works in this version. should fix og version also, but... probably wont.*/
+/* hotfixed og version and i should just convert it to all use the same classes but thats too much work */
 .signal-gc-arrow {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1086,9 +1104,6 @@ todo:
 }
 .inline{
   display:inline-block;
-  white-space: nowrap;
-  /* text-overflow: ellipsis; */
-  overflow: hidden;
   max-width:70%;
 }
 .signal-gc-dot {
@@ -1124,7 +1139,7 @@ todo:
   display:block;
   font-size:0.8em;
   font-weight:bold;
-  ppadding-bottom:-5px;
+  /* padding-bottom:-5px; */
 }
 .sgc-purple{
   color:#c13ca7;
@@ -1527,6 +1542,20 @@ text-decoration: underline;
 .tw-line-vertical-0{
   margin-left:22px;
 }
+.tw-line-vertical-10{
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  border-image: linear-gradient(to bottom, lightgray 10%, rgba(255,255,255, 0) 90%);
+  border-image-slice: 1;
+}
+.tw-line-vertical-90 {
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  border-image: linear-gradient(to bottom, lightgray 90%, rgba(255,255,255, 0) 10%);
+  border-image-slice: 1;
+}
 
 .tw-body{
   font-size: 1.4em;
@@ -1578,8 +1607,25 @@ text-decoration: underline;
   width:100%;
   background-size:100% 40px;
 }
+.tw-thread-indent{
+  float:left;
+  display: block;
+  margin-top:0px !important;
+  margin-left:-21px !important;
+  margin-bottom: 15px !important;
+  
+  box-shadow: 0px 0px 0px 3px white;
+}
 
-
+.tw-unviewable{
+  border:#EFF2F4 solid 1px;
+  border-radius: 10px;
+  /* width:95%; */
+  color:#54656F;
+  background-color: #F7F9F8;
+  padding:5px 10px 5px 10px;
+  margin:5px;
+}
 .tw-gray-box{
   background: #C5CFD6;
   width:100%;
@@ -1589,13 +1635,13 @@ text-decoration: underline;
   /* might not ever use this, but just in case */
   /* border: solid 2px #C5CFD6;
   margin-left: 10px; */
-/*
+
   height: 50px;
   width: 50px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
-  background-color: #F8FAFB; */
+  background-color: #F8FAFB;
 }
 .tw-header{
   font-size: 1.2em;
@@ -2264,6 +2310,7 @@ div.dc-font > p
   width: 50px;
   padding-top:10px;
   margin-bottom:-11px;
+  margin-left:-12px;
 
 
 /* check this later, no internet now  */
@@ -2282,11 +2329,9 @@ div.dc-font > p
   /* font-size:35px; */
   font-size: 1.3em;
   font-weight:bold;
-  mmargin-top:10px;
-  margin-left:5px; /* this was 0 before*/
-  ppadding-bottom:-10px;
-  ppadding-bottom:0;
-  mmargin-bottom:-15px;
+
+  /* was previously 5 */
+  margin-left:0px; 
 
   overflow: auto;
 }
@@ -2316,24 +2361,13 @@ border:1.5px solid #BCBCBC;
   padding: 2px 5px 2px 3px;
 }
 .dc-img-box {
-  border-color: #f2f4f4;
-  color: #595959;
-  background: #F6F6F6;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-  padding: 3px 3px 10px 3px;
-  /* margin-top:-10px; */
-
-
-    /* background: #2c6bee; */
-    border-radius: 15px;
-    border:2px solid #F6F6F6;
-    border-bottom-left-radius: 5px;
-    margin-top: 10px;
-    max-width: 75%;
-    max-height:500px;
-  }
+  border-radius: 20px;
+  border:2px;
+  margin-top: 5px;
+  /* idk why this has to be -5 */
+  margin-bottom: -5px;
+  max-width: 100%;
+  max-height:400px;
 }
 .dc-green-line-50 {
   border-bottom: 3px solid transparent;
@@ -2605,8 +2639,8 @@ border:1.5px solid #BCBCBC;
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/mood.png") no-repeat;
   background-size:1.2em 1.2em;
 }
-.shakey_eyes{
-  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/shakey-eyes.png") no-repeat;
+.shaky-eyes{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/shaky-eyes.png") no-repeat;
   background-size:1.2em 1.2em;
 }
 
@@ -2648,6 +2682,53 @@ cb thumbsup
 .dc-yt-text{
   font-size:.7em;
   color:gray;
+}
+
+
+.dc-twt-box{
+  width:95%;
+  max-width:500px;
+  /* why was this a table */
+  /* display:table; */
+  background-color:#F2F3F5;
+  border: 1px solid #DDDEDF;
+  border-left: 4px solid #1DA0F2;
+  border-radius: 6px;
+  padding:3px 7px 3px 7px;
+  line-height:1.4em;
+  /* align:left !important; */
+  margin-left: 0px;
+}
+.dc-twt-img{
+  width:60%;
+  border: 1px;
+  border-radius: 6px;
+  margin-top:10px;
+}
+.dc-twt-main-text{
+  /* font-size:.7em; */
+  /* color:gray; */
+  margin-top:4px;
+}
+.dc-twt-sub-text{
+  font-size:.7em;
+  /* color:gray; */
+  margin-bottom:7px;
+}
+.dc-twt-box-likes{
+float:left;
+}
+.dc-twt-box-retweets{
+float:left;
+margin-left:50px;
+}
+
+.bird-icon{
+  width:1.5em;
+  height:1.5em;
+  margin-bottom:-7px;
+  margin-right:5px;
+  /* display: inline; */
 }
 
 .dc-orange-bg{
@@ -3338,4 +3419,36 @@ div.ch-table p
    background: linear-gradient(rgba(255,255,255,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(255,255,255,0) 100%);
    width: 100%;
    height:1500px;
+}
+
+
+/* testing */
+.dc-img-modal{
+  width: 90%;
+}
+
+.modalContainer{
+  position:relative;
+  background-color: pink;
+}
+.modalDialog {
+    position: absolute;
+    width:100%;
+    height:200%;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    /* right: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    background: rgba(0, 0, 0, 0.8);
+    /* z-index: 99999; */
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* do the active loop trick thing */
+.modalDialog:hover  {
+    opacity:1;
 }
