@@ -23,6 +23,7 @@ you should, but for some reason you haven't:
 - ch4 twitter broke (lightly); also is not in figure which might (re) break yt
 - check soho chapter; signal is being weird and fat there 
 - figure out if you can make a table overflow hidden ("new" twitter icons being fat)
+- **bro you have two different versions of "this tweet is no longer" floating around. fix that. 
 
 
 i THINK i already:

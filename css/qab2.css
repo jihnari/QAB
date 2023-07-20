@@ -428,6 +428,8 @@ the last thing we might wanna do here is use the fadeout function and place the 
   text-align: center;
   color: #5f6267;
   clear: both;
+  padding-top: 10px;
+  margin-bottom: -10px;
 }
 .sms-border {
   box-shadow: 0px 8px 10px -10px #888888;
@@ -1547,6 +1549,13 @@ text-decoration: underline;
   border-left: 2px solid transparent;
   border-color: lightgray;
   border-image: linear-gradient(to bottom, lightgray 10%, rgba(255,255,255, 0) 90%);
+  border-image-slice: 1;
+}
+.tw-line-vertical-50 {
+  margin-left: 22px;
+  border-left: 2px solid transparent;
+  border-color: lightgray;
+  border-image: linear-gradient(to bottom, lightgray 50%, rgba(255,255,255, 0) 50%);
   border-image-slice: 1;
 }
 .tw-line-vertical-90 {
