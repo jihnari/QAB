@@ -1487,7 +1487,8 @@ text-decoration: underline;
   /*might want to,*/
   /*display: inline-block;*/
   /* protip i think this might be block not inline-block */
-  margin: 10px 0px 10px 10px;
+  /* margin: 10px 0px 10px 10px; */
+  margin: 10px 0px 10px 0px; 
   max-width: 95%;
   /* check on this height  */
   max-height:400px;
@@ -1913,6 +1914,7 @@ p.tw-small-icon-buffer{
     width:30px;
     background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-link.png") no-repeat;
     background-size:30px 30px;
+    cursor: pointer;
 
     vertical-align: -70%;
     padding-right:15px;
@@ -1946,6 +1948,7 @@ p.tw-small-icon-buffer{
   width:30px;
   background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-bubble.png") no-repeat;
   background-size:30px 30px;
+  cursor: pointer;
 
   vertical-align: -70%;
   padding-right:15px;
@@ -1973,6 +1976,7 @@ p.tw-small-icon-buffer{
   width:30px;
   background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-heart.png") no-repeat;
   background-size:30px 30px;
+  cursor: pointer;
 
   vertical-align: -70%;
   padding-right:15px;
@@ -2004,6 +2008,7 @@ p.tw-small-icon-buffer{
   width:30px;
   background: url("https://github.com/jihnari/QAB/raw/main/img/tw-icon-retweet.png") no-repeat;
   background-size:30px 30px;
+  cursor: pointer;
 
   vertical-align: -70%;
   padding-right:15px;
@@ -2083,6 +2088,7 @@ p.tw-small-icon-buffer{
     float:right;
     white-space: nowrap;
     overflow: hidden;
+    cursor: pointer;
   }
 
 /* gotta make this no wrap somehow, think we've done it somewhere else; replies? */
@@ -2106,6 +2112,7 @@ p.tw-small-icon-buffer{
     width: 19%;
     display: inline-block;
     text-align : center;
+    cursor:pointer;
   }
   .tw-tab-name-focus{
     color:#18A0FB;
@@ -2573,17 +2580,40 @@ border:1.5px solid #BCBCBC;
   font-family: "Lucida Console", Monaco, monospace;
 }
 
-
-.dc_image{
+/* this does nothing */
+.dc_image_container{
   max-width: 95%;
+}
+
+/* portrait */
+.dc_image{
+  max-width:95%;
+  /* max-width: 350px; */
+  /* width: 350px; */
+  /* width: 95%; */
   max-height: 350px;
-  height: auto;
+  /* height: auto; */
+  /* object-fit: contain; */
 
   display:table;
   border: 1px solid #DDDEDF;
   border-radius: 6px;
   line-height: 1.4em;
+}
 
+.dc_image_landscape{
+  max-width:95%;
+  width: 400px;
+  /* width: 350px; */
+  /* width: 95%; */
+  /* max-height: 350px; */
+  height: auto;
+  /* object-fit: contain; */
+
+  display:table;
+  border: 1px solid #DDDEDF;
+  border-radius: 6px;
+  line-height: 1.4em;
 }
 
 /* discord emotes */

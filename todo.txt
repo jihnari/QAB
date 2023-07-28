@@ -24,6 +24,7 @@ you should, but for some reason you haven't:
 - check soho chapter; signal is being weird and fat there 
 - figure out if you can make a table overflow hidden ("new" twitter icons being fat)
 - **bro you have two different versions of "this tweet is no longer" floating around. fix that. 
+- 
 
 
 i THINK i already:
@@ -44,11 +45,15 @@ i DID already:
 20
 21
 haha guess what, you have to redo all of these now. :)
+i think i got through chapter 14? 15? and then got tired. im sure you'll find them again. 
 
 
 error reports:
 [chapter 1]
 - Is crawler's handle supposed to be on the same line as the "<- Tweet"? Because it appears so on my phone (android). Same with Enon's tweet later in the chapter
+  - this is a android > firefox issue im pretty sure. i dont know why its happening tho
+  - ok this is an issue with float + spans. i would probably have to rewrite it entirely to fix it, which is doable but then fixing everywhere would suck. i definitely feel like ive done this already tho? like with the qcon chapters i remember mei's name being long and not behaving properly so i made it do the ellipsis thing? oh yeah they're in stay-blocks, thats why. ugh. hm. ugh.
 - Blood Love's first message on the discord, her name overlaps with the discord header
 [chapter ?]
 - "overlapping lines with twitter in previous chapters"
+  - this should be fixed, it was the ao3 update in december of 22. 
