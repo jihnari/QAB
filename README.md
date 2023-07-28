@@ -1,5 +1,5 @@
 # QAB
-code, examples, and resources for <a href=https://archiveofourown.org/series/2429515>QAB</a> (© 2020-2022 jihnari)
+code, examples, and resources for <a href=https://archiveofourown.org/series/2429515>QAB</a> (© 2020-2023 jihnari)
 <br/><br/>
 <strong>if you use any of the code in this repo, please credit me!</strong> 
 <br/><br/><br/>
