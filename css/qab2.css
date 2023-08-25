@@ -7,6 +7,27 @@ figure {
     margin-left: 0px;
 }
 
+/* ao3 stuff */
+/* p {
+margin: 1.286em auto;
+padding: 0;
+line-height: 1.5;
+word-wrap: break-word;
+}
+
+body {
+  font: 100%/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #2a2a2a;
+  font: 100%/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+
 .relative-wrapper {
   position: relative;
 }
@@ -37,6 +58,9 @@ figure {
 }
 .right {
   float: right;
+}
+.center{
+  text-align: center;
 }
 
 .shift-zero{
@@ -166,6 +190,15 @@ margin-bottom:-15px;
   margin-left: 5px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+.right-arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 
@@ -450,6 +483,26 @@ the last thing we might wanna do here is use the fadeout function and place the 
   margin-top: 5px;
   clear: both;
   position: relative;
+}
+.sms-view-all{
+  padding-top: 10px;
+  border-top: #5f6267 solid 1px;
+}
+.sms-block-container{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+.sms-block{
+  color:black;
+  font-size: 1em;
+  border:#000 solid 1px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 14px;
+}
+.zero-out{
+  margin:0;
 }
 
 
@@ -1167,7 +1220,7 @@ todo:
 
 .signal-at-right {
   border-radius: 5px;
-  padding: 2px 3px 3px 3px;
+  padding: 0px 5px 0px 2px;
   color: white !important;
   background: #1248B2;
   text-decoration: none !important;
@@ -1177,7 +1230,7 @@ todo:
 .signal-at-left {
   border-radius: 5px;
   color: black !important;
-  padding: 2px 3px 3px 3px;
+  padding: 0px 5px 0px 2px;
   background: #C6C6C6;
   text-decoration: none !important;
   cursor: pointer;
@@ -1495,18 +1548,36 @@ text-decoration: underline;
   border: 1px solid #D7DADD;
   border-radius: 10px;
 }
-.tw-qrt-img{
-  float: center;
-  /*might want to,*/
-  /*display: inline-block;*/
-  /* protip i think this might be block not inline-block */
-  /* margin: 10px 0px 10px 10px; */
-  margin: 10px 0px 0px 0px; 
-  max-width: 95%;
-  /* check on this height  */
-  max-height:400px;
+.tw-qrt-w-img{
+  font-size: 1.0em !important;
+  display:block;
+  width:95%;
+  margin: 10px 0px 0px 10px;
+  padding:5px 10px 10px 10px;
+  min-height: 10px;
   border: 1px solid #D7DADD;
   border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.tw-qrt-img{
+  display:block;
+  width: 95%;
+  margin: -2px 0px 15px 10px;
+  /* padding:5px 10px 10px 10px; */
+  /* padding-top:2px; */
+  border: 1px solid #D7DADD;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 .tw-qrt{
   font-size: 1.0em !important;
@@ -1523,14 +1594,12 @@ text-decoration: underline;
   padding-top: 25px;
 }
 .tw-tiny-dot{
-  /* float: left; */
   vertical-align: middle;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
-  /* margin-bottom: 5px; */
   background-color: #D7DADD;
 }
 .tw-line-vertical {
@@ -2675,6 +2744,10 @@ border:1.5px solid #BCBCBC;
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/pensive_cowboy.png") no-repeat;
   background-size:1.2em 1.2em;
 }
+.pensive_clown{
+  background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/pensive_cowboy.png") no-repeat;
+  background-size:1.2em 1.2em;
+}
 .yeehowdy{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/yeehowdy.png") no-repeat;
   background-size:1.2em 1.2em;
@@ -2894,6 +2967,11 @@ div.dc-msg-container p
   border-radius: 10px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+
+  /* doesnt quite fix the issue but comes close */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dc-blue-x{
   float:right;

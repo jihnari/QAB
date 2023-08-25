@@ -1,4 +1,10 @@
+<!--
+8/7/23 i HATE this i dont know what i was thinking (actually i do its called "working it out as i go but i dont know what div or p are") but anyway important note: each comment section should be wrapped in a p and if its not the bottom section, the p should have class div2. good luck with this trash template.
+-->
+
+
 <!-- remember to delete all ur newlines and pray :) -->
+<!-- you no longer have to delete the newlines ig -->
 <div class="rd-font">
 
 <!-- intro -->
@@ -18,9 +24,10 @@
 <p class="rd-vr rd-div2"> <span class=rd-small><strong>_user_ </strong><span class="rd-gray-text"> _1h_</span></span><span class="rd-elispes">...</span> <br/>
 _content_
 <br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img>
-<p class ="rd-div2">
+</p>
 
 <!-- comment w/ reply -->
+<p class ="rd-div2">
 <span class=rd-small><strong> _user_ </strong><span class="rd-gray-text"> _3h_ </span></span> <br/>
 _content_
 <br/>
@@ -35,7 +42,6 @@ _content_
 <br/><img class="rd-vote" src="https://github.com/jihnari/QAB/raw/main/img/rd-vote-reply.jpg"></img></span>
 <span class=rd-small><b>1 more reply</b></span>
 </span>
-
 </p>
 
 <!-- outro -->
