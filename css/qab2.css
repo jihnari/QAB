@@ -2809,6 +2809,18 @@ cb thumbsup
   color:gray;
 }
 
+.dc-link-box{
+  width:95%;
+  max-width:500px;
+  background-color:#F2F3F5;
+  color:black;
+  border: 1px solid #DDDEDF;
+  border-left: 4px solid #E3E5E8;
+  border-radius: 6px;
+  padding:3px 7px 3px 7px;
+  line-height:1.4em;
+  margin-left: 0px;
+}
 
 .dc-twt-box{
   width:95%;
@@ -2816,6 +2828,7 @@ cb thumbsup
   /* why was this a table */
   /* display:table; */
   background-color:#F2F3F5;
+  color:black;
   border: 1px solid #DDDEDF;
   border-left: 4px solid #1DA0F2;
   border-radius: 6px;
