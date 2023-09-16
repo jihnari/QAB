@@ -1,0 +1,115 @@
+<!-- 
+notes: 
+* OP header always has a thin border. all subsequent headers do not have borders.
+* thin border for all connected posts, thick border for new post
+* only final post has tags, notes, and the reblog buttons 
+* two brs to separate any given line of text. img following text requires THREE brs. is this the correct way to do this? probably not. 
+* this might be a problem for image only posts tho, bc those kill the thin border at top 
+* "follow" btn shifts to the next line if name + reblogged from is too long
+* possibly you can remove the timestamp entirely...? that might only be there because i went out of my way to turn it on in the settings, i dont think its default
+* im removing the timestamp, it exists and is mostly correct except for the shifts in padding/margin and goes after the username 
+* trending tags REQUIRE a hardcoded #. 
+-->
+
+
+<!-- <img src="https://cdn.discordapp.com/attachments/983566168805756938/1149920945335701576/Screenshot_20230908-221507.png" width="50%"/> -->
+
+
+<!-- tumblr:_search_:_date_ -->
+
+<p>&nbsp;</p><p>&nbsp;</p>
+
+
+<div class="tblr-container">
+
+<!-- top bar -->
+<table class="tblr-search-container">
+  <td class="tblr-back-icon"></td>
+  <td class="tblr-search-box">_searchquery_</td>
+  <td class="tblr-follow-btn"></td>
+</table>
+
+<!-- tabs bar -->
+<p class="tblr-tabs">
+  <span class="tblr-tab-name tblr-tab-name-focus">
+    Posts
+  </span><span class="tblr-tab-name">
+    Tags
+  </span><span class="tblr-tab-name">
+    Blogs
+  </span>
+</p>
+
+<!-- filters bar -->
+<p class="tblr-filters">
+  <span class="tblr-filter-name">Top</span>
+  </span><span class="tblr-filter-name">All time</span>
+  </span><span class="tblr-filter-name">All types</span>
+  </span>
+</p>
+
+
+<!-- tumblr post -->
+<div class="tblr-post">
+  <p class="tblr-post-header tblr-thin-border">
+    <span class="tblr-pfp"></span>
+    <span class="tblr-menu-btn"></span>
+    <span class="tblr-inline">
+<span class="tblr-name">_username_</span> <span class="tblr-from tblr-follow">_user2_</span>
+
+    </span>
+</p>
+<p class="tblr-post-body">
+  _content_ <span class="tblr-at">@_user2_</span>
+  <br/><br/>
+    <!-- <br/> <img class="tblr-img" src="https://pbs.twimg.com/media/F4oesQBbYAAnm1s.jpg"/> -->
+
+  <span class="tblr-tag tblr-trending">#_tag_</span><span class="tblr-tag">_tag_</span>
+
+</p>
+<p class="tblr-post-footer">
+  <span class="tblr-notes">127</span> <span class="tblr-buttons"></span>
+</p>
+</div>
+
+<!-- tumblr post (thread)-->
+<!-- if last post, consider adding tblr-thin-border to div  -->
+<div class="tblr-post tblr-thin-border">
+<p class="tblr-post-header tblr-thin-border">
+  <span class="tblr-pfp"></span>
+  <span class="tblr-menu-btn"></span>
+  <span class="tblr-inline">
+  <span class="tblr-name tblr-follow">_username_</span> 
+  <br/> <!-- need a br if you dont have a "reblogged". messes up the spacing -->
+  </span>
+  </p>
+  <p class="tblr-post-header">
+    <span class="tblr-pfp-small"></span>
+    <span class="tblr-inline">
+    <span class="tblr-name tblr-follow">_username_</span>
+    </span>
+    </p>
+<p class="tblr-post-body tblr-thin-border">
+    <!-- <img class="tblr-img" src="https://pbs.twimg.com/media/F4oesQBbYAAnm1s.jpg"/> -->
+    _content_
+</p>
+
+<p class="tblr-post-header">
+  <span class="tblr-pfp-small"></span>
+  <span class="tblr-inline">
+  <span class="tblr-name tblr-follow">_username_</span> 
+  </span>
+  </p>
+<p class="tblr-post-body ">
+  _content_
+
+  <br/><br/>
+  <span class="tblr-tag">_tag_</span><span class="tblr-tag">_tag_</span>
+</p>
+<p class="tblr-post-footer">
+  <span class="tblr-notes">_X_</span> <span class="tblr-buttons"></span>
+</p>
+</div>
+
+
+</div>

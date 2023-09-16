@@ -21,17 +21,17 @@ for line in sys.stdin:
 	
 	# name switch 
 	if name == "Lar | anti-soup squadron":
-		print ("<p><span class=dc-name-purple>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-purple>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	if name == "Reeves | Soup Switzerland":
-		print ("<p><span class=dc-name-green>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-green>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	if name == "crawler | anti-soup captain":
-		print ("<p><span class=dc-name-blue>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-blue>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	if name == "Volanna | Soup is good":
-		print ("<p><span class=dc-name-red>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-red>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	if name == "Shuttai | soup radical 🤍":
-		print ("<p><span class=dc-name-forest>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-forest>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	if name == "Squish! | favorite child":
-		print ("<p><span class=dc-name-green>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+		print ("<p><span class=dc-name color-green>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
 	
 
     
@@ -44,4 +44,4 @@ for line in sys.stdin:
 	print ("-----")
 	'''
 	
-	# print ("<p class=shift-up><span class=dc-name-default>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")
+	# print ("<p class=shift-up><span class=dc-name color-default>", name, "</span> <span class=dc-time-stamp>Today at", time, "</span><br />", msg, "</p>")

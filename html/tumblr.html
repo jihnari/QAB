@@ -1,0 +1,450 @@
+<style>
+
+  .tblr-container{
+    width:100%; 
+    max-width:500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* font: 100%/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif; */
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    /* background-color: #001A35; */
+  }
+  .tblr-post{
+    padding-bottom:10px;
+    border-bottom:15px solid #001A35;
+    width:100%;
+  }
+  
+  /* for testing */
+
+  div.tblr-container,  div.tblr-post > p{
+    margin-top:0;
+    margin-bottom:0;
+  } 
+
+  /* to fix ao3 p nonsense */
+  
+  p.tblr-tabs, p.tblr-filters, p.tblr-post-header {
+    margin-top:1em !important;
+    margin-bottom:1em !important;
+  }
+
+
+  .tblr-search-container {
+      display: table;
+      width: 100%;
+      position:relative;
+      border-bottom: 1px solid #F5F5F5;
+      /* padding-bottom: 0px; */
+  }
+
+  .tblr-search-box{
+    /* display: table-cell; */
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+    font-size: 1.2em;
+    width:70%;
+    color: black;
+  }
+  .tblr-back-icon{
+    width:24px;
+    height:24px;
+
+    margin-left:5px;
+    padding-right:35px;
+    margin-top: 10px;
+    /* vertical-align:middle; */
+    
+    background: url("https://github.com/jihnari/QAB/raw/main/img/tw-arrow.png") no-repeat;
+    background-size:24px 24px;
+    /* filter: brightness(0.4); */
+    filter: grayscale(100%);
+
+    display: inline-block;
+    cursor:pointer;
+  }
+
+  .tblr-follow-btn{
+    background:#00B8FF;
+    border-width: 1px;
+    border-radius: 3px;
+    margin-top:5px;
+    padding:5px 12px 5px 12px;
+    font-size: .9em;
+    display: inline-block;
+    cursor:pointer;
+  }
+  .tblr-follow-btn::after{
+  content:"Follow";
+  /* padding-left: 10px; */
+
+  color:black;
+  }
+
+  .tblr-tabs{
+    width:100%;
+    padding-bottom:15px;
+    border-bottom:1px solid #F5F5F5;
+    background-color: white;
+  }
+  .tblr-tab-name{
+    width: 32%;
+    font-size: .8em;
+    font-weight: bold;
+    color:#595959;
+    display: inline-block;
+    text-align : center;
+    cursor:pointer;
+  }
+  .tblr-tab-name-focus{
+    color:#00B8FF;
+    border-bottom:3.5px solid;
+    /* 12 and -18 for normal people, 13 and -18 for ao3  */
+    padding-bottom: 13px;
+    margin-bottom:-18px;
+  }
+
+  .tblr-filters{
+    white-space: nowrap;
+    padding-bottom:7px;
+    border-bottom: 1px solid #F5F5F5;
+    box-shadow: 0px 7px 5px -4px lightgray;
+    padding-left:5px;
+    overflow: hidden;
+  }
+  .tblr-filter-name{
+    display: inline-block;
+    text-align : center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #00B8FF;
+    cursor:pointer;
+    border:1.5px solid #00B8FF;
+    border-radius: 20px;
+
+    margin:0px 2px 5px 5px;
+    padding: 7px 15px 7px 15px;
+  }
+  .tblr-filter-name::after{
+    content:"";
+    border: solid #00B8FF;
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 2.7px;
+    margin-bottom:2px;
+    margin-left:7px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  /* post */
+  .tblr-post-header{
+    color:black;
+    width:100%;
+    white-space: nowrap;
+    /* border-bottom:1px solid #F5F5F5; */
+    padding-bottom: 15px;
+
+    line-height: 1.2em;
+
+    /* display: table; */
+  }
+  .tblr-pfp{
+  height: 40px;
+  width: 40px;
+  float:left;
+  margin-right: 10px;
+  margin-left: 15px;
+  background-color: lightgray;
+
+  /* display:table-cell; */
+  }
+  .tblr-pfp-small{
+  height: 20px;
+  width: 20px;
+  float:left;
+  margin-right: 10px;
+  margin-left: 15px;
+  background-color: lightgray;
+
+  /* display:table-cell; */
+  }
+  .tblr-name{
+    font-weight: bold;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    display: block;
+  }
+  .tblr-blue{
+    color: #00B8FF;
+    cursor:pointer;
+  }
+  .tblr-timestamp{
+    font-size: .8em;
+    /* display:inline-block; */
+    /* display:block; */
+  }
+  .tblr-menu-btn{
+    float:right;
+    width:35px;
+    height:20px;
+    margin-top: 10px;
+    margin-right:10px;
+
+    background: url("https://cdn.discordapp.com/attachments/453388093559537664/1150887862510825594/image.png") no-repeat;
+    background-size:35px 20px;
+    cursor:pointer;
+  }
+
+  .tblr-post-body{
+    width:100%;
+    padding-left: 15px;
+    padding-bottom:20px;
+    line-height: 1.2em;
+    color:black;
+  }
+  .tblr-post-footer{
+    width:100%;
+    display: table;
+    color:black;
+
+    /* padding-top:22px; */
+    /* margin-bottom:-10px; */
+    /* border-bottom:15px solid #001A35;  */
+    white-space: nowrap;
+    overflow: auto;
+  }
+  .tblr-thin-border{
+    border-bottom:1px solid #F5F5F5 !important ;
+  }
+
+  .tblr-img{
+    width:100%;
+    margin-left: -15px;
+    margin-top:-1em;
+    /* i THINK anyway  */
+    /* margin-bottom:-1em; */
+    margin-bottom: -20px;
+    display: block;
+  }
+  .tblr-tag{
+    color:#595959;
+    margin-right:10px;
+    cursor:pointer;
+  }
+  .tblr-tag::before{
+    content:"#";
+  }
+  .tblr-tag:hover{
+    text-decoration: underline;
+  }
+  .tblr-trending{
+    background-image: linear-gradient(45deg, rgb(255, 97, 206), rgb(124, 92, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tblr-trending::before{
+    content:"";
+    margin-right:2px;
+    vertical-align: middle;
+
+    width:1.5em;
+    height:1.5em;
+    display: inline-flex;
+    background: url("https://media.discordapp.net/attachments/387318898174984195/1152002900629917807/tblr-trending.png") no-repeat;
+    background-size:1.5em 1.5em;
+  }
+
+  .tblr-at{
+  -webkit-text-stroke-width: thin;
+  color:#595959;
+  }
+  .tblr-note-container{
+    display: table-cell;
+  }
+  .tblr-notes{
+    border:1px solid lightgray;
+    border-radius: 20px;
+    margin-left:10px;
+    padding:7px 12px 5px 12px;
+    display: inline-block;
+    overflow: hidden;
+    cursor:pointer;
+  }
+  .tblr-notes::after{
+    content: " notes";
+    color:gray;
+  }
+  .tblr-buttons{
+    width:170px;
+    height:35px;
+    background: url("https://cdn.discordapp.com/attachments/453388093559537664/1150885428740751420/image.png") no-repeat;
+    background-size:170px 35px;
+    margin-right: 5px;
+    display: table-cell;
+    text-align:right;
+    cursor:pointer;
+  }
+
+  .tblr-follow{
+    cursor:pointer;
+    /* display:inline-block !important; */
+  }
+  .tblr-follow::after{
+    margin-left:5px;
+    content: "Follow";
+    color: #00B8FF;
+    font-weight: 100;
+  }
+  .tblr-from{
+    color:gray;
+    margin-right:5px;
+
+    display:block;
+  }
+  .tblr-from::before{
+    content: '';
+    margin-right:5px;
+    vertical-align: middle;
+    width:15px;
+    height:15px;
+    display: inline-flex;
+    background: url("https://media.discordapp.net/attachments/387318898174984195/1151610340514222110/image.png") no-repeat;
+    background-size:15px 15px;
+    /* display:inline-block; */
+  }
+  .tblr-inline{
+    /* display:table-cell; */
+    display:inline-block;
+  }
+
+
+</style>
+
+<!-- 
+notes: 
+* OP header always has a thin border. all subsequent headers do not have borders.
+* thin border for all connected posts, thick border for new post
+* only final post has tags, notes, and the reblog buttons 
+* two brs to separate any given line of text. img following text requires THREE brs. is this the correct way to do this? probably not. 
+* this might be a problem for image only posts tho, bc those kill the thin border at top 
+* "follow" btn shifts to the next line if name + reblogged from is too long
+* possibly you can remove the timestamp entirely...? that might only be there because i went out of my way to turn it on in the settings, i dont think its default
+* im removing the timestamp, it exists and is mostly correct except for the shifts in padding/margin and goes after the username 
+* trending tags REQUIRE a hardcoded #. 
+-->
+
+
+<!-- <img src="https://cdn.discordapp.com/attachments/983566168805756938/1149920945335701576/Screenshot_20230908-221507.png" width="50%"/> -->
+
+
+<!-- tumblr:_search_:_date_ -->
+
+
+<p>&nbsp;</p><p>&nbsp;</p>
+
+
+<p>&nbsp;</p><p>&nbsp;</p>
+
+<div class="tblr-container">
+
+
+  <!-- <table class="tblr-post-header"> -->
+
+<!-- top bar -->
+<table class="tblr-search-container">
+  <td class="tblr-back-icon"></td>
+  <td class="tblr-search-box">_searchquery_</td>
+  <td class="tblr-follow-btn"></td>
+</table>
+
+<!-- tabs bar -->
+<p class="tblr-tabs">
+  <span class="tblr-tab-name tblr-tab-name-focus">
+    Posts
+  </span><span class="tblr-tab-name">
+    Tags
+  </span><span class="tblr-tab-name">
+    Blogs
+  </span>
+</p>
+
+<!-- filters bar -->
+<p class="tblr-filters">
+  <span class="tblr-filter-name">Top</span>
+  </span><span class="tblr-filter-name">All time</span>
+  </span><span class="tblr-filter-name">All types</span>
+  </span>
+</p>
+
+<div class="tblr-post">
+  <p class="tblr-post-header tblr-thin-border">
+    <span class="tblr-pfp"></span>
+    <span class="tblr-menu-btn"></span>
+    <span class="tblr-inline">
+<span class="tblr-name">_username_</span> <span class="tblr-from tblr-follow">_user2_</span>
+
+    </span>
+</p>
+<p class="tblr-post-body">
+  _content <span class="tblr-at">@_user2_</span>
+  <!-- <svg class="reblogged"/> -->
+  <br/><br/>
+    <!-- <br/> <img class="tblr-img" src="https://pbs.twimg.com/media/F4oesQBbYAAnm1s.jpg"/> -->
+
+  <span class="tblr-tag tblr-trending">#_tag_</span><span class="tblr-tag">_tag_</span>
+
+</p>
+<p class="tblr-post-footer">
+  <span class="tblr-notes">127</span> <span class="tblr-buttons"></span>
+</p>
+</div>
+
+<!-- tumblr post (thread)-->
+<!-- if last post, consider adding tblr-thin-border to div  -->
+<!-- *** add the reblogged from icon  -->
+<div class="tblr-post tblr-thin-border">
+<p class="tblr-post-header tblr-thin-border">
+  <span class="tblr-pfp"></span>
+  <span class="tblr-menu-btn"></span>
+  <span class="tblr-inline">
+  <span class="tblr-name tblr-follow">_username_</span> 
+  <br/> <!-- need a br if you dont have a "reblogged". messes up the spacing -->
+  </span>
+  </p>
+  <p class="tblr-post-header">
+    <span class="tblr-pfp-small"></span>
+    <span class="tblr-inline">
+    <span class="tblr-name tblr-follow">_username_</span>
+    </span>
+    </p>
+<p class="tblr-post-body tblr-thin-border">
+    <!-- <img class="tblr-img" src="https://pbs.twimg.com/media/F4oesQBbYAAnm1s.jpg"/> -->
+    _content_
+</p>
+
+<p class="tblr-post-header">
+  <span class="tblr-pfp-small"></span>
+  <span class="tblr-inline">
+  <span class="tblr-name tblr-follow">_username_</span> 
+  </span>
+  </p>
+<p class="tblr-post-body ">
+  _content_
+
+  <br/><br/>
+  <span class="tblr-tag">_tag_</span><span class="tblr-tag">_tag_</span>
+</p>
+<p class="tblr-post-footer">
+  <span class="tblr-notes">_X_</span> <span class="tblr-buttons"></span>
+</p>
+</div>
+
+
+</div>

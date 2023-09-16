@@ -779,7 +779,6 @@ todo:
 }
 
 .signal-box-right0, .signal-box-right1, .signal-box-right2,.signal-box-right3 {
-  margin-top: 10px;
   border-width: 1px;
   color: white;
   background: #2c6bee;
@@ -793,7 +792,6 @@ todo:
 }
 .signal-box-right1 {
   margin-top: 10px;
-  padding: 7px 14px 7px 14px;
   border-bottom-right-radius: 0;
   margin-bottom: 3px;
 }
@@ -2285,6 +2283,7 @@ border:1.5px solid #BCBCBC;
 .dc-yt-box, .dc-twt-box, .dc-embed-box{
   /* width:95%; */
   /* max-width:300px; */
+  color:black;
   width: fit-content;
   background-color:#F2F3F5;
   border: 1px solid #DDDEDF;
@@ -3016,9 +3015,12 @@ div.tblr-container,  div.tblr-post > p{
   margin-top:0;
   margin-bottom:0;
 } 
-p.tblr-tabs, p.tblr-filters, p.tblr-post-header {
+p.tblr-tabs, p.tblr-filters, p.tblr-post-header{
   margin-top:1em !important;
   margin-bottom:1em !important;
+}
+p.tblr-post-footer, img.tblr-img {
+  margin-top:1em !important;
 }
 
 .tblr-search-container {
@@ -3178,7 +3180,7 @@ width: 20px;
   /* padding-right:25px; */
   /* margin-right:10px; */
   /* margin-left:-25px; */
-  padding:0 15 20 15;
+  padding:0px 15px 20px 15px;
   line-height: 1.2em;
   color:black;
 }
@@ -3286,4 +3288,14 @@ color:#595959;
 }
 .tblr-inline{
   display:inline-block;
+}
+.tblr-readmore{
+  text-align: center;
+}
+.tblr-readmore::after{
+  cursor:pointer;
+  content:"Keep reading";
+  font-weight: bold;
+  font-size: .9em;
+  color: black;
 }
