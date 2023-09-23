@@ -3299,3 +3299,35 @@ color:#595959;
   font-size: .9em;
   color: black;
 }
+
+/* need to code smth for asks  */
+
+
+
+
+/* linux for qab1 */
+/* gonna have to delete more stuff for this :/ */
+.linux-blue {
+  color: #5D75B0;
+}
+.linux-green {
+  color: #82D832;
+}
+.linux-box-top, .linux-box-bottom{
+  margin: 0;
+  border-width: 1px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.linux-box-top {
+  background: #282B28;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.linux-box-bottom {
+  background: #300820;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
