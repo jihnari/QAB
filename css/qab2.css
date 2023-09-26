@@ -44,9 +44,9 @@ body {
   clear: both;
 }
 /* i think maybe clear is already defined by ao3?  */
-.clearclear{
+/* .clearclear{
     clear: both;
-}
+} */
 .clear2{
   overflow: auto;
 }
@@ -133,9 +133,6 @@ max-width:100%;
   margin-right: 10px;
   background-color: #D7DADD;
   margin-bottom: -15px;
-}
-.dotbox {
-  width: 40px;
 }
 .thread-buffer{
   margin-top:8px;
@@ -303,11 +300,6 @@ the last thing we might wanna do here is use the fadeout function and place the 
   padding: 0px 0px 0px 10px;
   margin: 0px 0px 5px 5px;
   border-left: 1px solid #EEEFF1;
-}
-.rd-vr-not {
-  display: table;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0 5px 0;
 }
 .rd-gray-text {
   color: #657685;
@@ -486,21 +478,7 @@ cried enough over it already so i'll probably just. ignore it forever?
   position: relative;
 }
 /* deleting line-box-left1 as a leftover from qab1 */
-.line-box-left {
-  border-color: #d3dce0;
-  border-style: solid;
-  border-width: 1px;
-  background: #d3dce0;
-  color: black;
-  float: left;
-  margin: 0 0 0.5em;
-  border-radius: 1em;
-  padding: 0.5em 1em;
-  max-width: 75%;
-  clear: both;
-  position: relative;
-}
-.line-box-left-m {
+.line-box-left, .line-box-left-m {
   border-color: #d3dce0;
   border-style: solid;
   border-width: 1px;
@@ -548,18 +526,7 @@ the only difference is the bottom margin, one is 0.5em the other is 5px? 10px? r
 why are there two of these? why did i use right1 for so long over right? i do not know.
 - deleted right because right1 is used everywhere but a single chapter. updated that chapter to use right1. i should rename it to just right, yes, but i havent gotten that far yet. 
 */
-.line-box-right1 {
-  float: right;
-  color: black;
-  margin-bottom: 10px;
-  border-radius: 1em;
-  padding: 0.5em 1em;
-  background: #9DE694;
-  max-width: 75%;
-  clear: both;
-  position: relative;
-}
-.line-box-right1-m {
+.line-box-right1, .line-box-right1-m {
   float: right;
   color: black;
   margin-bottom: 10px;
@@ -1203,19 +1170,8 @@ text-decoration: underline;
   color: #1c94dc !important;
   text-decoration: none !important;
 }
-.tw-border-top-bottom {
-  border-bottom: 1px solid #D7DADD;
-  border-top: 1px solid #D7DADD;
-  font-size: 0.8em; /*this might break things*/
-}
 .tw-border-bottom {
   border-bottom: 1px solid #D7DADD;
-}
-.tw-border-bottom2 {
-  border-bottom: 1px solid #D7DADD;
-
-  /* ao3 nonsense */
-  margin-top:-5px;
 }
 .tw-border-bottom-thick {
   /* border-bottom: 5px solid #dfe5e8; */
@@ -1231,30 +1187,6 @@ text-decoration: underline;
   max-width: 450px;
   display: block;
 }
-.twt-comment-buttons2{
-  max-width: 500px;
-  /* background: url("https://github.com/jihnari/QAB/raw/main/img/tw-topbar.jpg") no-repeat; */
-  background: url("https://cdn.discordapp.com/attachments/387318898174984195/1008111410984783923/Screenshot_20220813-133439_Twitter.jpg") no-repeat;
-  display: inline-block;
-  height:30px;
-  width:100%;
-  background-size:80% 30px;
-  margin-bottom:0;
-}
-.twt-share {
-  /* why the hell is this on imgur */
-  /* that seems excessively wrong */
-  /* like. who the hell put it on imgur? it wasnt me. no one else works on this project. all my resources are on github or, if i was lazy and forgot to fix it, discord. so *who put it on imgur*. */
-  /* wait am i even USING this anywhere??? */
-  /* WHO PUT THIS HERE */
-  background-image: url("https://i.imgur.com/iwGvFJY.png");
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-top: -24px;
-  margin-bottom: -10px;
-}
 .tw-img{
   float: center;
   margin: 10px 0px 0px 0px; 
@@ -1264,47 +1196,35 @@ text-decoration: underline;
   border: 1px solid #D7DADD;
   border-radius: 10px;
 }
-.tw-qrt-w-img{
+
+.tw-qrt-img, .tw-qrt-w-img, .tw-qrt{
   font-size: 1.0em !important;
   display:block;
   width:95%;
+  border: 1px solid #D7DADD;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.tw-qrt-w-img{
   margin: 10px 0px 0px 10px;
   padding:5px 10px 10px 10px;
   min-height: 10px;
-  border: 1px solid #D7DADD;
-  border-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .tw-qrt-img{
-  display:block;
-  width: 95%;
   margin: -2px 0px 15px 10px;
-  /* padding:5px 10px 10px 10px; */
-  /* padding-top:2px; */
-  border: 1px solid #D7DADD;
-  border-radius: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .tw-qrt{
-  font-size: 1.0em !important;
-
-  display:block;
   width:90%;
   margin: 10px 0px 10px 10px;
   padding:5px 10px 10px 10px;
   min-height: 10px;
-  border: 1px solid #D7DADD;
-  border-radius: 10px;
 }
 .tw-qrt-body{
   padding-top: 25px;
@@ -1448,7 +1368,6 @@ text-decoration: underline;
   vertical-align: sub;
 }
 
-
 /*twitter DMs*/
 .tw-check { 
   color: #1Da1f3;
@@ -1460,7 +1379,7 @@ text-decoration: underline;
   content: "✓";
   font-weight: bold;
 }
-.tw-box-left0, .tw-box-left1  {
+.tw-box-left0, .tw-box-left1 {
   color: black;
   background: #e7ecf0;
   border-width: 1px;
@@ -1479,6 +1398,8 @@ text-decoration: underline;
 .tw-box-left1 {
   border-top-left-radius: 0;
 }
+/* no bg color */
+/* might have replaced this in qab2 but idk with what, will have to check **qab1 */
 .tw-box-left-round {
   border: 1px solid #e7ecf0;
   border-radius: 12px;
@@ -3194,10 +3115,8 @@ width: 20px;
 .tblr-thin-border{
   border-bottom:1px solid #F5F5F5 !important ;
 }
-
 .tblr-img{
   width:100%;
-  /* margin-left: -15px; */
   margin-top:-1em;
   margin-bottom: -20px;
   display: block;
@@ -3223,14 +3142,12 @@ width: 20px;
   content:"";
   margin-right:2px;
   vertical-align: middle;
-
   width:1.5em;
   height:1.5em;
   display: inline-flex;
   background: url("https://github.com/jihnari/QAB/raw/main/img/tblr-trending.png") no-repeat;
   background-size:1.5em 1.5em;
 }
-
 .tblr-at{
 -webkit-text-stroke-width: thin;
 color:#595959;
@@ -3273,11 +3190,10 @@ color:#595959;
 .tblr-from{
   color:gray;
   margin-right:5px;
-
   display:block;
 }
 .tblr-from::before{
-  content: '';
+  content:'';
   margin-right:5px;
   vertical-align: middle;
   width:15px;
@@ -3290,7 +3206,7 @@ color:#595959;
   display:inline-block;
 }
 .tblr-readmore{
-  text-align: center;
+  text-align:center;
 }
 .tblr-readmore::after{
   cursor:pointer;
@@ -3299,9 +3215,95 @@ color:#595959;
   font-size: .9em;
   color: black;
 }
+.tblr-ask{
+  background-color: #EDEDED;
+  margin:0px 70px 20px 5px; 
+  padding: 15px 10px;
+  position:relative;
+  border-radius: 5px;
+}
+.tblr-ask::before{
+  content:"";
+  position: absolute;
+  border: 22px solid transparent;
+  border-left-color: #EDEDED;
+  right: -30px;
+  top: 0%;
+}
+/* merge w the others? */
+.tblr-ask::after{
+  content:"";
+  height: 40px;
+  width: 40px;
+  position:absolute;
+  background-color: lightgray;
+  right:-55px; top:0%;
+}
 
-/* need to code smth for asks  */
-
+.tblr-header-main, .tblr-header-sub{
+  color:black;
+    /* width:100%; */
+    white-space: nowrap;
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left:63px;
+    padding-bottom: 5px;
+    position:relative;
+}
+.tblr-header-sub{
+    margin-left:43px;
+}
+.tblr-header-main::after{
+  /* the dots */
+  content: "";
+  width:35px;
+  height:20px;
+  margin-top: 10px;
+  margin-right:10px;
+  background: url("https://cdn.discordapp.com/attachments/453388093559537664/1150887862510825594/image.png") no-repeat;
+  background-size:35px 20px;
+  background-color: purple;
+  cursor:pointer;
+  position:absolute;
+  right:0px;
+  top:0%;
+}
+.tblr-header-main::before, .tblr-header-sub::before{
+  content:"";
+  height: 40px;
+  width: 40px;
+  position:absolute;
+  background-color: lightgray;
+  left:-50px;top:0%;
+}
+/* these have to be declared after header1 */
+.tblr-header-sub::before{
+  height: 20px;
+  width: 20px;
+  left:-30px;top:0%;
+}
+.tblr-post-footer{
+  width:100%;
+  display: table;
+  color:black;
+  white-space: nowrap;
+  overflow: auto;
+  position:relative;
+}
+.tblr-post-footer::after{
+  content: "";
+  width:170px;
+  height:35px;
+  background: url("https://cdn.discordapp.com/attachments/453388093559537664/1150885428740751420/image.png") no-repeat;
+  background-size:170px 35px;
+  margin-right: 5px;
+  text-align:right;
+  cursor:pointer;
+  position:absolute;
+  right:0px;
+}
 
 
 
