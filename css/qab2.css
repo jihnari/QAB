@@ -820,7 +820,6 @@ todo:
   padding: 30px 0 5px 0;
   color: gray;
   font-size:.8em;
-  bbackground: white;
   text-align:center;
   clear: both;
   position: relative;
@@ -974,26 +973,20 @@ todo:
 .yt-font{
 font-family: 'Roboto', sans-serif;
 }
-.yt-red-line-50 {
+.yt-red-line-50, .yt-red-line-30, .yt-red-line-70{
   position:absolute;
   width:100%;
   height:3px;
-  background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);
   bottom:5px;
+}
+.yt-red-line-50 {
+  background:linear-gradient(to right, red 50%,rgba(246,246,246,.3) 50%);
 }
 .yt-red-line-30 {
-  position:absolute;
-  width:100%;
-  height:3px;
   background:linear-gradient(to right, red 30%,rgba(246,246,246,.3) 30%);
-  bottom:5px;
 }
 .yt-red-line-70 {
-  position:absolute;
-  width:100%;
-  height:3px;
   background:linear-gradient(to right, red 70%,rgba(246,246,246,.3) 70%);
-  bottom:5px;
 }
 .yt-border-bottom-gray  {
   border-bottom: 1px solid #b1b1b3;
@@ -1024,21 +1017,19 @@ font-family: 'Roboto', sans-serif;
   text-decoration: none !important;
   cursor: pointer;
 }
-.yt-down-arrow {
+.yt-down-arrow, .yt-up-arrow{
   margin-top: 10px;
   margin-right: 5px;
   border: 6px solid transparent;
   border-bottom-color: #000;
   display: inline-block;
+}
+.yt-down-arrow {
   transform: rotate(-180deg);
   -webkit-transform: rotate(180deg);
   }
 .yt-up-arrow {
-  margin-bottom: 10px;
-  margin-right: 5px;
-  border: 6px solid transparent;
-  border-bottom-color: #000;
-  display: inline-block;
+  /* why is this here whats it doing  */
   float: right;
 }
 .yt-stats{
@@ -1244,20 +1235,16 @@ text-decoration: underline;
   border-image: linear-gradient(to bottom, lightgray 70%, rgba(255,255,255, 0) 20%);
   border-image-slice: 1;
 }
-.tw-line-vertical2 {
+
+/* can i really just throw border-image-slice in here? is that really allowed (as opposed to putting it after the border-image was declared) */
+.tw-line-vertical-100, .tw-line-vertical-10, .tw-line-vertical-50, .tw-line-vertical-90, .tw-line-vertical2{
   margin-left: 22px;
   border-left: 2px solid transparent;
   border-color: lightgray;
-  border-image: linear-gradient(to bottom, lightgray 95%, rgba(255,255,255, 0) 5%);
   border-image-slice: 1;
 }
-
-/* its hacky but it works (better than the above) */
-.tw-line-vertical-100, .tw-line-vertical-10, .tw-line-vertical-50, .tw-line-vertical-90{
-  margin-left: 22px;
-  border-left: 2px solid transparent;
-  border-color: lightgray;
-  border-image-slice: 1;
+.tw-line-vertical2 {
+  border-image: linear-gradient(to bottom, lightgray 95%, rgba(255,255,255, 0) 5%);
 }
 .tw-line-vertical-0{
   margin-left:22px;
@@ -1339,25 +1326,6 @@ text-decoration: underline;
   background: #C5CFD6;
   width:100%;
   height:120px;
-}
-.tw-big-cirle{
-  /* might not ever use this, but just in case */
-  /* border: solid 2px #C5CFD6;
-  margin-left: 10px; */
-
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #F8FAFB;
-}
-.tw-header{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.tw-subheader{
-  color: #626E81;
 }
 .tw-verified-icon{
   background: url("https://github.com/jihnari/QAB/raw/main/img/tw-verified.png");
@@ -1491,19 +1459,13 @@ text-decoration: underline;
 .tw-header-text{
   font-size: 12px;
 }
-.tw-tweet-header{
+.tw-tweet-header, .tw-thread-header, .tw-header{
   font-size:1.2em;
   padding-bottom:5px;
   border-bottom: 1px solid #D7DADD;
 }
 .tw-tweet-header::after{
   content:"Tweet";
-}
-
-.tw-thread-header{
-  font-size:1.2em;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #D7DADD;
 }
 .tw-thread-header::after{
   content:"Thread";
@@ -1953,36 +1915,35 @@ border:1.5px solid #BCBCBC;
   color: #5865F2;
   padding: 2px 5px 2px 3px;
 }
-.dc-img-box {
-  border-radius: 20px;
-  border:2px;
-  margin-top: 5px;
-  /* idk why this has to be -5 */
-  margin-bottom: -5px;
-  max-width: 100%;
-  max-height:400px;
+.dc-loading-box {
+  border-color: #f2f4f4;
+  color: #595959;
+  background: #F6F6F6;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 3px 3px 10px 3px;
+}
+
+.dc-green-line-50, .dc-green-line-20, .dc-green-line-85{
+  border-bottom: 3px solid transparent;
+  padding-left: 5px;
+  padding: 3px;
+  border-image-slice: 1;
 }
 .dc-green-line-50 {
-  border-bottom: 3px solid transparent;
-  padding-left: 5px;
-  padding: 3px;
   border-image: linear-gradient(to right, #78bf9f 50%, #F6F6F6 50%);
-  border-image-slice: 1;
 }
 .dc-green-line-20 {
-  border-bottom: 3px solid transparent;
-  padding-left: 5px;
-  padding: 3px;
   border-image: linear-gradient(to right, #78bf9f 20%, #F6F6F6 70%);
-  border-image-slice: 1;
 }
 .dc-green-line-85 {
-  border-bottom: 3px solid transparent;
-  padding-left: 5px;
-  padding: 3px;
   border-image: linear-gradient(to right, #78bf9f 85%, #F6F6F6 15%);
-  border-image-slice: 1;
 }
+.rounded-corners {
+  border-radius: 2px;
+}
+
 .dc-name{
   font-weight:bold;
   font-size:1.1em;
@@ -2149,7 +2110,6 @@ border:1.5px solid #BCBCBC;
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/finter.png") no-repeat;
   background-size:1.2em 1.2em;
 }
-
 .fcb{
   background: url("https://github.com/jihnari/QAB/raw/main/img/emotes/fcb.png") no-repeat;
   background-size:1.2em 1.2em;
@@ -2199,6 +2159,7 @@ border:1.5px solid #BCBCBC;
 .dc-link-blue{
   color: #0C63CC !important;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .dc-yt-box, .dc-twt-box, .dc-embed-box{
@@ -2569,12 +2530,14 @@ div.dc-msg-container p
   font-size:.7em;
   font-family:verdana;
   color: red;
-  margin: -40px 0 -10px 0;
+  /* margin: -40px 0 -10px 0; */
+  margin-bottom:10px;
 }
 .art-header{
   font-size:4em;
   font-weight:bold;
   font-family:serat;
+  margin-bottom:-40px;
 }
 .art-read-more {
   position: absolute;
@@ -2588,6 +2551,7 @@ div.dc-msg-container p
   text-align: center;
   left: 45%;
   margin-left: -50px;
+  cursor: pointer;
 }
 .art-content{
   text-align: justify;
@@ -2913,6 +2877,7 @@ div.ch-table p
    width: 100%;
    height:1500px;
 }
+
 
 /* tumblr  */
 .tblr-container{
@@ -3247,9 +3212,7 @@ color:#595959;
     padding-bottom: 15px;
     line-height: 1.2em;
     font-weight: bold;
-    margin-right: 5px;
-    margin-left:63px;
-    padding-bottom: 5px;
+    margin:15px 5px 10px 63px;
     position:relative;
 }
 .tblr-header-sub{
