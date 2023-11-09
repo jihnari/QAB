@@ -69,6 +69,9 @@ max-width:100%;
 .padding-left-20 {
   padding-left: 20px;
 }
+.left-70{
+  padding-left: 70px;
+}
 .padding-bottom-5{
   padding-bottom:5px;
 }
@@ -142,9 +145,8 @@ max-width:100%;
 
 /* attempting a thing to hide the scroll bar on pc */
 .stay-block {
-  overflow: auto;
+  overflow: hidden;
   display: block;
-
   scrollbar-width: none;
 }
 .stay-block::-webkit-scrollbar {
@@ -192,8 +194,8 @@ the last thing we might wanna do here is use the fadeout function and place the 
 .rd-font{
   font-family:verdana, arial, helvetica, sans-serif;
   background-color: white;
-  /*make sure this didnt break everything*/
   color:black;
+  padding:10px;
 }
 .rd-view-box {
   background: #0079D3;
@@ -257,10 +259,6 @@ the last thing we might wanna do here is use the fadeout function and place the 
   padding-top:5px;
   padding-bottom:5px;
 }
-.rd-poster{
-  font-size: .8em;
-  margin-bottom: 15px;
-}
 .rd-op{
   color:#25A0ED;
   font-weight:bold;
@@ -284,37 +282,37 @@ the last thing we might wanna do here is use the fadeout function and place the 
   display: inline-block;
   padding-bottom:5px;
 }
-.rd-vr0 {
-  display: table;
-  padding: 10px 0 0px 30px;
-  border-bottom: 1px solid #EEEFF1;
-}
 .rd-vr1 {
   display: table;
   padding: 0px 0px 0px 10px;
   margin: 0px 0 5px 5px;
   border-left: 1px solid #EEEFF1;
 }
-.rd-vr2 {
-  display: table;
-  padding: 0px 0px 0px 10px;
-  margin: 0px 0px 5px 5px;
-  border-left: 1px solid #EEEFF1;
-}
 .rd-gray-text {
   color: #657685;
 }
-.rd-bubble{
+.rd-bubble, .rd-open{
   color: #787C7F;
   font-size: .8em;
   padding: 12px 5px 3px 5px;
   margin-bottom:5px;
   border-radius: 16px;
   border: 1px solid #EEEFF1;
+  cursor: pointer;
+}
+.rd-answered {
+  background: #2d4351;
+  border-radius: 2px;
+  font-size: 0.8em;
+  color: white;
+  padding: 1px 5px;
+  /* margin-bottom:-5px; */
+  /* padding: 1px;
+  padding-right: 5px;
+  padding-left: 5px; */
 }
 .rd-arrow-text{
   padding-top:2px;
-  /* mmargin-bottom:10px; */
   vertical-align:super;
   display: inline-block;
 }
@@ -332,6 +330,13 @@ the last thing we might wanna do here is use the fadeout function and place the 
   float:right;
   padding-right:10px;
   font-size:1.0em;
+}
+.rd-open-text{
+  font-weight: bold;
+  color:black;
+  vertical-align:super;
+  display: inline-block;
+  padding: 12px 8px;
 }
 
 
@@ -632,6 +637,7 @@ why are there two of these? why did i use right1 for so long over right? i do no
   height:140px;
 }
 /* are these supposed to be "line" */
+/* they are not (its for embeds) */
 .link-text-top{
   font-weight: bold;
   font-size: .9em;
@@ -649,14 +655,6 @@ why are there two of these? why did i use right1 for so long over right? i do no
 .line-at{
   color: #4582C2;
   cursor: pointer;
-}
-.lbox2 {
-  background: #BFBDC1;
-  border-radius: 10px;
-  color: white;
-  padding: 5px 13px;
-  clear: both;
-  text-align: center;
 }
 .line-notif-container {
   float: left;
@@ -1237,26 +1235,31 @@ text-decoration: underline;
 }
 
 /* can i really just throw border-image-slice in here? is that really allowed (as opposed to putting it after the border-image was declared) */
+/* ***it is NOT allowed, just fyi */
 .tw-line-vertical-100, .tw-line-vertical-10, .tw-line-vertical-50, .tw-line-vertical-90, .tw-line-vertical2{
   margin-left: 22px;
   border-left: 2px solid transparent;
   border-color: lightgray;
-  border-image-slice: 1;
+  /* border-image-slice: 1; */
 }
 .tw-line-vertical2 {
   border-image: linear-gradient(to bottom, lightgray 95%, rgba(255,255,255, 0) 5%);
+  border-image-slice: 1;
 }
 .tw-line-vertical-0{
   margin-left:22px;
 }
 .tw-line-vertical-10{
   border-image: linear-gradient(to bottom, lightgray 10%, rgba(255,255,255, 0) 90%);
+  border-image-slice: 1;
 }
 .tw-line-vertical-50 {
   border-image: linear-gradient(to bottom, lightgray 50%, rgba(255,255,255, 0) 50%);
+  border-image-slice: 1;
 }
 .tw-line-vertical-90 {
   border-image: linear-gradient(to bottom, lightgray 90%, rgba(255,255,255, 0) 10%);
+  border-image-slice: 1;
 }
 .tw-body{
   font-size: 1.4em;
@@ -1916,34 +1919,37 @@ border:1.5px solid #BCBCBC;
   padding: 2px 5px 2px 3px;
 }
 .dc-loading-box {
-  border-color: #f2f4f4;
+  border: 2px solid #f2f4f4;
   color: #595959;
   background: #F6F6F6;
-  border-style: solid;
-  border-width: 2px;
   border-radius: 5px;
   padding: 3px 3px 10px 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* width:95%; */
 }
-
 .dc-green-line-50, .dc-green-line-20, .dc-green-line-85{
   border-bottom: 3px solid transparent;
   padding-left: 5px;
   padding: 3px;
-  border-image-slice: 1;
 }
 .dc-green-line-50 {
   border-image: linear-gradient(to right, #78bf9f 50%, #F6F6F6 50%);
+  border-image-slice: 1;
 }
 .dc-green-line-20 {
   border-image: linear-gradient(to right, #78bf9f 20%, #F6F6F6 70%);
+  border-image-slice: 1;
 }
 .dc-green-line-85 {
   border-image: linear-gradient(to right, #78bf9f 85%, #F6F6F6 15%);
+  border-image-slice: 1;
 }
+/* unsure if needed  */
 .rounded-corners {
-  border-radius: 2px;
+  border-radius:2px;
 }
-
 .dc-name{
   font-weight:bold;
   font-size:1.1em;
@@ -2320,7 +2326,6 @@ div.dc-msg-container p
   margin-top:-1px;
   */
 }
-
 .dc-new-msg-bar{
   background:#5865F2;
   color:white;
@@ -2331,6 +2336,7 @@ div.dc-msg-container p
   border-radius: 10px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  /* width: 90%; */
 
   /* doesnt quite fix the issue but comes close */
   white-space: nowrap;
@@ -2338,8 +2344,9 @@ div.dc-msg-container p
   overflow: hidden;
 }
 .dc-blue-x{
-  float:right;
-  padding-right:3px;
+  position: absolute;
+  right:0;
+  margin-right:12px;
   /* margin-top:-3px; */
   vertical-align: middle;
   height:1.4em;
@@ -2378,23 +2385,21 @@ div.dc-msg-container p
 .phone-time {
   font-size: 4em;
 }
-.phone-notif-top{
-  border-color: #d3dce0;
-  border-style: solid;
-  margin: 0;
-  border-width: 1px;
+.phone-notif-top, .phone-notif-bottom{
+  border: 1px solid #d3dce0;
   border-radius: 10px;
   padding: 10px;
+}
+
+.phone-notif-top{
+  margin: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   color: #9F9FA1;
 }
 .phone-notif-bottom {
-  border: 1px solid #d3dce0;
   margin-bottom: 25px;
   margin-top: 0;
-  border-radius: 10px;
-  padding: 10px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -2504,6 +2509,11 @@ div.dc-msg-container p
 .blog-cmt-reply{
   margin:0 0 30px 30px;
 }
+.fake-link{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 /*article*/
 .art-author{
@@ -2607,7 +2617,8 @@ div.gmail-font > a
 .gmail-reply-button{
   height: 30px;
   display: inline-block;
-  margin-right: -5px;
+  /* REMEMBER THE SIDEWAYS SCROLL YOU COULD NEVER FIND?? THIS HAS BEEN THE PROBLEM THE ENTIRE TIME I THINK.  and for what? for why?? why is it here?? why didnt overflow hidden work???? honestly i dont know how overflow works so nvm that tracks but god was this the problem the entire time, its been. its been years. this bug has been in prod for YEARS. */
+  /* margin-right: -5px; */
   float: right;
   overflow: hidden;
 }

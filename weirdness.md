@@ -2,7 +2,7 @@ ao3 -
 - cant have <p class=clear> some stuff </p>. its gotta be standalone i guess? wonder if thats gonna break something...
 - cant have <p class="clear anything"></p>. its gotta be COMPLETELY standalone ig.
 - the yt img is weird. its got a shadow and also its shifted off of the red bar? and the margin is diff now. may have to overwrite whatev the new ao3 default is?
--- is it that 'bottom 4'?
+- - is it that 'bottom 4'?
 - line randomly breaks sometimes, but i THINK only when its the last section?? but adding a couple of div clears didnt help. anyway, the workaround is go to the problem section, close the p, open the p, close the p around THAT SECTION AND THAT SECTION ONLY, open the p right after that and usually that + cussing does the trick
 - had to move yt-line-## from bottom 4px to ~~5px~~ 5.5px bc of the way ao3 renders images? unclear.
 - ~~also, ao3 is randomly adding a box-shadow to ONLY the yt vid images?? why is it doing that. do i need to put a box around the image/style the image maybe? it might be the only img w/o a style... hm. might be the default style if u dont apply. hmmmm.~~ fixed
@@ -17,7 +17,9 @@ ao3 -
 - <th> and <td> are by default, "vertical-align: top" due to ao3 and inheritance? setting the <table> to "vertical-align: middle" fixes this issue on most platforms. however, there's something weird about the inheritance rules on ios/safari because it defaults to "vertical-align: top" again. you can fix this by making the class for every cell/td/th (or just the thing thats holding the thing not laying properly) to include "vertical-align: middle".
 - 1/12/23, ao3's new update breaks spans that aren't wrapped by <p> already. known breaks: twitter "left dot". fix is to throw it in the below <p> block. fixed ch14 but no others so far. honestly i should just update that base code bc its janky but. i didnt do that.
 - 2/4/23, this isnt a new issue but it is an issue i am just now understanding. the twitter breaks from october(?) were because of the new parser deleting extra empty <p> tags. it doesnt matter if they have a class, if they're empty theyre deleted. gotta &nbsp; those suckers. also potentially you could wrap the entire chapter in <figure>, thats been fixing some of the parser update introduced bugs.
-- same as above, another new issue is that empty or comment lines are being interpreted into <p><br/></p> which breaks. a lot of things. i have sent in a ticket but for now the fix is to condense everything to a single line. \r\n
+- same as above, another new issue is that empty or comment lines are being interpreted into <p><br/></p> which breaks. a lot of things. i have sent in a ticket but for now the fix is to condense everything to a single line. 
+- on some platforms, the main twitter user handle falls into the dot. this can be fixed with a <span class="stay-block"> in the right place. see ch1 section1 for an example. 
+- on safari, something is broke but i dont remember what it was and i lost the bug report. i looked at it and said "oh yeah ive seen that before, hope i wrote it down so i know how to fix it" but i cant find anything about it. will update here when that gets found. ideally, it's logged on discord, but it'll take some hunting. it had to do with a scroll bar appearing in a weird place i think. it was twitter initially, but its tumblr this time
 
 allowed operators:
 - lost again :/
@@ -44,3 +46,4 @@ html:
 
 github's free webpage:
 - for some reason it doesnt like rel links if theyre global? (ie, the github hosted css file.) it insists on it being an actual relative link in the same file structure it's in. super annoying.
+- code code doesnt work, only non-code code. (so no javascript.)
