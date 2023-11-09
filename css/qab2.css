@@ -57,7 +57,7 @@ body {
   float: right;
 }
 .center{
-  text-align: center;
+  text-align: center !important;
 }
 .shift-zero{
 margin-top:0;
@@ -810,7 +810,7 @@ todo:
   margin-bottom: 3px;
   float: right;
   max-width: 75%;
-  max-height:500px;
+  max-height:400px;
   clear: both;
   position: relative;
 }
