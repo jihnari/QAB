@@ -235,15 +235,6 @@ the last thing we might wanna do here is use the fadeout function and place the 
   font-size:1.1em;
   margin:-5px 0 -5px 0;
 }
-.rd-dot { /*idx if i wanna go down this path*/
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #bbb;
-  margin-bottom: -15px;
-}
 .rd-div1{
   border-bottom: 8px solid #EEEFF1;
   padding-bottom:18px;
@@ -258,15 +249,14 @@ the last thing we might wanna do here is use the fadeout function and place the 
   display: inline-block;
   padding-top:5px;
   padding-bottom:5px;
+  cursor: pointer;
+}
+.rd-link, .rd-op{
+  color:#25A0ED;
+  cursor: pointer;
 }
 .rd-op{
-  color:#25A0ED;
   font-weight:bold;
-  cursor: pointer;
-}
-.rd-link{
-  color:#25A0ED;
-  cursor: pointer;
 }
 .rd-down-arrow {
   border: solid black;
@@ -2706,8 +2696,8 @@ padding-left:50px;
 }
 .gmail-quoted-text{
   color: #2372DB;
-  text-decoration: none;
   font-size:.8em;
+  cursor: pointer;
 }
 .gmail-dot{
   height: 40px;
