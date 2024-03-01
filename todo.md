@@ -16,17 +16,18 @@ you should, but for some reason you haven't:
 - ~~change out the new twitter icons for real images, not discord images. also ~~consider making them transparent~~ make them transparent. that would be real uggo as is on a black bg.~~
 - kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
 - totally forgot about the "read #" on line group convos, gotta add that back (edit: did several of these)
-- TWITTER USES SEP, NOT SEPT. AHHHH.
+- TWITTER USES SEP, NOT SEPT. AHHHH. **might ignore this 
 - ~~twitter header is broken in most places~~
 - litter in custom emotes
-- you have fixed code for the vertical twitter line, so use it (gotta  figure out what its called/how to format, but its in the qcon chapter a lot)
+- you have fixed code for the vertical twitter line, so use it (gotta  figure out what its called/how to format, but its in the qcon chapter a lot) **i think i did this
 - ~~new parser update breaks all twitter, ch3 and ch14? are fixed but nothing else.~~
 - ~~have to remove all 'shift-up' from discord sections now due to change in ao3 margin handling; also may need to delete extra empty paragraphs, ao3 is nbsp-ing those on its own now~~
 - ~~ch4 twitter broke (lightly); also is not in figure which might (re) break yt~~
 - check soho chapter; signal is being weird and fat there 
 - figure out if you can make a table overflow hidden ("new" twitter icons being fat)
 - **bro you have two different versions of "this tweet is no longer" floating around. fix that. 
-- 
+- consider fixing signal just-emotes to be like discord just-emotes. or to, in fact, just be dc-just-emotes bc we have no more space in the css. would require several/many edits and maybe one extra class(invisible signal box) but would look better
+- ***standardize kirishima. i thought i did this but no i didnt? capitalize his Is i think, give him quote marks (some mistakes (autocorrect first option)), no caps unless autocorrect catches it 
 
 
 i THINK i already:
