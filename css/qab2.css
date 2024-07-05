@@ -1784,45 +1784,42 @@ div.dc-font > p
   font-size:.9em;
 }
 .dc-gc-change{
-  color: #757F8B;
-  -webkit-text-stroke-width: 0.2px;
-  padding-left:35px;
-position:relative;
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
+  font-size:1.1em;
 
+  letter-spacing: .4px;
+  /* -webkit-text-stroke:royalblue  */
+  /* -webkit-text-stroke:1px; */
+
+  padding-left:35px;
+  position:relative;
+}
+.dc-gc-namechange{
+  font-weight:bold;
+  /* color:black; */
 }
 .dc-gc-edit, .dc-gc-add{
   display: inline-flex;
-  /* margin-right:20px; */
-/* position:relative; */
-position:absolute;
-
-  
+  position:absolute;
   width: 25px;
   height: 25px;
-  background-color: pink;
-  vertical-align: -35%;
-  /* margin-left:-5px; */
   left:0;
   background: url("https://github.com/jihnari/QAB/raw/main/img/dc-edit.png") no-repeat;
-  
   background-size:25px 25px;
 }
 .dc-gc-add{
-  /* background: url("https://github.com/jihnari/QAB/raw/main/img/dc-add.png") no-repeat; */
-  background: url("https://github.com/jihnari/QAB/raw/main/img/dc-locked.png") no-repeat;
-
+  background: url("https://github.com/jihnari/QAB/raw/main/img/dc-add.png") no-repeat;
   background-size:25px 25px;
 }
 
 .dc-time-stamp {
-  font-size:0.8em;
+  font-size:0.8rem !important;
+  /* font-size:10px !important; */
   color: #757F8B;
 
   /* testing */
-  -webkit-text-stroke-width: 0;
+  /* -webkit-text-stroke-width: 0; */
+  -webkit-text-stroke:0;
+  letter-spacing:normal;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1839,7 +1836,9 @@ position:absolute;
 .dc-reply-text2:hover{
   /* color: black; */
   font-style: bold;
-  -webkit-text-stroke-width: thin;
+  /* -webkit-text-stroke-width: thin; */
+  -webkit-text-stroke:.3px;
+
 }
 .dc-reply-text2{
   /* a lot of this is ao3 specific */
@@ -1980,10 +1979,16 @@ border:1.5px solid #BCBCBC;
 }
 .dc-name{
   font-weight:bold;
-  font-size:1.1em;
+  font-size:1.1rem;
+  /* font-size:1.1em; */
+  /* font-size:15px; */
+
+  letter-spacing: 0px;
   color:#060607;
   cursor: pointer;
-  -webkit-text-stroke-width: 0;
+  /* -webkit-text-stroke-width: 0; */
+  letter-spacing:normal;
+  -webkit-text-stroke:0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

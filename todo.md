@@ -5,6 +5,7 @@ you should, but for some reason you haven't:
 - youtube template/css is ugly. does that bother you enough to rewrite it into something legible?
 - i think some 100 width somewhere is still screwing things up with ao3
 - - this is still happening. 
+- - - i think this was gmail and i think its fixed
 - i changed dm-container to have a max of 100 and a min of 97 and i think that messed things up but
 - - actually this is fine maybe
 - - i dont think it fixed the issue tho
@@ -16,7 +17,7 @@ you should, but for some reason you haven't:
 - ~~change out the new twitter icons for real images, not discord images. also ~~consider making them transparent~~ make them transparent. that would be real uggo as is on a black bg.~~
 - kazuho's line name is inconsistent; gotta choose between "Kazuho" and "Kazuho Haneyama", and im thinking the second
 - totally forgot about the "read #" on line group convos, gotta add that back (edit: did several of these)
-- TWITTER USES SEP, NOT SEPT. AHHHH. **might ignore this 
+- TWITTER USES SEP, NOT SEPT. UGH. **might ignore this 
 - ~~twitter header is broken in most places~~
 - litter in custom emotes
 - you have fixed code for the vertical twitter line, so use it (gotta  figure out what its called/how to format, but its in the qcon chapter a lot) **i think i did this
@@ -27,7 +28,15 @@ you should, but for some reason you haven't:
 - figure out if you can make a table overflow hidden ("new" twitter icons being fat)
 - **bro you have two different versions of "this tweet is no longer" floating around. fix that. 
 - consider fixing signal just-emotes to be like discord just-emotes. or to, in fact, just be dc-just-emotes bc we have no more space in the css. would require several/many edits and maybe one extra class(invisible signal box) but would look better
-- ***standardize kirishima. i thought i did this but no i didnt? capitalize his Is i think, give him quote marks (some mistakes (autocorrect first option)), no caps unless autocorrect catches it 
+- ~~standardize kirishima. i thought i did this but no i didnt? capitalize his Is i think, give him quote marks (some mistakes (autocorrect first option)), no caps unless autocorrect catches it ~~
+- ~~GMAIL UPDATE. figure out a non sucky semi automatic way. shouldnt be that hard except the dates are variable, so we'll have to do the first half and the second half, for every party involved. probably just four replacements, and the replacements can be reused in future chapters if the parties are the same.~~
+-- chapters: 
+-- qab1: 
+--- 2, 9, 10
+-- qab2: 
+--- 6, 8, 10, 13 (33 and 34 are done) 
+-- see notepad++, new 14
+- (gmail is all fixed now) (hopefully)
 
 
 i THINK i already:
